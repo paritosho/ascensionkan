@@ -1,0 +1,45 @@
+BODY {
+	FONT-SIZE: 10pt; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: Verdana,Arial,Helvetica; BACKGROUND-COLOR: #ffffff
+}
+.date {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #191970; FONT-STYLE: normal; FONT-FAMILY: verdana,sans-serif
+}
+.headline {
+	FONT-WEIGHT: normal; FONT-SIZE: 40pt; COLOR: #ffffff; FONT-STYLE: italic; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.text {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; COLOR: #191970; FONT-STYLE: normal; FONT-FAMILY: "MS PGothic", arial,helvetica,sans-serif
+}
+TD.33 {
+	WIDTH: 185px; HEIGHT: 170px
+}
+A.white {
+	FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.white:link {
+	FONT-SIZE: 10pt; COLOR: #e4feff; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A.white:visited {
+	FONT-SIZE: 10pt; COLOR: #e4feff; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A.white:active {
+	FONT-SIZE: 10pt; COLOR: #e4feff; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A.white:hover {
+	COLOR: #191970; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A {
+	FONT-FAMILY: "MS PGothic", arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #191970; FONT-STYLE: normal; FONT-FAMILY: "MS PGothic", arial,helvetica,sans-serif
+}
+A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #191970; FONT-STYLE: normal; FONT-FAMILY: "MS PGothic", arial,helvetica,sans-serif
+}
+A:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #191970; FONT-STYLE: normal; FONT-FAMILY: "MS PGothic", arial,helvetica,sans-serif
+}
+A:hover {
+	FONT-WEIGHT: bold; COLOR: red; FONT-FAMILY: "MS PGothic", arial,helvetica,sans-serif
+}
