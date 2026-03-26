@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title if title else "アセンション館" }} | ascensionkan.com</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-title">アセンション館</a>
+    <nav class="site-nav">
+      <a href="/#bookshelf">本棚</a>
+      <a href="/#movie">映画</a>
+      <a href="/#ndic">N辞書</a>
+      <a href="/#rdic">R辞書</a>
+      <a href="/#prose-poem">随想</a>
+      <a href="/#works">仕事</a>
+      <a href="/mm/">通信</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  {{ content | safe }}
+</main>
+
+<footer class="site-footer">
+  <p>Copyleft &copy; paritosho | <a href="https://www.ascensionkan.com">ascensionkan.com</a></p>
+</footer>
+
+</body>
+</html>

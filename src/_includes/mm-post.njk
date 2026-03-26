@@ -1,0 +1,37 @@
+---
+layout: base.njk
+---
+
+<div class="mm-post">
+  <div class="mm-post-header">
+    <p class="mm-breadcrumb">
+      <a href="/">ホーム</a> &gt; <a href="/mm/">通信</a> &gt; 第{{ vol }}号
+    </p>
+    <h1 class="mm-post-title">{{ title }}</h1>
+    {% if date %}<p class="mm-post-date">{{ date }}</p>{% endif %}
+  </div>
+
+  <div class="mm-post-nav">
+    {% if vol > 1 %}
+    <a href="/mm/vol{{ (vol - 1) | string | padStart(4, '0') }}/" class="nav-prev">← 前の号</a>
+    {% endif %}
+    <a href="/mm/" class="nav-index">一覧</a>
+    {% if vol < 1141 %}
+    <a href="/mm/vol{{ (vol + 1) | string | padStart(4, '0') }}/" class="nav-next">次の号 →</a>
+    {% endif %}
+  </div>
+
+  <div class="mm-post-body">
+    {{ content | safe }}
+  </div>
+
+  <div class="mm-post-nav mm-post-nav-bottom">
+    {% if vol > 1 %}
+    <a href="/mm/vol{{ (vol - 1) | string | padStart(4, '0') }}/" class="nav-prev">← 前の号</a>
+    {% endif %}
+    <a href="/mm/" class="nav-index">一覧</a>
+    {% if vol < 1141 %}
+    <a href="/mm/vol{{ (vol + 1) | string | padStart(4, '0') }}/" class="nav-next">次の号 →</a>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,34 @@
+---
+layout: base.njk
+title: "アセンション館通信"
+---
+
+<div class="mm-index">
+  <h1>アセンション館通信</h1>
+  <p class="mm-index-desc">2004年2月の創刊号から現在まで、毎週発行しているメルマガのアーカイブです。</p>
+
+  <div class="mm-year-nav">
+    {% for year in range(2004, 2027) %}
+    <a href="#y{{ year }}">{{ year }}</a>
+    {% endfor %}
+  </div>
+
+  {% set currentYear = "" %}
+  {% for post in collections.mm | reverse %}
+    {% set postYear = post.data.date | truncate(4, true, "") %}
+    {% if postYear != currentYear %}
+      {% if currentYear != "" %}</ul>{% endif %}
+      {% set currentYear = postYear %}
+      <h2 id="y{{ currentYear }}" class="mm-year-heading">{{ currentYear }}年</h2>
+      <ul class="mm-list">
+    {% endif %}
+    <li>
+      <a href="{{ post.url }}">
+        <span class="mm-vol">第{{ post.data.vol }}号</span>
+        <span class="mm-date">{{ post.data.date }}</span>
+        <span class="mm-title">{{ post.data.title }}</span>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
