@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vol.0925 &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;&#x901A;&#x4FE1;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa;
+      --font-sans: 'Noto Sans JP', sans-serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .mm-pre { font-family: 'Noto Sans Mono', 'Courier New', monospace; font-size: 0.82rem; line-height: 1.65; white-space: pre-wrap; word-break: break-all; color: #1e1b35; }
+    .nav-arrow { display: inline-flex; align-items: center; gap: 0.25rem; color: #a78bfa; font-size: 0.8rem; transition: color 0.15s; padding: 0.4rem 0.8rem; border: 1px solid rgba(167,139,250,0.3); border-radius: 9999px; }
+    .nav-arrow:hover { color: #7c3aed; border-color: rgba(124,58,237,0.5); background: rgba(167,139,250,0.05); }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-sans text-base font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/mm/" class="text-accent font-medium">&#x901A;&#x4FE1;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="bg-gradient-to-br from-primary-dark via-primary to-primary-light pt-24 pb-8">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <div class="text-accent/60 text-xs tracking-widest mb-2">2022-01-09</div>
+    <div class="text-white/40 text-xs font-mono mb-1">Vol.0925</div>
+    <a href="index.html" class="text-white/40 text-xs hover:text-accent transition-colors">&#x2190; &#x901A;&#x4FE1;&#x30A2;&#x30FC;&#x30AB;&#x30A4;&#x30D6;</a>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 py-8">
+  <div class="flex items-center justify-between mb-6">
+    <a href="vol0924.html" class="nav-arrow">&#x2190; &#x524D;&#x865F;</a>
+    <a href="vol0926.html" class="nav-arrow">&#x6B21;&#x53F7; &#x2192;</a>
+  </div>
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 md:p-8">
+    <div class="mm-pre">━━━━☆☆☆☆━━━━━━━━━━━━━━ by paritosho ━
+　　☆☆　　　☆☆
+　☆☆　　　　　☆☆『アセンション館通信』2022/01/09(第925号)
+☆☆　　 ☆　　 ☆☆
+☆☆　　　　　　☆★　【気刊】──「私は在る」に導かれ♪──
+-☆☆────-☆☆─────────────────────
+　☆☆　　　☆☆　　 https://www.ascensionkan.com
+━━☆☆☆☆━━━━━━━━━━━━━━━━━━━━━━━━
+
+◇◇ このメルマガの趣旨 ◇◇
+
+　〈自己〉は展開する宇宙的ドラマの壮大なショー生み出し、
+　それを観ながら、そのなかに、そしてそれとして現れているが、
+　それは夢を見ている人が自分の夢を作り出すと同時に
+　それを見ながらそこに出演しているのと同じだ。
+　（『夢へと目覚める』レオ・ハートン）
+　
+内容は人畜無害、でも読む人は相当変わっていますね。現在493名
+──────────────────
+◇◇ もくじ ◇◇
+
+１．何をするかは問題ではない
+
+２．編集後記
+──────────────────
+
+━━━━━━━━━━━━━━━━━━
+■ １．何をするかは問題ではない
+━━━━━━━━━━━━━━━━━━
+
+風呂上がりで頭髪を完全に乾燥させないまま
+
+DVDを観たりしたものだから、
+
+頭を冷やしてしまったらしく
+
+正月早々ちょっと久しぶりに風邪気味です。(;_;)
+
+さて、またまた一週間が過ぎて、
+
+楽しい“アセンション噺”と
+
+“「私は在る」噺”を紡ぐ今がきました。
+
+『アセンション館通信』配達人のpariです。
+
+いつも戻ってくるこの本、
+
+ラメッシ・バルセカールの手になる
+
+　『ニサルガダッタ・マハラジが指し示したもの』
+　
+の最後の方に
+
+「付録１　教えの核心」という章があります。
+
+その中に「霊的修行：意志」
+
+という節があって、
+
+そこの記述に何度となく戻ってきました。
+　
+──────────────────
+　
+　霊的修行：意志
+　
+　
+　マハラジの言うことにここまでついて来ると、
+　たいていの訪問者の反応は驚くほど同じです。
+　「あなたが言ったことはとても奥深いですし、
+　　私はそれを知的に理解したと思います。
+　　しかし、
+　　それを実際に経験するために
+　　人がするべきことは
+　　まさに何なのでしょうか？」
+　マハラジはときには
+　自分の落胆を隠すときもありますし、
+　またこの質問に
+　かっとなって怒るときもあります。
+　しかしたいていは、
+　その質問に対して次のような
+　対抗する質問をして答えます
+　──
+　自分が何かをしなければいけないと考える
+　この「人」とは誰なのか？
+　そして、
+　何を達成するというのか？
+　いったん実体は単に間違った
+　観念にすぎず、
+　肉体は他の現象と同様に、
+　意識の中の経験にすぎず、
+　意志を行使する人は
+　誰もいないことが理解されたら、
+　誰かが何かをする
+　という問題がどこにあるのか？
+　理解──直感的認識がすべてである。
+　この直感的認識に
+　全面的に完全に浸透されることが、
+　解放にとって必要な
+　すべての「行動」である。
+　そして、
+　自立した意志をもつ
+　独立した実体という間違った観念が
+　完全に消滅しなければ、
+　どれほどの「行動」も
+　それを達成することはできないだろう。
+　「私」は
+　「自分」の消滅なしに、
+　現れることはできない。
+　「自分」が消えるとき、
+　あなたは私である。
+　
+　マハラジが言うように、
+　もし矢が的に当たったなら、
+　もはやどんな質問も
+　ありえないことでしょう。
+　しかし、
+　この事実の直接的直感的認識
+　──矢の飛行──は、
+　知的思考による観念化の介入によって
+　困難になります。
+　知的理解は原因と結果にもとづき、
+　それは一時的二元論の一つの面であり、
+　観念化はそれにもとづいています。
+　その一方、
+　直感的理解──直接的理解──は
+　原因と結果が一つである永遠です。
+　次のような質問へと導くのは知的理解です
+　──
+　「もし意志を行使する
+　　自立的実体が何もいないなら、
+　　どうやって非意志的生き方は
+　　達成できるのか？」
+　とか、
+　「どうやって人はこの世の中で生き、
+　　行動することになるのだろうか」
+　など。
+　
+　そういった質問が尋ねられるとき、
+　マハラジの通常の答えは
+　「あなたが私の言っていることを
+　　本当に理解しているかぎり、
+　　あなたが何をするかは問題ではない。
+　　別の言い方をするなら、
+　　あなたが私の言っていることを
+　　理解していないとしても（！）
+　　同様にあなたが何をするかは問題ではない！」
+　というものでした。
+　明らかに、
+　そのポイントとは、
+　もし注意深く分析するなら、
+　私たちの過去のすべての経験は、
+　私たちが考えているように
+　私たちによって生きられているのではなく、
+　事実は
+　人の夢の中にいるすべての登場人物のように、
+　私たちのために生きられているということ、
+　そしてそれゆえ、
+　私たちの人生で意志というものは
+　重要な要因ではないことを示している、
+　ということです。
+　少し考えれば、
+　私たちの肉体的ないし有機的機能の
+　ごくごくわずかな部分しか、
+　自分たちの意志に依存していないことが
+　明らかになることでしょう。
+　マハラジは尋ねます
+　──
+　あなたはどれくらいの間、
+　睡眠、食べ物、水なしで
+　生きることができるだろうか？
+　どれくらいの間、排泄作用なく
+　やっていくことができるだろうか？
+　あなたは次の五分間さえ生き残るための
+　絶対的意志をもっているのだろうか？
+　あなたは自分が妊娠されたとき、
+　自分の意志を行使したのだろうか？
+　そして、
+　妊娠された物質が
+　母親の子宮の中で成長するときも、
+　意志を行使したのだろうか？
+　
+　『ニサルガダッタ・マハラジが
+　　指し示したもの』(p335-337)
+──────────────────
+　
+
+&gt; マハラジの通常の答えは
+&gt; 「あなたが私の言っていることを
+&gt; 　本当に理解しているかぎり、
+&gt; 　あなたが何をするかは問題ではない。
+&gt; 　別の言い方をするなら、
+&gt; 　あなたが私の言っていることを
+&gt; 　理解していないとしても（！）
+&gt; 　同様にあなたが何をするかは問題ではない！」
+&gt; というものでした。
+
+もちろん、ここで
+
+「問題ではない」と判断されているのは、
+
+自分が「何をすべきか」を模索し、
+
+気にかけ、心配している
+
+偽実体の判断でないことは間違いありません。
+
+「問題ではない」という判断は
+
+もちろん観照される見かけの中に
+
+どんな分離した実体も存在していないことを知っている
+
+マハラジのような覚者の判断でしょう。
+
+まずそれが大前提にあります。
+
+とはいえ、
+
+このマハラジの言葉の前半と後半には
+
+意味の包含において明らかな差異があります。
+
+&gt; 「あなたが私の言っていることを
+&gt; 　本当に理解しているかぎり、
+&gt; 　あなたが何をするかは問題ではない。
+
+この言葉の意味は自明です。
+
+私が言った言葉の意味が
+
+あなたという存在の中核を射抜いて
+
+現象という見かけの上での個人に
+
+実際はどんな実体も存在していないことが
+
+直感的に認識されているなら、
+
+あなたが何をするかは問題ではないと。
+
+具体的にどのような行為が喚起されるかは、
+
+その肉体精神器官の性質によることですから。
+
+しかし、この後半部分、
+
+&gt; 　別の言い方をするなら、
+&gt; 　あなたが私の言っていることを
+&gt; 　理解していないとしても（！）
+&gt; 　同様にあなたが何をするかは問題ではない！」
+
+このメッセージが意味するところは、
+
+必ずしも自明ではありません。
+
+これは何を意味しているのか？
+
+マハラジはあまり「神」という言葉を使いませんが、
+
+これは、
+
+&gt; 　あなたが私の言っていることを
+&gt; 　理解していないとしても（！）
+&gt; 　同様にあなたが何をするかは問題ではない！」
+
+なぜなら、それもまた
+
+神の意志が行われているということだから、
+
+ということになるでしょうか。
+
+つまり、
+
+何をすべきかを模索して、
+
+あたふた右往左往するのもまた
+
+神の表現なのだから……ということになるでしょうか。
+
+では、
+
+あたふた右往左往に共振させられている者は
+
+神の犠牲者なのか？
+
+いえ、そこには
+
+意識的な一時的観念が浮上しているだけで、
+
+それ以外のどんな分離した実体も
+
+実在してはいないわけです。
+
+(-||-)
+
+──────────────────
+　あなたは在る。
+　ほかのすべては現れにすぎない。
+　
+　『私は在る』(p421) 
+──────────────────
+
+(-||-)
+
+──────────────────
+　永久的なもの、
+　それはあなた自身の存在である。
+　真我として在りなさい。
+　それが至福である。
+　あなたはいつもそれなのである。
+　
+　『あるがままに』(p58) 
+──────────────────
+
+……。(-_-)
+
+ありがとうございました。
+
+(-||-)
+
+今日はこんなところで。
+
+……。
+
+m(_ _)m
+
+
+　　 ………○…………○…………○………
+
+
+「ニサルガ辞書」はここです。
+https://www.ascensionkan.com/ndic/
+
+「ラマナ・マハルシ辞書」はここです。
+https://www.ascensionkan.com/rdic/
+
+おこがましくも『アセ通』既刊号は
+すべてここに置いてあります。
+https://www.ascensionkan.com/mm/
+
+　　 ………○…………○…………○………
+
+
+▼『アセ通』へのご意見投稿フォーム：
+http://www.formzu.net/fgen.ex?ID=P48750702
+
+
+　　 ………○…………○…………○………
+
+
+▼『アセ通』への情報ご投稿フォーム
+http://www.formzu.net/fgen.ex?ID=P87119518
+
+
+　　 ………○…………○…………○………
+
+
+━━━━━━━━━━━━━━━━━━
+■ ２．編集後記：
+━━━━━━━━━━━━━━━━━━
+
+今日は少しボーッとしてます。(*^_^*)
+
+今日はまだまだ明るいです。
+
+それではまた。
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━
+■　【作者】 『アセンション資料館』主人 pari
+━━━━━━━━━━━━━━━━━━━━━━━
+　　メール：　pariアットマークjk2.so-net.ne.jp
+──────────────────
+mag2：http://www.mag2.com/m/0000126287.html
+━━━━━━━━━━━━━━━━━━━━━━━
+Copyleft(C)2022 paritosho
+──────────────────</div>
+  </article>
+  <div class="flex items-center justify-between mt-6">
+    <a href="vol0924.html" class="nav-arrow">&#x2190; &#x524D;&#x865F;</a>
+    <a href="vol0926.html" class="nav-arrow">&#x6B21;&#x53F7; &#x2192;</a>
+  </div>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>

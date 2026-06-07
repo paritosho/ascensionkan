@@ -1,0 +1,423 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&#x672C;&#x68DA; &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa; --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif; --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+  </style>
+</head>
+<body class="min-h-screen">
+  <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-white font-serif text-lg font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/bookshelf/"  class="text-accent font-medium">&#x672C;&#x68DA;</a>
+        <a href="/movie/"      class="text-white/70 hover:text-white transition-colors">&#x6620;&#x753B;</a>
+        <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+      </div>
+    </div>
+  </nav>
+  <header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-20">
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 30% 60%, #a78bfa 0%, transparent 55%), radial-gradient(circle at 70% 20%, #7c3aed 0%, transparent 50%);"></div>
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center animate__animated animate__fadeIn">
+      <div class="inline-block text-accent text-xs tracking-[0.3em] uppercase mb-4 font-medium">books &amp; readings</div>
+      <h1 class="font-serif text-5xl md:text-7xl text-white mb-6">&#x672C;&#x68DA;</h1>
+      <p class="text-white/60 text-lg max-w-xl mx-auto leading-relaxed">pari&#x304C;&#x6B69;&#x3093;&#x3067;&#x304D;&#x305F;&#x63A2;&#x6C42;&#x306E;&#x8ECC;&#x8DE1;&#x2014;&#x2014;&#x5FC3;&#x306B;&#x97FF;&#x3044;&#x305F;&#x672C;&#x305F;&#x3061;&#x3002;</p>
+      <div class="mt-8 text-accent/50 text-sm">&#x5168; 91 &#x518A;</div>
+    </div>
+  </header>
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-16">
+    <section class="mb-14">
+      <h2 class="font-serif text-lg text-primary mb-5 pb-2 border-b border-primary/15">■過去からの声： 先住民族からのメッセージ／超古代史</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <a href="mutant.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『ミュータント・メッセージ』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『ミュータント・メッセージ――＜真実の人＞族の教え――』 書誌： 原題 Mutant Message Dawn Under (c)1991 発信 アボリジニ（オーストラリア原住民）＜真実の人＞...</p>
+        </a>
+        <a href="papalagi.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『パパラギ』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『パパラギ――はじめて文明を見た南海の酋長ツイアビの演説集――』 書誌： 原題 DEL PAPARAGI (c)1920年バーデンのフェルデン社初版、1979改訂新版 発信 サモア諸島ウポル島...</p>
+        </a>
+        <a href="hopi_kit.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『ホピ　神との契約』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『大地といのちの護りびと ホピ 神との契約 ――この惑星を救うテククワ・イカチという生き方――』 書誌： 原題 The Hopi Survival Kit (c)1997 著者 トーマス・Ｅ・...</p>
+        </a>
+        <a href="10_lost_tribes.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『大和民族はユダヤ人だった』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『大和民族はユダヤ人だった――出エジプトから日本への道――』 書誌： 原 題 THE JAPANESE AND THE TEN LOST TRIBES OF ISLAEL (c)1980 著 ...</p>
+        </a>
+      </div>
+    </section>
+    <section class="mb-14">
+      <h2 class="font-serif text-lg text-primary mb-5 pb-2 border-b border-primary/15">■秘匿された伝統：秘教グループ／真のイエス／タントラ</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <a href="love-condition.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『無条件の愛』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『無条件の愛――キリスト意識を鏡として』 書誌： 原題 Love wihtout Conditions (c)1994 著者 ポール・フェリーニ 訳者 井辻朱美 発行 株式会社 ナチュラルスピ...</p>
+        </a>
+        <a href="vigyan.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『タントラ秘法の書』</p></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『タントラ秘法の書』 書誌： 原題 VIGYAN BHAIRAV TANTRA (c)1976 発信 シバ神 講話 和尚（ＯＳＨＯ） 関連HP 国際版 http://www.osho.com/...</p>
+        </a>
+        <a href="superascen.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『スーパー・アセンション』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『スーパー・アセンション――イシャヤ・アセンションの技術解明――』 書誌： 原題 ASCENSION : An Analysis of the Art of Ascension as Taug...</p>
+        </a>
+      </div>
+    </section>
+    <section class="mb-14">
+      <h2 class="font-serif text-lg text-primary mb-5 pb-2 border-b border-primary/15">■内宇宙からの声： 御神示／チャネリング</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <a href="ramtha.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『ラムサ』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『ラムサ――真・聖なる預言』 書誌： 原題 RAMTHA (c)1986 著者 ラムサ 訳者 川瀬勝 発行 株式会社角川春樹事務所（1995年10月10日第一刷発行） 発売 株式会社ハルキ・コ...</p>
+        </a>
+        <a href="ramtha_white_book.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『ラムサ　ホワイトブック』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『ラムサ ホワイトブック』 書誌： 原題 Ramtha The White Book (c)1999, 2001 JZK,Inc 著者 ラムサ 訳者 松野健一、後藤雄三 発行人 竹 健治 発行...</p>
+        </a>
+        <a href="ramtha_tensei.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『転生の神秘』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『転生の神秘』 書誌： 原題 Ramtha The Plane of Bliss On Earth As It Is In Heaven (c)1997 JZK,Inc 著者 ラムサ 訳者 後...</p>
+        </a>
+        <a href="cwg-1.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『神との対話』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『神との対話――宇宙を見つける自分を見つける――』 書誌： 原題 Conversations with God (c)1995 発信 神 著者 ニール・ドナルド・ウォルシュ 訳者 吉田利子 発...</p>
+        </a>
+        <a href="cwg-2.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『神との対話②』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名：『神との対話②――宇宙を生きる自分を生きる――』 書誌： 原題 Conversations with God book2 (c)1997 発信 神 著者 ニール・ドナルド・ウォルシュ 訳者 吉田...</p>
+        </a>
+        <a href="cwg-3.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『神との対話③』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『神との対話③――宇宙になる自分になる――』 書誌： 原題 Conversations with God book3 (c)1998 発信 神 著者 ニール・ドナルド・ウォルシュ 訳者 吉田利...</p>
+        </a>
+        <a href="cwg-5.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『神とひとつになること』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『神とひとつになること』 書誌： 原題 Communion with God (c)2000 発信 神 著者 ニール・ドナルド・ウォルシュ 訳者 吉田利子 発行 株式会社サンマーク（2001年...</p>
+        </a>
+        <a href="cwg-6.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『新しき啓示』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『新しき啓示』 書誌： 原題 The New Revelations (c)2002 発信 神 著者 ニール・ドナルド・ウォルシュ 訳者 吉田利子 発行 株式会社サンマーク（2003年6月20...</p>
+        </a>
+        <a href="hifumi.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『ひふみ神示（日月神示）』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『ひふみ神示（旧「日月神示」）』 書誌： 発信 神（ウシトラの金神） 筆録 岡本天明 発行 株式会社コスモ・テン・パブリケーション（平成３年１２月３日初版発行）発売 太陽出版 書名： 『一二三...</p>
+        </a>
+        <a href="himitsu.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『火水伝文』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『火水伝文 （ひみつつたえふみ）』 書誌： 発信 日本国国祖・国常立大神の指導のもとに降ろされる 筆録 我空徳生 発行 火水伝文普及会 私評： この本には特別の思い入れがある。 もともとこうい...</p>
+        </a>
+        <a href="tera.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『愛しのテラへ』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『愛しのテラへ――地球と私たちが光り輝く日のために――』 書誌： 著者 岡田多母 発行 株式会社風雲舎（1997年10月10日初版発行） 〒162-0805 東京都新宿区矢来町122 矢来第二...</p>
+        </a>
+        <a href="souseikai.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『創世会レポート』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『創世会レポート』 書誌： 発信 日本の高次元意識（高天原） 著者 津留晃一 現在の関連URL：津留晃一の世界 http://www1.ttcn.ne.jp/~turu/ 私評： このサイトの...</p>
+        </a>
+        <a href="hikarino.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『光の歌』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『光の歌――２１世紀の福音書――』 書誌： 発信 かつて地上に人間の生を享けた天上のわたしたち 著者 板谷翠 発行 （株）光の楽園（1997年2月20日第一刷発行） URL :http://k...</p>
+        </a>
+        <a href="mokushi-2.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『宇宙船天空に満つる日』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『宇宙船天空に満つる日――「宇宙からの黙示録」完結編――』 書誌： 発信 金星の長老サナンダを含む惑星連合 著者 渡辺大起、山本耕一 発行 （株）徳間書店（1993年5月31日初版発行） 私評...</p>
+        </a>
+        <a href="arigatou-1.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『どういきたらいいの？』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『どういきたらいいの？』 書誌： 著者 詠人不知 発行者 山岸道弘 発行 メディアサンゴハチ（平成14年2月22日第一刷発行） 〒920-1161 金沢市鈴見台5丁目10番21号 電話：(07...</p>
+        </a>
+        <a href="motoike-1.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『愛しさのあなた』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『愛しさのあなた――光の存在とつながって生きる――』 書誌： 著者 本池千美子 （関連URL：http://www5.ocn.ne.jp/~cmnty-jm/） 発行人 山平松生 発行 株式会...</p>
+        </a>
+        <a href="alien_interview.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『エイリアン インタビュー』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『エイリアン インタビュー――マチルダ・オードネル・マックエルロイが提供した文書に基づいて――』 書誌： 原題 Alien Interview (c)2010 発信 Airl（エアル） 対話者...</p>
+        </a>
+        <a href="theodore-1.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『テオドールから地球へ』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『テオドールから地球へ――地球は第４密度へ移行する――』 書誌： 原題 The Extraterrestrial Vision: Channeled Teaching from Theodor...</p>
+        </a>
+        <a href="theodore-2.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『地球の目醒め』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『地球の目醒め――テオドールから地球へⅡ――』 書誌： 原題 Waking Up: Channeled Teaching from Theodore by Gina Lake (c)1996 ...</p>
+        </a>
+        <a href="bashar-1.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『ＢＡＳＨＡＲ』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『ＢＡＳＨＡＲ――宇宙存在バシャールからのメッセージ――』 書誌： 原題 （1987年5月の日本での公開チャネリング） 発信 バシャール 受信 ダリル・アンカ 制作 喜多見龍一 発行 株式会社...</p>
+        </a>
+        <a href="bashar-2.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『ＢＡＳＨＡＲ[２]』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『ＢＡＳＨＡＲ[２]――宇宙存在バシャールからのメッセージ――』 書誌： 原題 （1989～1990年の日本および海外での公開チャネリング） 発信 バシャール 受信 ダリル・アンカ 翻訳 関野...</p>
+        </a>
+        <a href="bashar-3.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『ＢＡＳＨＡＲ[３]』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『ＢＡＳＨＡＲ[３]――宇宙存在バシャールが語る新しい現実――』 書誌： 原題 （1989～1990年の日本および海外での公開チャネリング） 発信 バシャール 受信 ダリル・アンカ 翻訳 関野...</p>
+        </a>
+        <a href="new-meta.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『ニュー・メタフィジックス』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『ニュー・メタフィジックス――世界を創る意識の力学――』 書誌： 原題 New Meta-physics (C)1987 発信 バシャールと宇宙連合 受信 ダリル・アンカ 翻訳 関野直行 発行...</p>
+        </a>
+        <a href="pleiad+1.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『プレアデス＋かく語りき』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『プレアデス＋かく語りき――地球 30 万年の夜明け――』 書誌： 原題 Bringers of the Dawn (c)1992 著者 バーバラ・マーシニアック 訳者 大内 博 発行 コスモ...</p>
+        </a>
+        <a href="pleiad+2.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『プレアデス＋地球を開く鍵』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『プレアデス＋地球を開く鍵』 書誌： 原題 EARTH:Pleiadian Keys to the Living Library (c)1995 発信 プレアデス人 著者 バーバラ・マーシニア...</p>
+        </a>
+        <a href="adachi-1.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『波動の法則』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『波動の法則――宇宙からのメッセージ――』 書誌： 発信 惑星連合（ＦＩＤＡ）および銀河連合（ＦＩＬＦ） 著者 足立育朗 発行 ＰＨＰ研究所（1995年12月29日初版発行） 関連URL：ht...</p>
+        </a>
+        <a href="manabu.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『宇宙に学ぶ』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『宇宙に学ぶ――地球の次の時代の文化の創造に備えて――』 書誌： 発信 惑星連合（ＦＩＤＡ）および銀河連合（ＦＩＬＦ） 著者 森 真由美 発行 ＰＨＰ研究所（1997年7月17日初版発行） 私...</p>
+        </a>
+        <a href="adachi-2.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『真 地球の歴史』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『真 地球の歴史――波動の法則Ⅱ――』 書誌： 発振 惑星連合（ＦＩＤＡ）および銀河連合（ＦＩＬＦ） 編著 足立育朗 協力(文)森 真由美 (絵)栗田正樹 発行 ＰＨＰ研究所（1998年7月2...</p>
+        </a>
+        <a href="prism.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『プリズム・オブ・リラ』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『プリズム・オブ・リラ――銀河系宇宙種族の起源を求めて――』 書誌： 原題 THE PRISM OF LYRA (c)1989 発信 ジャーメインその他の情報源と共著者の洞察、推理の集大成 著...</p>
+        </a>
+        <a href="prepare.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『宇宙人遭遇への扉』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『宇宙人遭遇への扉――人類の進化を導くプレアデスからのメッセージ――』 書誌： 原題 Preparing for Contact (c)1993 発信 プレアデス人サーシャと集合意識体ジャーメ...</p>
+        </a>
+        <a href="agenda.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『プレアデス　銀河の夜明け』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『プレアデス 銀河の夜明け』 書誌： 原題 PLEADIAN AGENDA (c)1995 発信 プレアデスの中心太陽アルシオネの女神サティア 著者 バーバラ・ハンド・クロウ 訳者 高橋裕子 ...</p>
+        </a>
+        <a href="visitor.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『[宇宙人]内なる訪問者』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『［宇宙人］内なる訪問者 ―未来人類が銀河と意識をともにする日―』 （今在庫切れかな……。） 書誌： 原題 Visitors from Within (c)1992 発信 プレアデス人サーシャ...</p>
+        </a>
+        <a href="newtime.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『「新しい時間」の発見』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『「新しい時間」の発見 甦るマヤの預言――人類はなぜ“偽りの時間”の中にいるのか――』 書誌： 原題 Discovering the New Time (c)1997 著者 ホゼ・アグエイアス...</p>
+        </a>
+        <a href="ETcontact.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『アセンションへの道』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『アセンションへの道――惑星連合からのメッセージ――』 書誌： 原題 ET CONTACT: A BLUEPRINT FOR A NEW WORLD (c)1997 発信 惑星連合 著者 ジー...</p>
+        </a>
+        <a href="peables.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『生命の目覚めるとき』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『生命の目覚めるとき』 書誌： 原題 TO DANCE WITH ANGELS (c)1990 発信 ドクター・ピーブルズ 受信 トマス・ジェーコブソン 著者 ドン＆リンダ・ペンドルトン 訳者...</p>
+        </a>
+        <a href="crystal.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『クリスタルの階梯』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『クリスタルの階梯』 書誌： 原題 THE CRYSTAL STAR (c)1990 発信 サナンダ 著者 エリック・クライン 監訳 キヨ・ササキ・モンロウ 発行 株式会社コスモ・テン・パブリ...</p>
+        </a>
+        <a href="unbound.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『あなたの神話』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『あなたの神話――アセンションのサイクル――』 書誌： 原題 UNBOUND (c)1986 発信 「七番目の領域（王国）のマスター」と名乗るソース 著者 ドリアン・Ｇ・イスラエル 訳者 松岡...</p>
+        </a>
+        <a href="emmanue1.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『エマヌエルの書』</p></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『エマヌエルの書』 書誌： 原題 EMMANUEL'S BOOK 発信 エマヌエル 著者 パット・ロドガスト、ジュディス・スタントン 訳者 井辻朱美 発行 株式会社ヴォイス（1993年3月22...</p>
+        </a>
+        <a href="emmanue2.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『天使の鼓動』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『天使の鼓動』 書誌： 原題 EMMANUEL'S BOOK Ⅲ What Is Angel Doing Here? 発信 エマヌエル 著者 パット・ロドガスト、ジュディス・スタントン 訳者 ...</p>
+        </a>
+        <a href="starchild.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『スターチャイルドの誕生』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『スターチャイルドの誕生――宇宙的瞑想と変容のための詩的ガイド――』 書誌： 発信 宇宙意識コンテッサ 著者 直居慧 発行 株式会社コスモテン・パブリケーション（平成6年7月30日初版発行） ...</p>
+        </a>
+        <a href="olin-3.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『スピリチュアル・グロース』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『スピリチュアル・グロース ――光の存在オリン、ハイアーセルフを語る――』 書誌： 原題 SPIRITUAL GROWTH (c)1989 発信 オリン 著者 サネヤ・ロウマン 訳者 高木悠鼓...</p>
+        </a>
+      </div>
+    </section>
+    <section class="mb-14">
+      <h2 class="font-serif text-lg text-primary mb-5 pb-2 border-b border-primary/15">■宇宙探訪記</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <a href="9thplanet.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『超巨大[宇宙文明]の真相』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『超巨大[宇宙文明]の真相 進化最高＜カテゴリー９＞の惑星から持ち帰ったかつてなき精緻な＜外宇宙情報＞』 書誌： 原題 ABDUCTION TO THE 9th PLANET (c)1993 ...</p>
+        </a>
+      </div>
+    </section>
+    <section class="mb-14">
+      <h2 class="font-serif text-lg text-primary mb-5 pb-2 border-b border-primary/15">■内宇宙への冒険： 体外離脱／臨死体験／催眠誘導／アカシックレコード解読</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <a href="journeyf.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『魂の体外旅行』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『魂の体外旅行――体外離脱の科学――』 書誌： 原題 Far Journeys (c)1985 著者 ロバート・Ａ・モンロー 監修 笠原敏雄 訳者 坂場順子 発行 日本教文社（1990年5月1...</p>
+        </a>
+        <a href="journeyu.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『究極の旅』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『究極の旅 体外離脱者モンロー氏の最後の冒険』 書誌： 原題 Ultimate Journey (c)1994 著者 ロバート・Ａ・モンロー 訳者 塩崎麻彩子 発行 日本教文社（1990年5月...</p>
+        </a>
+        <a href="afterdeath.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『死後の真実』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『死後の真実』 書誌： 原題 ON LIFE AFTER DEATH (c)1991 著者 Ｅ・キューブラー・ロス 訳者 伊藤ちぐさ 解説 阿部秀雄 発行 日本教文社（1995年4月15日初版...</p>
+        </a>
+        <a href="recollection.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『「あの世」からの帰還』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『「あの世」からの帰還――臨死体験の医学的研究――』 書誌： 原題 Recollections of Death (c)1982 著者 マイクル・Ｂ・セイボム 訳者 笠原敏雄 発行 日本教文社...</p>
+        </a>
+        <a href="between.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『輪廻転生』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『輪廻転生――驚くべき現代の神話――』 書誌： 原題 LIFE BETWEEN LIFE (c)1986 著者 Ｊ・Ｌ・ホイットン、Ｊ・フィッシャー 訳者 片桐すみ子 発行 人文書院（1989...</p>
+        </a>
+        <a href="12days.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『光の十二日間』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『光の十二日間』 書誌： 原題 The Twelve Days of Light: Prophecy Concering the Milenium (c)1998 著者 ゲリー・ボーネル 訳者...</p>
+        </a>
+        <a href="kioku.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『光の記憶』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『光の記憶――アカシックレコードで解きあかす人類の封印された記憶と近未来――』 書誌： 著者 高橋克彦、ゲリー・ボーネル 訳者 大野百合子 発行 株式会社ヴォイス（1999年12月23日初版発...</p>
+        </a>
+        <a href="tensei.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『転生と地球』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『転生と地球――価値観の転換へのメッセージ――』 書誌： 著者 高木義之 発行 ＰＨＰ研究所（1997年9月4日第1版第1刷発行） 私評： 日本最大のＮＧＯ、環境ネットワーク『地球村』の代表高...</p>
+        </a>
+      </div>
+    </section>
+    <section class="mb-14">
+      <h2 class="font-serif text-lg text-primary mb-5 pb-2 border-b border-primary/15">■創作／ファンタジー</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <a href="ami-1.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『アミ 小さな宇宙人』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『アミ 小さな宇宙人――アダムスキー、マイヤーをしのぐＵＦＯ体験――』 書誌： 原題 Ami, el nino de las estrellas (c)1991 著者 エンリケ・バリオス 訳者...</p>
+        </a>
+        <a href="ami-2.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『戻ってきたアミ』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『戻ってきたアミ――惑星（ほし）へ、魂の恋人を求めて――』 書誌： 原題 AMI Regresa (c)1990 著者 エンリケ・バリオス 訳者 石原彰二 発行 株式会社徳間書店（1996年7...</p>
+        </a>
+        <a href="lem-1.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『星からの帰還』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『星からの帰還』 書誌： 原 題 POWROT Z GWIAZG (c)1961 著 者 スタニスワフ・レム 訳 者 吉川昭三 編 集 株式会社 綜合社 発行所 株式会社 集英社（昭和43年1...</p>
+        </a>
+      </div>
+    </section>
+    <section class="mb-14">
+      <h2 class="font-serif text-lg text-primary mb-5 pb-2 border-b border-primary/15">■瞑想と悟りの世界</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <a href="zettaimu.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『絶対無の戯れ』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『絶対無の戯れ』 書誌： 著者 ダンテス・ダイジ 発行 森北出版（1990年7月27日第1刷発行） 私評： 著者は一九八七年に三七歳で遷化した座禅老師にしてタントラ・ヨーガ・グルという異色の雨...</p>
+        </a>
+        <a href="no-self.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『自己喪失の体験』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『自己喪失の体験』 書誌： 原題 THE EXPERIENCE OF NO-SELF (c)1982 著者 バーナデット・ロバーツ 訳者 雨宮一郎、志賀ミチ 発行 株式会社紀伊国屋書店（198...</p>
+        </a>
+        <a href="I_AM_THAT.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『アイ・アム・ザット　私は在る』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『アイ・アム・ザット 私は在る ニサルガダッタ・マハラジとの対話』 書誌： 英訳者 モーリス・フリードマン 編集者 スダカール・Ｓ・ディクッシット 翻訳者 福間 巌 発行所 株式会社ナチュラル...</p>
+        </a>
+        <a href="shouji.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『正法眼蔵　生死』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『正法眼蔵 生死』 書誌： 著者 道元禅師 発行 岩波文庫版『正法眼蔵』など 私評： こんな文章を入れたくなってしまった。 意味がわかかるわけでもない。 といって、わからないと決め付けるわけに...</p>
+        </a>
+        <a href="sonomama.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『そのまま　このまま』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『そのまま このまま』 書誌： 著者 山田 耕榮 発行 株式会社飛鳥新社（2001年1月6日第1刷発行） 私評： わかってしまった方々の表現はどれも似ている。 そして、同じことを何度も何度も、...</p>
+        </a>
+      </div>
+    </section>
+    <section class="mb-14">
+      <h2 class="font-serif text-lg text-primary mb-5 pb-2 border-b border-primary/15">■瞑想／哲学／自己実現</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <a href="as_a_man_thinketh.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『「原因」と「結果」の法則』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『「原因」と「結果」の法則』 書誌： 原題 AS A MAN THINKETH (c)1902 著者 ジェームズ・アレン 訳者 坂本貢一 発行 株式会社サンマーク出版（2003年4月25日初版...</p>
+        </a>
+      </div>
+    </section>
+    <section class="mb-14">
+      <h2 class="font-serif text-lg text-primary mb-5 pb-2 border-b border-primary/15">■科学的／報道的アプローチ</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <a href="kojigen3.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『生命と宇宙』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『生命と宇宙――見えてきて生命と宇宙の仕組み、その起源――』 （在庫切れかな） 書誌： 著者 関 英男 発行 株式会社飛鳥新社（1998年3月26日第1刷発行） 私評： サイ科学の草分け関英男...</p>
+        </a>
+        <a href="amazing.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『アポロ宇宙飛行士が撮ったＵＦＯ』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『アポロ宇宙飛行士が撮ったＵＦＯ――異星文明との遭遇――』 書誌： 著者 コンノ ケンイチ 発行 株式会社徳間書店（1994年10月31日第1刷発行） 私評： 著者のこの本での狙いは、“誰にも...</p>
+        </a>
+        <a href="reset.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『ＲＥＳＥＴ』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『ＲＥＳＥＴ――リセット―― ――2012年12月23日、地球は「フォトン・ベルト」によってリセットされる――』 書誌： 著者 渡邊延朗 発行所 ガイア出版（2002年12月21日 初版発行）...</p>
+        </a>
+        <a href="power_vs_force.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『パワーか、フォースか』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『パワーか、フォースか――人間のレベルを測る科学――』 書誌： 原題 Power vs. Force (c)1999, 2001 JZK,Inc 著者 デヴィッド・Ｒ・ホーキンズ 訳者 エハン...</p>
+        </a>
+      </div>
+    </section>
+    <section class="mb-14">
+      <h2 class="font-serif text-lg text-primary mb-5 pb-2 border-b border-primary/15">■未来ヴィジョン</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <a href="goldenfuture.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『黄金の未来』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『大いなる挑戦――黄金の未来』 書誌： 講話 バグワン・シュリ・ラジニーシ 監修 創造的科学と芸術と世界アカデミー日本準備委員会 発行 株式会社ラジニーシ・エンタープライズ・ジャパン（1988...</p>
+        </a>
+        <a href="saienkazoku.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『「菜園家族」酔夢譚』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『週休五日制による 三世代「菜園家族」酔夢譚 ――２１世紀・日本のグランドデザイン――』 書誌： 著者 小貫 雅男 編集 伊藤 恵子 発行 Ｎｏｍａｄ（映像地域学研究会）（2000年5月1日第...</p>
+        </a>
+        <a href="taenaru.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『妙なる畑に立ちて』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『妙なる畑に立ちて』 書誌： 著者 川口由一 発行 野草社（1990年5月2日第一刷発行） 私評： ＊＊＊ 引用： ＊＊＊ 好み：★★★ （注：独断と偏見によるお薦め度、または記憶による感動度...</p>
+        </a>
+        <a href="diet.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『エコロジカル・ダイエット』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『エコロジカル・ダイエット――生きのびるための食事法――』 書誌： 原題 DIET FOR A NEW AMERICA (c)1987 著者 ジョン・ロビンズ 訳者 田村源二 発行 株式会社角...</p>
+        </a>
+        <a href="common-21.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『経済成長がなければ私たちは豊かになれないのだろうか』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『経済成長がなければ私たちは豊かになれないのだろうか』 書誌： 著者 Ｃ．ダグラス・ラミス ［参考］：ダグラス・ラミス著作目録（Lummis, C.Douglas） 発行 株式会社平凡社（20...</p>
+        </a>
+        <a href="jitsugaku.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『和の実学』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『和の実学』 書誌： 著者 大和信春 発行 株式会社博進堂 コミュニケーション事業部（1985年5月1日初版発行） 私評： ＊＊＊ 引用： ＊＊＊ 好み：★★★ （注：独断と偏見によるお薦め度...</p>
+        </a>
+        <a href="neo-jipang.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『ネオ・ジパングの夜明け』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『ネオ・ジパングの夜明け』 書誌： 著者 高遠 哲＋グループ・ホルス （関連URL：http://now.ohah.net/pari/） 発行 株式会社コスモ・テン（1998年10月25日初版...</p>
+        </a>
+        <a href="newchild.html" class="group block bg-white rounded-xl p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+          <div class="flex justify-between items-start mb-1"><p class="font-serif text-primary text-sm group-hover:text-accent transition-colors leading-snug flex-1">『ニュー チャイルド』</p><span class="text-yellow-400 text-xs ml-1 shrink-0">&#9733;&#9733;&#9733;&#9733;</span></div>
+          <p class="text-xs text-primary/45 leading-relaxed line-clamp-2 mt-1">書名： 『ニューチャイルド』 書誌： 講話 和尚（ＯＳＨＯ） 関連HP 国際版 http://www.osho.com/（←行ったら日本語を選んでね。） 訳者 スワミ・パリトーショ スワミ・スディープ...</p>
+        </a>
+      </div>
+    </section>
+
+  </main>
+  <footer class="bg-primary-dark text-white/30 py-10 text-center text-xs mt-8">
+    <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+  </footer>
+  <script>
+    const navbar = document.getElementById('navbar');
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => { navbar.classList.toggle('scrolled', window.scrollY > 50); ticking = false; });
+        ticking = true;
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ロボットと人間 &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa; --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif; --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .article-body { font-family: 'Noto Serif JP', serif; line-height: 2.2; font-size: 1rem; color: #1e1b35; }
+    .article-body strong { color: #6d28d9; font-weight: 600; }
+    .article-body dl { margin: 1.5em 0; }
+    .article-body dt { font-weight: 700; margin-top: 1.5em; color: #1e1b4b; }
+    .article-body dd { margin-left: 1.5em; }
+    .works-heading { color: #db245b; font-weight: 700; display: block; text-align: center; margin-bottom: 1.5em; font-size: 1.1em; }
+    .works-series { color: #a78bfa; font-size: 0.8em; text-align: center; margin-bottom: 0.5em; }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-serif text-lg font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/works/" class="text-accent font-medium">&#x4ED5;&#x4E8B;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-10">
+  <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 30% 60%, #a78bfa 0%, transparent 55%);"></div>
+  <div class="relative max-w-3xl mx-auto px-4 text-center">
+    <div class="works-series">『21世紀への指導原理　ＯＳＨＯ』より</div>
+    <h1 class="font-serif text-2xl md:text-3xl text-white mb-4 leading-relaxed">ロボットと人間</h1>
+    <div class="mt-4">
+      <a href="index.html" class="inline-flex items-center gap-1 text-accent/80 text-sm hover:text-accent transition-colors">&#x2190; &#x76EE;&#x6B21;&#x3078;&#x623B;&#x308B;</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-8 md:p-12">
+    <div class="article-body">
+br>
+
+<strong>『21世紀への指導原理　ＯＳＨＯ』より<br><br>
+<span class="works-heading">ロボットと人間</span></strong>
+<br><br>
+
+
+
+　スタンリー・キューブリック監督の『２００１年宇宙の旅』（アーサー・Ｃ・クラーク原作）という映画を観たことがある。<br>
+　その中で宇宙探査に乗り出す宇宙船オデッセイの操縦全体を司っているのは、人間のパイロットではなく、宇宙船に組み込まれたハルというコンピュータだ。コンピュータが航海を司るのはもはやＳＦの世界ではなく、現在の宇宙開発技術の現状そのものらしい。
+　ところで、航海の途中でハルの判断に異常が見え始める。人間の航海士は、そのハルの判断に疑いを持ち始める。そして生存者である二人の航海士が相談して、宇宙船の操縦権をハルから奪取しようとする。ハルはそれを察知して、自分の頭脳が破壊されるのを何とか避けようとする。<br>
+　ハルの判断力（データベース）を奪い取る場面がこのＳＦ映画のひとつの山になるのだが、この映画の状況設定そのものに基本的な偽りがあることに、観客はなかなか気づかないかもしれない。<br><br>
+
+　この作品に限らず、さまざまなＳＦ作品の中で、人間が作成したロボットの世界が人間に反乱を起こす状況が描かれる。<br>
+　あるいはポーランドの作家スタニスラフ・レムの『星からの帰還』では、必ずしも反乱しないまでも、動作効率の落ちた作業ロボットをロボットたちの世界が処理していく処理工場の中で、処理されるロボットが自らの延命を願って断末魔の呻【うめ】き声をあげている場面がある。この非常にリアルな場面も、実は、ロボットに対するある微妙かつ根本的な知見の欠如があってイメージされている。<br>
+　意図的であるかどうかはともかく、そこに実は、曖昧に放置された人間とロボットの真の区別の問題が横たわっている。おそらくは、はっきりとその区別を意識していない作者の無意識がそこに顕れているのだろう。<br><br>
+
+　ハルの反乱にせよ、『星からの帰還』のロボット処理工場の呻き声にせよ、そのような場面がイメージされる根拠には、ロボットの知能の複雑さ、その判断力の高さが、即人間との近似を表すと考える短絡した見解が前提されているだろう。<br>
+　けれども現実には、ロボットの側からのこのような事態はありえないのだ。<br>
+　なぜなら、ハルの反乱にせよ、処理されるロボットのうめき声にせよ、それはロボットの中に「エゴ」を前提せずには存在しえない事態だからだ。<br>
+　つまりこの優れた作家たちは、作品の非常に根本的な状況設定の中で、カテゴリーエラーともいえる錯誤を犯しているといえる。<br>
+　もし、コンピュータのハルが自己保存のための闘いに立ち上がるのだとすれば、ハルには「エゴ」があることになる。<br>
+　となると当然その「エゴ」、その“保身回路”を設計したのは人間のはずだから、どのような状況でその「エゴ」回路が起動するかを、設計者たちがパイロットに教育していないはずがない。ところが物語は、人間が自ら意図してロボットの中に仕込んだその“「エゴ」回路”によって引き起こされるロボットの判断、反乱行動にパイロットが仰天する展開になっているのだ。<br><br>
+
+　無論、この天才的な作家たちが、小説作法の上のエラーを犯したわけではない。<br>
+　彼らは無意識のうちに、人間の知能と同じほどにも賢い判断力と感受性を備えたロボットは、当然それなりの「エゴ」を育んでいるという状況を想定し、その前提の上で物語を展開したということだろう。<br>
+　しかし実は、このことは起こらないのである。<br>
+　その理由は、人間が「エゴ」を育む基盤には、単なる論理的思考能力の存在根拠とはまったく別の根拠、＜意識＞の存在が前提されなければならないからだ。<br>
+ ＜意識＞のないところに、判断回路だけを基盤として「エゴ」が自然に形成されることはありえない。なぜなら、ロボットの中に発生する判断とは、何処までいっても処理結果の受け渡しと加工であるに過ぎず、それをどのように増幅拡大しようと、どのような演算処理を施し構造化を施そうとも、結局はあくまでも単なる機械的、電気的信号に過ぎず、どんな重要な判断も、その判断結果自体がその判断の「意味」を形成することはありえないからだ。<br>
+　コンピュータの出力が疑似的に“判断”と呼ばれるのは、それが私たち人間の＜意識＞の中で、ある内面的な「意味」に変化するからに他ならない。<br>
+　そしてその「意味」の形成なくして、喜びや不安や恐怖や、またそれに対する対抗感情の発露なくして「エゴ」が形成されることはありえない。「エゴ」の形成には、判断力回路とはまったく別な根拠、＜意識＞の場の存在が前提されなくてはならない。<br><br>
+
+　西洋世界から発達したコンピュータによって、人間は左脳に代わる能力を途方もなく拡大する技術を発見した。<br>
+　この技術を駆使することによって、目の道具としての望遠鏡、顕微鏡にも当たる道具を、人間の左脳は手に入れたといえる。これから人間は、左脳の作業の一部を徐々にコンピュータ作業に置き換えていけばいいということだろう。<br>
+　けれども、そのことで私たちが心【マインド】の、そしてその根拠としての＜意識＞の神秘に少しでもでも近づいたと考えるなら、それはあまりにも愚かしいといわなければならない。(p136-139)
+    </div>
+  </article>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>

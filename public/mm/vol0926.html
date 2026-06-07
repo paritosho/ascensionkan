@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vol.0926 &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;&#x901A;&#x4FE1;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa;
+      --font-sans: 'Noto Sans JP', sans-serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .mm-pre { font-family: 'Noto Sans Mono', 'Courier New', monospace; font-size: 0.82rem; line-height: 1.65; white-space: pre-wrap; word-break: break-all; color: #1e1b35; }
+    .nav-arrow { display: inline-flex; align-items: center; gap: 0.25rem; color: #a78bfa; font-size: 0.8rem; transition: color 0.15s; padding: 0.4rem 0.8rem; border: 1px solid rgba(167,139,250,0.3); border-radius: 9999px; }
+    .nav-arrow:hover { color: #7c3aed; border-color: rgba(124,58,237,0.5); background: rgba(167,139,250,0.05); }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-sans text-base font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/mm/" class="text-accent font-medium">&#x901A;&#x4FE1;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="bg-gradient-to-br from-primary-dark via-primary to-primary-light pt-24 pb-8">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <div class="text-accent/60 text-xs tracking-widest mb-2">2022-01-16</div>
+    <div class="text-white/40 text-xs font-mono mb-1">Vol.0926</div>
+    <a href="index.html" class="text-white/40 text-xs hover:text-accent transition-colors">&#x2190; &#x901A;&#x4FE1;&#x30A2;&#x30FC;&#x30AB;&#x30A4;&#x30D6;</a>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 py-8">
+  <div class="flex items-center justify-between mb-6">
+    <a href="vol0925.html" class="nav-arrow">&#x2190; &#x524D;&#x865F;</a>
+    <a href="vol0927.html" class="nav-arrow">&#x6B21;&#x53F7; &#x2192;</a>
+  </div>
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 md:p-8">
+    <div class="mm-pre">━━━━☆☆☆☆━━━━━━━━━━━━━━ by paritosho ━
+　　☆☆　　　☆☆
+　☆☆　　　　　☆☆『アセンション館通信』2022/01/16(第926号)
+☆☆　　 ☆　　 ☆☆
+☆☆　　　　　　☆★　【気刊】──「私は在る」に導かれ♪──
+-☆☆────-☆☆─────────────────────
+　☆☆　　　☆☆　　 https://www.ascensionkan.com
+━━☆☆☆☆━━━━━━━━━━━━━━━━━━━━━━━━
+
+◇◇ このメルマガの趣旨 ◇◇
+
+　〈自己〉は展開する宇宙的ドラマの壮大なショー生み出し、
+　それを観ながら、そのなかに、そしてそれとして現れているが、
+　それは夢を見ている人が自分の夢を作り出すと同時に
+　それを見ながらそこに出演しているのと同じだ。
+　（『夢へと目覚める』レオ・ハートン）
+　
+内容は人畜無害、でも読む人は相当変わっていますね。現在493名
+──────────────────
+◇◇ もくじ ◇◇
+
+１．絶対的に何も必要ない
+
+２．編集後記
+──────────────────
+
+━━━━━━━━━━━━━━━━━━
+■ １．絶対的に何も必要ない
+━━━━━━━━━━━━━━━━━━
+
+なかなか風邪が抜けない状態が続いたあと、
+
+今やっとモニターが新しくなり、
+
+まわりを掃除したりして新規蒔き直し。
+
+しばらくぶりに意気軒昂な感じ。(^_-)
+
+さて、またまた一週間が過ぎて、
+
+楽しい“アセンション噺”と
+
+“「私は在る」噺”を紡ぐ今がきました。
+
+『アセンション館通信』配達人のpariです。
+
+長く使ってきたモニターが
+
+以前からかなり不調になっていました。
+
+作業の途中で
+
+まるでふと思いついたとでもいうふうに
+
+暗転してしまうのです。
+
+デュアルモニターにしているので、
+
+メインのモニターは使えます。
+
+ただそれは右側に置いてあって、
+
+実際の作業そのものは正面に置いてある
+
+その長年愛用の解像度の低いモニター上でしているので
+
+そのファイルにアクセスできないのです。(&gt;_＜)
+
+なぜそんなことをしていたかというと、
+
+２つ目のモニターとして買ったLGの色調が
+
+黄色みが足りなくてどうも正面で見る気がしない。
+
+（バカな話とも言えますが、
+
+　これは電球の明かりに馴れた者が
+　
+　電球色のLED電球を選ぶようなもので、
+
+　なかなか理屈だけでは割り切れません。(^_-) ）
+
+ところがモニタースペックはそちらのほうが高いので
+
+システムはそちらをメインに設定したがりました。
+
+もちろん古い方をメインに設定はできるのですが、
+
+そうすると画面下に並ぶアイコンが大きく感じられる。
+
+というわけでけっきょく
+
+LGをメインにして右側に収まっていただき、
+
+実際はこれまでどおり見慣れた
+
+従来の解像度の低いモニター上で作業していました。
+
+（馴れというのは恐ろしいものですね。
+
+　マインドは変化を嫌う。
+
+　できることなら今までのやり方を変えたくない。(^_-)
+
+　エディタでは今ではプログラムを書いているわけでもないのに
+
+　最初に使っていた「MIFES」で
+
+　ブルーの背景に白抜きのテキストで書いていた癖で、
+
+　それがその後の「ＶＸ」や現在の「秀丸」まで、
+
+　結局いつもその体裁で書いています。）
+
+そんなふうに使っていたものだから、
+
+そのモニターがはじめて暗転したときには慌てました。
+
+作業ファイルにはアクセスできないわかって、
+
+やむなく諦めてシャット・ダウンして
+
+また再起動して作業したりしていました。
+
+そうするとまた古いモニターが
+
+点灯してくれることもわかりました。
+
+なのではじめこそ少し驚きましたが、
+
+最近はもう馴れっこになっていました。
+
+そして作業ファイル自体を
+
+ファイルの右端が右モニターに掛かる位置に置いて、
+
+いつ正面のモニターが暗転しても
+
+作業ファイルにアクセスできるようにしていました。
+
+しかし最近はその暗転の頻度が高くなって、
+
+いよいよ買い替えないとダメかと覚悟を決めかけます。
+
+すると不思議とまた点灯してくれたりする。
+
+まるでご機嫌を伺いながら
+
+老齢の職人に働いていただいている感じでした。
+
+とはいえこの数日は点灯しなくなったので
+
+もう買い換えるしかないと決めました。
+
+（不思議なことにそう決めて以来
+
+　古いモニターは一度も暗転しなかったんですけど。(*^_^*)
+　
+　ありがとうございました。(-||-) ）
+
+そして今、こうして新しい環境を整えた感じです。
+
+さて……。
+
+今回久しぶりに長引く風邪を引きました。
+
+そしてはじめて
+
+【喉に龍角散】という言葉の意味を知りました。
+
+シャーラは龍角散を使って育ったらしいけど、
+
+私は経験がありませんでした。
+
+今回の風邪が意外と長引き私があまりに咳き込むので
+
+シャーラが龍角散の使い方を教えてくれたわけです。
+
+いやー、これは効き目がありました。
+
+それまでは夜寝てこんなに咳き込んでいては
+
+喘息になってしまうのではという気がするほどでした。
+
+これで大切なことを知りました。
+
+身体が風邪を引いたら、
+
+【鼻に塩水　喉に龍角散】です。(*^_^*)
+
+身体の風邪はそれでいいんですが……、
+
+その身体を孕んだマインドの風邪となると……。
+
+なにしろマインドは腫れ方が百人百様なので
+
+これはもう当人が自分が納得できるものを
+
+発見するしかない。
+
+まあ、宇宙はそれをさせるために
+
+存在しているのかもしれませんし。
+
+まあ、わたしの場合は
+
+最近、こんなのに出会ったわけです。
+
+──────────────────
+　「あなたが私の言っていることを
+　　本当に理解しているかぎり、
+　　あなたが何をするかは問題ではない。
+　　別の言い方をするなら、
+　　あなたが私の言っていることを
+　　理解していないとしても（！）
+　　同様にあなたが何をするかは問題ではない！」
+　　
+　『ニサルガダッタ・マハラジが
+　　指し示したもの』(p335-337)
+──────────────────
+
+(*^_^*)
+
+まあ、要するに、
+
+あなたが何かで困っているにせよ、
+
+あるいは何も困っていないにせよ、
+
+それはそのこと自体を自己目的として現象しているので
+
+「それでいいのだ！」＼(^O^)／
+
+というバカボンパパの台詞です。
+
+──────────────────
+　生命の大海は人類だけでなく、
+　すべてを包含している。
+　まず、すべての自己同一化を放棄し、
+　あなた自身を
+　あれやこれとして考えるのをやめなさい。
+　あらゆる利己主義を放棄しなさい。
+　物質的であれ、霊的であれ、
+　あなたの幸福について心配するのをやめなさい。
+　粗雑なものであれ、微妙なものであれ、
+　すべての欲望を放棄しなさい。
+　いかなる類の達成についても
+　考えることをやめなさい。
+　あなたは今ここで、完璧なのだ。
+　あなたは絶対的に何も必要ないのだ。
+　
+　それは何も、あなたが無能で無謀な、
+　軽率で無関心な人になるべきだということではない。
+　ただ自分自身に関する
+　根本的な不安が去るべきなのだ。
+　あなたにはいくらかの食事と衣服、
+　そして住居が必要だ。
+　しかし、欲望を必要と見なさないかぎり、
+　それが問題をつくり出すことはないだろう。
+　想像ではなく、
+　あるがままのものごとと調和のうちに生きなさい。
+　
+　『私は在る』(p334-335)
+　https://amzn.to/3pEbJE8
+──────────────────
+
+&gt; あなたにはいくらかの食事と衣服、
+&gt; そして住居が必要だ。
+&gt; しかし、欲望を必要と見なさないかぎり、
+&gt; それが問題をつくり出すことはないだろう。
+
+間違いありません。(-||-)
+
+&gt; 想像ではなく、
+&gt; あるがままのものごとと調和のうちに生きなさい。
+
+ありがとうございます。(-||-)
+
+──────────────────
+　マインドを占有するすべてのものから注意を背けなさい。
+　完成しなければならない仕事は何であれ完成させなさい。
+　だが、新たな義務は避けなさい。
+　空っぽでいることを保ち、
+　つねに用意のできた、開いた状態でありなさい。
+　招かずにやってきたものを拒んではならない。
+　最後には、
+　あなたは無欲、歓喜の無執着、内なる平安、
+　そして描写不可能な解放の状態に達する。
+　しかも、それはすばらしく実在なのだ。
+　
+　『私は在る』(p393)
+──────────────────
+
+&gt; マインドを占有するすべてのものから注意を背けなさい。
+
+あやー、まだそういう状況が訪れていません。
+
+&gt; 完成しなければならない仕事は何であれ完成させなさい。
+
+はい。それはやっています。
+
+&gt; だが、新たな義務は避けなさい。
+
+わかりました。
+
+&gt; 空っぽでいることを保ち、
+&gt; つねに用意のできた、開いた状態でありなさい。
+
+それができていません。
+
+&gt; 招かずにやってきたものを拒んではならない。
+
+わかりました。
+
+&gt; 最後には、
+&gt; あなたは無欲、歓喜の無執着、内なる平安、
+&gt; そして描写不可能な解放の状態に達する。
+
+なぜそうなっていないのか、
+
+よくわかりました。
+
+&gt; しかも、それはすばらしく実在なのだ。
+
+ありがとうございます。(-||-)
+
+──────────────────
+　あなたは在る。
+　ほかのすべては現れにすぎない。
+　
+　『私は在る』(p421) 
+──────────────────
+
+(-||-)
+
+──────────────────
+　永久的なもの、
+　それはあなた自身の存在である。
+　真我として在りなさい。
+　それが至福である。
+　あなたはいつもそれなのである。
+　
+　『あるがままに』(p58) 
+──────────────────
+
+……。(-_-)
+
+ありがとうございました。
+
+(-||-)
+
+今日はこんなところで。
+
+……。
+
+m(_ _)m
+
+
+　　 ………○…………○…………○………
+
+
+「ニサルガ辞書」はここです。
+https://www.ascensionkan.com/ndic/
+
+「ラマナ・マハルシ辞書」はここです。
+https://www.ascensionkan.com/rdic/
+
+おこがましくも『アセ通』既刊号は
+すべてここに置いてあります。
+https://www.ascensionkan.com/mm/
+
+　　 ………○…………○…………○………
+
+
+▼『アセ通』へのご意見投稿フォーム：
+http://www.formzu.net/fgen.ex?ID=P48750702
+
+
+　　 ………○…………○…………○………
+
+
+▼『アセ通』への情報ご投稿フォーム
+http://www.formzu.net/fgen.ex?ID=P87119518
+
+
+　　 ………○…………○…………○………
+
+
+━━━━━━━━━━━━━━━━━━
+■ ２．編集後記：
+━━━━━━━━━━━━━━━━━━
+
+あーあ、今日も楽しかった。
+
+今日はもう暗いです。
+
+おやすみなさい。
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━
+■　【作者】 『アセンション資料館』主人 pari
+━━━━━━━━━━━━━━━━━━━━━━━
+　　メール：　pariアットマークjk2.so-net.ne.jp
+──────────────────
+mag2：http://www.mag2.com/m/0000126287.html
+━━━━━━━━━━━━━━━━━━━━━━━
+Copyleft(C)2022 paritosho
+──────────────────</div>
+  </article>
+  <div class="flex items-center justify-between mt-6">
+    <a href="vol0925.html" class="nav-arrow">&#x2190; &#x524D;&#x865F;</a>
+    <a href="vol0927.html" class="nav-arrow">&#x6B21;&#x53F7; &#x2192;</a>
+  </div>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>

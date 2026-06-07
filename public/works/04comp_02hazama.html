@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>「思想」と「情報」の狭間で &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa; --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif; --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .article-body { font-family: 'Noto Serif JP', serif; line-height: 2.2; font-size: 1rem; color: #1e1b35; }
+    .article-body strong { color: #6d28d9; font-weight: 600; }
+    .article-body dl { margin: 1.5em 0; }
+    .article-body dt { font-weight: 700; margin-top: 1.5em; color: #1e1b4b; }
+    .article-body dd { margin-left: 1.5em; }
+    .works-heading { color: #db245b; font-weight: 700; display: block; text-align: center; margin-bottom: 1.5em; font-size: 1.1em; }
+    .works-series { color: #a78bfa; font-size: 0.8em; text-align: center; margin-bottom: 0.5em; }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-serif text-lg font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/works/" class="text-accent font-medium">&#x4ED5;&#x4E8B;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-10">
+  <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 30% 60%, #a78bfa 0%, transparent 55%);"></div>
+  <div class="relative max-w-3xl mx-auto px-4 text-center">
+    <div class="works-series">『21世紀への指導原理　ＯＳＨＯ』より</div>
+    <h1 class="font-serif text-2xl md:text-3xl text-white mb-4 leading-relaxed">「思想」と「情報」の狭間で</h1>
+    <div class="mt-4">
+      <a href="index.html" class="inline-flex items-center gap-1 text-accent/80 text-sm hover:text-accent transition-colors">&#x2190; &#x76EE;&#x6B21;&#x3078;&#x623B;&#x308B;</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-8 md:p-12">
+    <div class="article-body">
+br>
+
+<strong>『21世紀への指導原理　ＯＳＨＯ』より<br><br>
+<span class="works-heading">「思想」と「情報」の狭間で</span></strong>
+<br><br>
+
+
+
+　今世紀に入ってフォン・ノイマンとノーバート・ウィーナーという二人の天才が現れて、「情報革命」というものの引き金を引いたという。<br>
+　この「情報革命」とは、いったい私たちの何を暴露したのだろう。<br><br>
+
+　フォン・ノイマンが発明したプログラム内臓方式とは、機械が自分の処理の進行計画（プログラム）を自分の中に持つということだった。<br>
+　一方ノーバート・ウィーナーは、機械が周囲の状況に対応して自分の行動を修正するためのフィードバックという概念を含む、情報の自己組織化理論サイバネティックスを開発したのだという。<br>
+　つまり、この二つの発明によって可能になった事態は、途中で外側からの人間の指示を必要とせずに、機械が状況（データ）に対応して自己修正しながら推測、判断などの一連の論理的処理を続行できるということらしい。<br><br>
+
+　いったん論理的推論を機械が遂行できるとなると、人間の「思考」そのものを、「情報」という意味単位を材料とした論理演算で代行できないかという着想が生まれた。<br>
+　その「情報」は物質的電気パターンで表現できたために、従来人間しかなしえなかった「考える」という行為を機械が行えるらしいことが分かってきた。<br>
+　それは広大な可能性を開く事態だったが、一種居心地の悪いような感じもあった。<br>
+　何故なら、人間の「思考」と機械がなしうるというその“思考”の違いが明瞭にならない限り、それは人間の尊厳を脅かす事態とも思えたからだ。<br>
+　無論、いかに有能であろうとも機械は機械に過ぎず、人間とは違うことを直感的に疑いはしなかったろうが……。<br><br>
+
+　もともと、私たちは「思想」という言葉から、理解とか、意味とか、情緒といった私たち人間の中に起こるある内面性を連想していた。<br>
+　コンピュータ上の推論が使用する「情報」、「構造」、「パターン」などといった無機的な言葉を初めて耳にしたとき、私たちはそれを「思想」とは別の世界のことと思っていた。けれども、「情報」という言葉があらゆる場面で使用されるようになると、いつの間にか私たちの中で「思想家」と呼ばれる人たちの営為と、「情報アナリスト」といわれるような人たちの作業との境界線が曖昧になっていった。<br>
+　昔「思索」と呼んでいた行為は、「情報分析」の一種のようでもあった。「考える」とは、多くの情報が相互関連する構造を認識し、その変化パターンを推論し、結果を推測することのようでもあった。<br>
+ 「考える」ということがそんなイメージになると、人間の「思考」とコンピュータの“思考”はまったく無関係だとも言っていられなくなった。<br>
+ 「情報アナリスト」の仕事が私たちの視野にはっきりと像を結ぶにつれ、逆に「思想家」の行為の内実の方がおぼろげになって視界から消えて行くようでもあった。<br><br>
+
+　その昔、「思想家」がわが身を置いていた状況は、データというものに置き換えられた。<br>
+ 「思索」という現象は、所与のデータに対する分析意図の「処理」となって、機械的演算処理に置換できる現象となって行くらしかった。<br>
+　その過程で「思索」という“心”の営為の実質の“何か”が抜け落ちたが、処理情報量の大きさと速度を賛美する賑やかな大合唱の中で、誰もそんなことを気にしていないようだった。「思想」というとき、思索する者の頭の中に半ば自然発酵してくる“情緒”を問題にしていたはずだが、「情報分析」では、分析者が前もって明確な分析意図を持って材料としての「情報」を処理することが前提されていた。<br>
+　確かに、初めから分析意図が明確なら、「分析」過程で現れる“情緒”など、省略しても構わないようでもあった。「分析」の目的は結果であり、それが手に入るなら速ければ速い方がいいとも言えたからだ。<br>
+　既定の分析意図がデータを処理する「分析」と、“心”の営為である「思索」、その最も純粋な表れである「洞察」とでは何が違うのだろう。<br>
+ 「思索」という過程で“思い”はどこに出現するのか、“意味”とは何か、そういうことが大事なような感じもあったが、何しろ世の中の動きが速すぎて、どうもゆっくりそんなことを問題にしている時間はないようだった。<br>
+ 「思想」を保証するのがその思想家の内面の“情緒”、“意味”であることは、昔は自明の理解だった。<br><br>
+
+　けれども、気がついてみれば、今や膨大な推論能力を手にした私たち人間は、内面的な「意味」を伴わないある種の推論を重ねる事態に突入していたのだ。
+(p130-132)
+    </div>
+  </article>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>

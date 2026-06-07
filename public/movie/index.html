@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&#x6620;&#x753B; &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa; --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif; --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+  </style>
+</head>
+<body class="min-h-screen">
+  <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-white font-serif text-lg font-bold tracking-wide">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/#intro"      class="text-white/70 hover:text-white transition-colors">&#x306F;&#x3058;&#x3081;&#x306B;</a>
+        <a href="/mm/"         class="text-white/70 hover:text-white transition-colors">&#x901A;&#x4FE1;</a>
+        <a href="/#library"    class="text-white/70 hover:text-white transition-colors">&#x8CC7;&#x6599;&#x9928;</a>
+        <a href="/movie/"      class="text-accent font-medium">&#x6620;&#x753B;</a>
+        <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+      </div>
+    </div>
+  </nav>
+  <header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-20">
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 25% 60%, #a78bfa 0%, transparent 55%), radial-gradient(circle at 75% 25%, #7c3aed 0%, transparent 50%);"></div>
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center animate__animated animate__fadeIn">
+      <div class="inline-block text-accent text-xs tracking-[0.3em] uppercase mb-4 font-medium">cinema &amp; reflections</div>
+      <h1 class="font-serif text-5xl md:text-7xl text-white mb-6">&#x6620;&#x753B;</h1>
+      <p class="text-white/60 text-lg max-w-xl mx-auto leading-relaxed">
+        &#x3053;&#x306E;&#x5922;&#x304C;&#x8010;&#x3048;&#x3089;&#x308C;&#x306A;&#x304F;&#x3066;&#x3001;&#x968F;&#x5206;&#x6697;&#x95C7;&#x306E;&#x4E2D;&#x306E;&#x5225;&#x306E;&#x5922;&#x306B;&#x9003;&#x3052;&#x305F;&#x2026;&#x2026;
+      </p>
+      <div class="mt-8 text-accent/50 text-sm">&#x5168; 19 &#x7BC7;</div>
+    </div>
+  </header>
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-16">
+    <section class="mb-16">
+      <div class="flex items-center gap-4 mb-8">
+        <div class="flex-1 h-px bg-primary/15"></div>
+        <div class="text-center">
+          <h2 class="font-serif text-2xl text-primary">&#x6620;&#x5199;&#x7A93;&#x306E;&#x5F8C;&#x308D;&#x304B;&#x3089;</h2>
+          <p class="text-primary/50 text-sm mt-1">&#x6E58;&#x5357;&#x540D;&#x753B;&#x9451;&#x8CDE;&#x4F1A;&#x306E;&#x8A18;&#x9332;</p>
+        </div>
+        <div class="flex-1 h-px bg-primary/15"></div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <a href="meiga-01.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから①</h3>
+        <p class="text-xs text-accent/70 mb-2">第三回上映会（上映映画『自転車泥棒』） / 1986年2月27日（土）、場所：藤沢市民会館小ホール</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから① home > 映画 > 映写窓の後ろから① 「湘南名画鑑賞会」会報 No.1 映写窓の後ろから① 第三回上映会（上映映画『自転車泥棒』） 1986年2月27日（...</p>
+      </a>
+      <a href="meiga-02.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから②</h3>
+        <p class="text-xs text-accent/70 mb-2">第四回上映会（上映映画『羅生門』） / 1986年4月17日（木）、場所：藤沢市民会館小ホール</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから② home > 映画 > 映写窓の後ろから② 「湘南名画鑑賞会」会報 No.2 映写窓の後ろから② 第四回上映会（上映映画『羅生門』） 1986年4月17日（木）...</p>
+      </a>
+      <a href="meiga-03.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから③</h3>
+        <p class="text-xs text-accent/70 mb-2">第五回上映会（上映映画『戦艦ポチョムキン』） / 1986年6月20日（金）、場所：藤沢市民会館小ホール</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから③ home > 映画 > 映写窓の後ろから③ 「湘南名画鑑賞会」会報 No.3 映写窓の後ろから③ 第五回上映会（上映映画『戦艦ポチョムキン』） 1986年6月2...</p>
+      </a>
+      <a href="meiga-04.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから④</h3>
+        <p class="text-xs text-accent/70 mb-2">第六回上映会（上映映画『麦秋』） / 1986年10月26日（金）、場所：湘南名画鑑賞会サロン</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから④ home > 映画 > 映写窓の後ろから④ 「湘南名画鑑賞会」会報 No.4 映写窓の後ろから④ 第六回上映会（上映映画『麦秋』） 1986年10月26日（金）...</p>
+      </a>
+      <a href="meiga-05.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから⑤</h3>
+        <p class="text-xs text-accent/70 mb-2">第七回上映会（上映映画『第三の男』） / 1986年11月30日（日）、場所：湘南名画鑑賞会サロン</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから⑤ home > 映画 > 映写窓の後ろから⑤ 「湘南名画鑑賞会」会報 No.5 映写窓の後ろから⑤ 第七回上映会（上映映画『第三の男』） 1986年11月30日（...</p>
+      </a>
+      <a href="meiga-06.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから⑥</h3>
+        <p class="text-xs text-accent/70 mb-2">第八回上映会（上映映画『忍ぶ川』） / 1986年12月21日（日）、場所：湘南名画鑑賞会サロン</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから⑥ home > 映画 > 映写窓の後ろから⑥ 「湘南名画鑑賞会」会報 No.6 映写窓の後ろから⑥ 第八回上映会（上映映画『忍ぶ川』） 1986年12月21日（日...</p>
+      </a>
+      <a href="meiga-07.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから⑦</h3>
+        <p class="text-xs text-accent/70 mb-2">第九回上映会（上映映画『舞踏会の手帳』） / 1987年1月25日（日）、場所：湘南名画鑑賞会サロン</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから⑦ home > 映画 > 映写窓の後ろから⑦ 「湘南名画鑑賞会」会報 No.7 映写窓の後ろから⑦ 第九回上映会（上映映画『舞踏会の手帳』） 1987年1月25日...</p>
+      </a>
+      <a href="meiga-08.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから⑧</h3>
+        <p class="text-xs text-accent/70 mb-2">第十回上映会（上映映画『七人の侍』） / 1987年2月15日（日）、場所：湘南名画鑑賞会サロン</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから⑧ home > 映画 > 映写窓の後ろから⑧ 「湘南名画鑑賞会」会報 No.8 映写窓の後ろから⑧ 第十回上映会（上映映画『七人の侍』） 1987年2月15日（日...</p>
+      </a>
+      <a href="meiga-09.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから⑨</h3>
+        <p class="text-xs text-accent/70 mb-2">第十一回上映会（上映映画『お熱いのがお好き』） / 1987年3月22日（日）、場所：湘南名画鑑賞会サロン</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから⑨ home > 映画 > 映写窓の後ろから⑨ 「湘南名画鑑賞会」会報 No.9 映写窓の後ろから⑨ 第十一回上映会（上映映画『お熱いのがお好き』） 1987年3月...</p>
+      </a>
+      <a href="meiga-10.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから⑩</h3>
+        <p class="text-xs text-accent/70 mb-2">第十二回上映会（上映映画『道』） / 1987年4月26日（日）、場所：湘南名画鑑賞会サロン</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから⑩ home > 映画 > 映写窓の後ろから⑩ 「湘南名画鑑賞会」会報 No.10 映写窓の後ろから⑩ 第十二回上映会（上映映画『道』） 1987年4月26日（日）...</p>
+      </a>
+      <a href="meiga-11.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから⑪</h3>
+        <p class="text-xs text-accent/70 mb-2">第十三回上映会（上映映画『東京物語』） / 1987年5月24日（日）、場所：湘南名画鑑賞会サロン</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから⑪ home > 映画 > 映写窓の後ろから⑪ 「湘南名画鑑賞会」会報 No.11 映写窓の後ろから⑪ 第十三回上映会（上映映画『東京物語』） 1987年5月24日...</p>
+      </a>
+      <a href="meiga-12.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから⑫</h3>
+        <p class="text-xs text-accent/70 mb-2">第十四回上映会（上映映画『市民ケーン』） / 1987年6月21日（日）、場所：湘南名画鑑賞会サロン</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから⑫ home > 映画 > 映写窓の後ろから⑫ 「湘南名画鑑賞会」会報 No.12 映写窓の後ろから⑫ 第十四回上映会（上映映画『市民ケーン』） 1987年6月21...</p>
+      </a>
+      <a href="meiga-13.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから⑬</h3>
+        <p class="text-xs text-accent/70 mb-2">第十五回上映会（上映映画『大人は判ってくれない』） / 1987年7月19日（日）、場所：湘南名画鑑賞会サロン</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから⑬ home > 映画 > 映写窓の後ろから⑬ 「湘南名画鑑賞会」会報 No.13 映写窓の後ろから⑬ 第十五回上映会（上映映画『大人は判ってくれない』） 1987...</p>
+      </a>
+      <a href="meiga-14.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから⑭</h3>
+        <p class="text-xs text-accent/70 mb-2">第十六回上映会（上映映画『無法松の一生』） / 1987年8月30日（日）、場所：湘南名画鑑賞会サロン</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから⑭ home > 映画 > 映写窓の後ろから⑭ 「湘南名画鑑賞会」会報 No.14 映写窓の後ろから⑭ 第十六回上映会（上映映画『無法松の一生』） 1987年8月3...</p>
+      </a>
+      <a href="meiga-15.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから⑮</h3>
+        <p class="text-xs text-accent/70 mb-2">第十七回上映会（上映映画『灰とダイヤモンド』） / 1987年9月27日（日）、場所：湘南名画鑑賞会サロン</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから⑮ home > 映画 > 映写窓の後ろから⑮ 「湘南名画鑑賞会」会報 No.15 映写窓の後ろから⑮ 第十七回上映会（上映映画『灰とダイヤモンド』） 1987年9...</p>
+      </a>
+      <a href="meiga-16.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">映写窓の後ろから⑯</h3>
+        <p class="text-xs text-accent/70 mb-2">第十八回上映会（上映映画『巴里祭』） / 1987年10月25日（日）、場所：湘南名画鑑賞会サロン</p>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">映写窓の後ろから⑯ home > 映画 > 映写窓の後ろから⑯ 「湘南名画鑑賞会」会報 No.16 映写窓の後ろから⑯ 第十八回上映会（上映映画『巴里祭』） 1987年10月25日...</p>
+      </a>
+
+      </div>
+    </section>
+    <section>
+      <div class="flex items-center gap-4 mb-8">
+        <div class="flex-1 h-px bg-primary/15"></div>
+        <div class="text-center">
+          <h2 class="font-serif text-2xl text-primary">&#x5922;&#x306E;&#x4E2D;&#x306E;&#x5922;</h2>
+          <p class="text-primary/50 text-sm mt-1">&#x5BB6;&#x65CF;&#x8A8C;&#x300C;&#x6D77;&#x304B;&#x3089;&#x306E;&#x98A8;&#x300D;&#x3088;&#x308A;</p>
+        </div>
+        <div class="flex-1 h-px bg-primary/15"></div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <a href="paritexas.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">「パリテキサス」</h3>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">「パリテキサス」 ――「夢の中の夢」―― 『パリテキサス』 夢の中の遊園地に、お化け屋敷ならぬ「映画館」がある。 肝試しではない、ここでのゲームは“覚えていられるか”どうか、だとい...</p>
+      </a>
+      <a href="akitsu.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">『秋津温泉』</h3>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">『秋津温泉』 ――「夢の中の夢」―― 『秋津温泉』 ハートの中に開いた穴。そこから流れ出る血が虚空の中に吹き飛ばされて行く。この血は何のために流されるのか？ この血には何か果たすべ...</p>
+      </a>
+      <a href="good-bye.html" class="group block bg-white rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h3 class="font-serif text-primary text-base mb-2 group-hover:text-accent transition-colors leading-snug">『さようなら、子どもたち』</h3>
+        <p class="text-xs text-primary/50 leading-relaxed line-clamp-2">『さようなら、子どもたち』 ――「夢の中の夢」―― 『さようなら、子どもたち』 何故なのだろう？ どうしてなのだろう？ しかし、それにしても、どうしてこんなことになってしまったのだ...</p>
+      </a>
+
+      </div>
+    </section>
+  </main>
+  <footer class="bg-primary-dark text-white/30 py-10 text-center text-xs mt-8">
+    <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+  </footer>
+  <script>
+    const navbar = document.getElementById('navbar');
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => { navbar.classList.toggle('scrolled', window.scrollY > 50); ticking = false; });
+        ticking = true;
+      }
+    });
+  </script>
+</body>
+</html>

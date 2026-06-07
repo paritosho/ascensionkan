@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&#x968F;&#x60F3; &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <meta name="description" content="paritosho&#x306E;&#x968F;&#x60F3;&#x30FB;&#x8A69;&#x30FB;&#x30A8;&#x30C3;&#x30BB;&#x30A4;&#x3002;&#x30A2;&#x30C9;&#x30F4;&#x30A1;&#x30A4;&#x30BF;&#x3001;&#x30B9;&#x30D4;&#x30EA;&#x30C1;&#x30E5;&#x30A2;&#x30EB;&#x3001;&#x899A;&#x9192;&#x306B;&#x3064;&#x3044;&#x3066;&#x3002;" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b;
+      --color-primary-light: #312e81;
+      --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa;
+      --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif;
+      --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-white font-serif text-lg font-bold tracking-wide">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/#intro"      class="text-white/70 hover:text-white transition-colors">&#x306F;&#x3058;&#x3081;&#x306B;</a>
+        <a href="/mm/"         class="text-white/70 hover:text-white transition-colors">&#x901A;&#x4FE1;</a>
+        <a href="/prose-poem/" class="text-accent font-medium">&#x968F;&#x60F3;</a>
+        <a href="/#works"      class="text-white/70 hover:text-white transition-colors">&#x4ED5;&#x4E8B;</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-20">
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 30% 50%, #a78bfa 0%, transparent 60%), radial-gradient(circle at 70% 20%, #7c3aed 0%, transparent 50%);"></div>
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center animate__animated animate__fadeIn">
+      <div class="inline-block text-accent text-xs tracking-[0.3em] uppercase mb-4 font-medium">prose poems &amp; reflections</div>
+      <h1 class="font-serif text-5xl md:text-7xl text-white mb-6">&#x968F;&#x60F3;</h1>
+      <p class="text-white/60 text-lg max-w-xl mx-auto leading-relaxed">
+        &#x601D;&#x7D22;&#x306E;&#x65AD;&#x7247;&#x3001;&#x9B42;&#x306E;&#x5449;&#x304D;&#x3002;<br>&#x5B58;&#x5728;&#x306E;&#x672C;&#x8CEA;&#x3092;&#x3081;&#x3050;&#x308B;&#x3001;pari&#x306E;&#x968F;&#x60F3;&#x30FB;&#x8A69;&#x30FB;&#x30A8;&#x30C3;&#x30BB;&#x30A4;&#x3002;
+      </p>
+      <div class="mt-8 text-accent/50 text-sm">&#x5168; 35 &#x7BD2;</div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <a href="addiction.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">中毒</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">中毒</p>
+      </a>
+      <a href="being.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">存在するもの</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">経験するということは、ある「思い」を味わうとか、ある意識の「位置」にフォーカスするということだろう。 だがその場合、そのような意味での経験が起こるためには、経験...</p>
+      </a>
+      <a href="be-happy.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">幸せでありなさい</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="complain.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">文句について</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="conclusive.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">決定的</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">決定的</p>
+      </a>
+      <a href="depression.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">落ち込み</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">Ｐ君 しばらくぶりに落ち込んだみたいだね。 「落ち込み」がそんなに悪いものだとは思わないけれど、あなたの嬉しくない気分は分かるよ。 「落ち込み」って、結局、外界...</p>
+      </a>
+      <a href="despair.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">希望と絶望</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">希望と絶望</p>
+      </a>
+      <a href="ego-satori.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">エゴと光明</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">こんな理屈……、いくら書いてもしょうがないんですけど……、出てくるだけ、書いてみようかとも思ってるんです。 このままの＜今＞の自分を、そして今の自分の理屈を許し...</p>
+      </a>
+      <a href="enlight.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">エゴ、そして光明</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">こんな理屈……、いくら書いてもしょうがないんですけど……、出てくるだけ、書いてみようかとも思ってるんです。 このままの＜今＞の自分を、そして今の自分の理屈を許し...</p>
+      </a>
+      <a href="enlightenment.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">エンライトとエゴ</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="eternal-recurrence.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">「永劫回帰」幻想について</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">Ｉ さん 「ニーチェの永劫回帰」についてのメール、読ませていただきました。 “永劫回帰の恐ろしさ”として、 ○全ての努力は無駄である（あらゆる成長は幻想） ○今...</p>
+      </a>
+      <a href="fall-in-love.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">初めてあるがままの自分を観察している</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="give-up.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">あきらめなさい</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="grace.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">宇宙の優しさ</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">Ｍさん 私はこの頃、宇宙はあんまり優しくて、残酷で、どこにも逃げ道などないのだと思うようになりました。 結局、われわれのうち誰一人、悟らずに許してもらえるような...</p>
+      </a>
+      <a href="hara.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">はら：夜の隠れ家</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="hell.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">地獄の存在</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="ivan.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">クイズとイワン・カラマーゾフ</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">最近、あるインチキ算数クイズを目にする機会があった。 これこそが「問題」だとでもいうかのように、その紙にはちゃんと「問題」と書いてあった。 「クイズ」の内容はこ...</p>
+      </a>
+      <a href="jealousy.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">嫉妬について</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="joan.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">あるのは音、感覚、目に見える像だけ</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="love.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">「愛」とは……(^^;)</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">こんなことは「言葉」で言ってもしようがないんですが……、 という前提を言わせていただいてから、あらためて言ったりして(^^;) 「愛」というのは、私は存在の「基...</p>
+      </a>
+      <a href="munasawagi.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">胸騒ぎ</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">胸騒ぎ</p>
+      </a>
+      <a href="must-live.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">「生きなければならない」</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">生きなければならない……。 私たちのあらゆる“問題”はこのことゆえに存在し、私たちのあらゆる“判断”はこのことを根拠として存在している。 生きなければならない…...</p>
+      </a>
+      <a href="my-longing.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">わがふるさと</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="objective.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">主観と客観</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">Ｉさん メール読ませていただきました。 基本的には、“こんな世界には耐えられない”、 “嫌悪感”というと、昔読んだ埴谷雄高さんの『不合理ゆえに吾信ず』の次 のイ...</p>
+      </a>
+      <a href="paradox.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">逆説について</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="priority.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">あなたの優先順位のリストで、自由は</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="puppet.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">操り人形</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">Ｍさん ご返事が遅れて、ごめんなさい。 早速読ませていただきました。 いい本を書かれましたね。 そして、Ｍさんもこのなかで書かれているように、 誰の本とか、誰の...</p>
+      </a>
+      <a href="right.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">すべて正しい</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">すべて正しい。 何もかも正しいのだとしたら、いったい何を言う必要があるだろう。 あらゆる感情、あらゆる情緒、あらゆる思いが「すべて正しい」のだとしたら、いったい...</p>
+      </a>
+      <a href="right-1.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">思考の正しさ</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="sick-fast.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">病気と断食</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">Ｅさん 今晩は。お久しぶりです。 もっと早く書きたかったのですが、今日はちょうど友人がきていて、 遅くなりました。 なにか、ご友人の方が膵臓の調子が悪いとか……...</p>
+      </a>
+      <a href="split.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">狂気と分裂</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">わたしはこれまで必死になって、何か“客観的な根拠”を求めてきたような気がする。 “藁をも持つかむ思い”で、なにか、客観的な根拠を、揺るがない何かを求めてきたよう...</p>
+      </a>
+      <a href="thought.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">思考の正しさ</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">Ｔさん 長いお手紙をありがとう。 そんな風に頭の中に次々と思考が湧いてくるときは楽しいですよね。 楽しめるときはその楽しさを充分に楽しむのがいいと思います。私も...</p>
+      </a>
+      <a href="topology.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">意味の位相</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="where-lead-to.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">それは結局どこに通じているのか？</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3"></p>
+      </a>
+      <a href="consciousness.html" class="group block bg-white rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 border border-primary/5">
+        <h2 class="font-serif text-primary text-lg mb-2 group-hover:text-accent transition-colors leading-snug">意識は誕生できない</h2>
+        <p class="text-sm text-primary/50 leading-relaxed line-clamp-3">はい、Setu pari です。 横から“長すぎる口出し”をしてもいいかな？ (*^_^*) >ただ、 >「自覚する者のいない宇宙かつ、その可能性のない宇宙」は...</p>
+      </a>
+
+    </div>
+  </main>
+
+  <footer class="bg-primary-dark text-white/30 py-10 text-center text-xs mt-8">
+    <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          navbar.classList.toggle('scrolled', window.scrollY > 50);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  </script>
+</body>
+</html>

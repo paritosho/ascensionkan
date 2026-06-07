@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>あなたの優先順位のリストで、自由は &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <meta name="description" content="paritosho&#x306E;&#x968F;&#x60F3;&#xFF1A;あなたの優先順位のリストで、自由は" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b;
+      --color-primary-light: #312e81;
+      --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa;
+      --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif;
+      --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .article-body { font-family: 'Noto Serif JP', serif; line-height: 2.3; font-size: 1.05rem; color: #1e1b35; }
+    .article-body p { margin-bottom: 1.6em; }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-white font-serif text-lg font-bold tracking-wide">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/#intro"      class="text-white/70 hover:text-white transition-colors">&#x306F;&#x3058;&#x3081;&#x306B;</a>
+        <a href="/mm/"         class="text-white/70 hover:text-white transition-colors">&#x901A;&#x4FE1;</a>
+        <a href="/prose-poem/" class="text-accent font-medium">&#x968F;&#x60F3;</a>
+        <a href="/#works"      class="text-white/70 hover:text-white transition-colors">&#x4ED5;&#x4E8B;</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-gradient-to-br from-primary-dark via-primary to-primary-light pt-28 pb-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <nav class="text-accent/60 text-xs mb-6 flex items-center gap-2 flex-wrap">
+        <a href="/" class="hover:text-accent transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+        <span>&#x203A;</span>
+        <a href="/prose-poem/" class="hover:text-accent transition-colors">&#x968F;&#x60F3;</a>
+        <span>&#x203A;</span>
+        <span class="text-white/50">あなたの優先順位のリストで、自由は</span>
+      </nav>
+      <h1 class="font-serif text-3xl md:text-4xl text-white leading-relaxed">あなたの優先順位のリストで、自由は</h1>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12 md:py-16">
+    <article class="article-body">
+
+    </article>
+
+    <nav class="mt-16 pt-8 border-t border-primary/20 flex justify-between items-start gap-4">
+      <a href="paradox.html" class="flex items-start gap-2 text-primary/60 hover:text-primary transition-colors max-w-xs"><span class="mt-0.5">&#8592;</span><span class="text-sm leading-snug">逆説について</span></a>
+      <a href="/prose-poem/" class="text-accent hover:text-primary transition-colors text-sm font-medium whitespace-nowrap">&#x968F;&#x60F3;&#x4E00;&#x89A7;&#x3078;</a>
+      <a href="puppet.html" class="flex items-start gap-2 text-primary/60 hover:text-primary transition-colors max-w-xs text-right"><span class="text-sm leading-snug">操り人形</span><span class="mt-0.5">&#8594;</span></a>
+    </nav>
+  </main>
+
+  <footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-8">
+    <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          navbar.classList.toggle('scrolled', window.scrollY > 50);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  </script>
+</body>
+</html>

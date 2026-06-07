@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>アセンション館 — 覚醒への資料館</title>
+  <meta name="description" content="アセンション館 — paritoshoによる、アセンション・スピリチュアル・アドヴァイタについての資料館。2004年創刊のメルマガ「アセンション館通信」のアーカイブ、本棚、映画、辞書、随想。" />
+  <meta name="keywords" content="アセンション,スピリチュアル,アドヴァイタ,不二一元論,ニサルガダッタ,ラマナ・マハルシ,paritosho,メルマガ,覚醒,悟り" />
+  <meta property="og:title" content="アセンション館 — 覚醒への資料館" />
+  <meta property="og:description" content="paritoshoによる、アセンション・スピリチュアル・アドヴァイタについての資料館。2004年創刊のメルマガ「アセンション館通信」のアーカイブ、本棚、映画、辞書、随想。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1464802686167-b939a6910659?w=1200&q=80&fm=jpg&fit=crop" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>" />
+
+  <!-- Tailwind CSS v4 -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@0.536.0/dist/umd/lucide.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind カスタムテーマ -->
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b;
+      --color-primary-light: #312e81;
+      --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa;
+      --color-accent-light: #c4b5fd;
+      --color-surface: #f5f3ff;
+      --color-surface-dark: #ede9fe;
+      --color-text: #1e1b35;
+      --color-text-light: #4c4575;
+      --color-text-muted: #8b83a3;
+      --font-sans: 'Noto Sans JP', sans-serif;
+      --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+
+  <style>
+    /* スムーススクロール */
+    html { scroll-behavior: smooth; }
+
+    /* カスタムスクロールバー */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--color-surface); }
+    ::-webkit-scrollbar-thumb { background: var(--color-accent); border-radius: 3px; }
+
+    /* Hero パララックス風効果 */
+    .hero-bg {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+    @media (max-width: 768px) {
+      .hero-bg { background-attachment: scroll; }
+    }
+
+    /* グラデーションテキスト */
+    .gradient-text {
+      background: linear-gradient(135deg, #a78bfa 0%, #e0d7ff 50%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* セクション区切り線 */
+    .section-divider {
+      width: 60px;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--color-accent), transparent);
+    }
+
+    /* カード ホバーエフェクト */
+    .card-hover {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(30, 27, 75, 0.12);
+    }
+
+    /* 引用装飾 */
+    .quote-decoration {
+      position: relative;
+    }
+    .quote-decoration::before {
+      content: '"';
+      font-family: 'Zen Old Mincho', serif;
+      font-size: 6rem;
+      line-height: 1;
+      position: absolute;
+      top: -1.5rem;
+      left: -0.5rem;
+      opacity: 0.12;
+      color: var(--color-accent);
+    }
+
+    /* ナビゲーション スクロール後スタイル */
+    #navbar.scrolled {
+      background: rgba(15, 14, 42, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    #navbar.scrolled .nav-logo,
+    #navbar.scrolled .nav-link {
+      color: rgba(196, 181, 253, 0.9);
+    }
+    #navbar.scrolled .nav-link:hover {
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-text font-sans antialiased">
+
+  <!-- ========================================
+       ナビゲーション
+  ======================================== -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" aria-label="メインナビゲーション">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+
+        <!-- ロゴ -->
+        <a href="#hero" class="nav-logo font-serif text-lg lg:text-xl font-bold text-white transition-colors duration-300">
+          アセンション館
+        </a>
+
+        <!-- デスクトップメニュー -->
+        <div class="hidden lg:flex items-center space-x-7">
+          <a href="#about"    class="nav-link text-sm text-white/90 hover:text-accent-light transition-colors duration-300">はじめに</a>
+          <a href="#mm"       class="nav-link text-sm text-white/90 hover:text-accent-light transition-colors duration-300">通信</a>
+          <a href="#library"  class="nav-link text-sm text-white/90 hover:text-accent-light transition-colors duration-300">資料館</a>
+          <a href="#prose"    class="nav-link text-sm text-white/90 hover:text-accent-light transition-colors duration-300">随想</a>
+          <a href="#teachers" class="nav-link text-sm text-white/90 hover:text-accent-light transition-colors duration-300">導師たち</a>
+          <a href="#words"    class="nav-link text-sm text-white/90 hover:text-accent-light transition-colors duration-300">珠玉の言葉</a>
+          <a href="#works"    class="nav-link text-sm text-white/90 hover:text-accent-light transition-colors duration-300">仕事</a>
+        </div>
+
+        <!-- モバイルメニューボタン -->
+        <button id="menu-toggle" class="lg:hidden text-white p-2"
+          aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- モバイルメニュー -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-primary-dark/95 backdrop-blur-lg">
+      <div class="px-4 py-6 space-y-4">
+        <a href="#about"    class="mobile-link block text-white/90 hover:text-accent-light py-2 text-sm transition-colors">はじめに</a>
+        <a href="#mm"       class="mobile-link block text-white/90 hover:text-accent-light py-2 text-sm transition-colors">通信</a>
+        <a href="#library"  class="mobile-link block text-white/90 hover:text-accent-light py-2 text-sm transition-colors">資料館</a>
+        <a href="#prose"    class="mobile-link block text-white/90 hover:text-accent-light py-2 text-sm transition-colors">随想</a>
+        <a href="#teachers" class="mobile-link block text-white/90 hover:text-accent-light py-2 text-sm transition-colors">導師たち</a>
+        <a href="#words"    class="mobile-link block text-white/90 hover:text-accent-light py-2 text-sm transition-colors">珠玉の言葉</a>
+        <a href="#works"    class="mobile-link block text-white/90 hover:text-accent-light py-2 text-sm transition-colors">仕事</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================
+       Hero セクション
+  ======================================== -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- 背景画像：星空・銀河 -->
+    <div class="absolute inset-0 hero-bg"
+      style="background-image: url('https://images.unsplash.com/photo-1464802686167-b939a6910659?w=1920&q=80&fm=webp&fit=crop');">
+    </div>
+    <!-- オーバーレイ -->
+    <div class="absolute inset-0 bg-gradient-to-b from-primary-dark/75 via-primary/55 to-primary-dark/85"></div>
+
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <p class="animate__animated animate__fadeInDown text-accent-light/75 font-serif text-sm sm:text-base tracking-[0.35em] mb-6">
+        — 覚醒への資料館 —
+      </p>
+      <h1 class="animate__animated animate__fadeIn animate__delay-1s font-serif text-5xl sm:text-6xl md:text-8xl font-bold leading-tight mb-4">
+        <span class="gradient-text">アセンション館</span>
+      </h1>
+      <p class="animate__animated animate__fadeIn animate__delay-1s font-serif text-base sm:text-lg text-accent-light/55 mb-10 tracking-[0.25em]">
+        by paritosho
+      </p>
+      <p class="animate__animated animate__fadeInUp animate__delay-2s text-white/65 font-serif text-base sm:text-lg md:text-xl leading-loose max-w-2xl mx-auto mb-12">
+        あなたは気づいています。<br />あなたが気づくなら、<br />それを得るために、苦労したり努力する必要はありません。
+      </p>
+      <a href="#about"
+        class="animate__animated animate__fadeInUp animate__delay-2s inline-flex items-center gap-2 text-accent-light/75 hover:text-accent-light text-sm tracking-wider transition-colors duration-300">
+        <span>探索を始める</span>
+        <i data-lucide="chevron-down" class="w-4 h-4 animate-bounce"></i>
+      </a>
+    </div>
+
+    <!-- 下部グラデーション -->
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-surface to-transparent"></div>
+  </section>
+
+  <!-- ========================================
+       はじめに（About）セクション
+  ======================================== -->
+  <section id="about" class="py-24 lg:py-32">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <p class="text-accent font-serif text-sm tracking-[0.2em] mb-3">ABOUT</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-primary mb-6">はじめに</h2>
+        <div class="section-divider mx-auto"></div>
+      </div>
+
+      <div class="space-y-8 text-text-light leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+        <p class="font-serif text-lg sm:text-xl text-primary/80 text-center leading-loose">
+          「あなたが気づくなら、<br />それを得るために、苦労したり努力する必要はありません。」
+        </p>
+
+        <div class="bg-white/60 rounded-2xl p-8 sm:p-10 backdrop-blur-sm">
+          <p class="text-base sm:text-lg leading-loose">
+            このサイトは、paritoshoが2004年から続けてきたスピリチュアルな探求の記録です。アセンション、不二一元論（アドヴァイタ）、覚醒——その言葉が指し示すものへの探求を、メルマガ「アセンション館通信」として毎週発行し続け、本棚・映画・辞書・随想として積み重ねてきました。
+          </p>
+          <p class="text-base sm:text-lg leading-loose mt-5">
+            ニサルガダッタ・マハラジ、ラマナ・マハルシ、オショ……彼らの言葉に触れながら、「気づき」とは何かを問い続けるこの場所へ、ようこそ。
+          </p>
+        </div>
+
+        <p class="text-center text-text-muted font-serif text-sm italic">
+          「あなたはすでに自由だ。ただそれに気づいていないだけだ。」
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       通信（Newsletter Archive）セクション
+  ======================================== -->
+  <section id="mm" class="relative py-24 lg:py-32 overflow-hidden">
+    <!-- 背景画像：霧の山 -->
+    <div class="absolute inset-0">
+      <img
+        src="https://images.unsplash.com/photo-1519414442781-fbd745c5b497?w=1920&q=80&fm=webp&fit=crop"
+        alt="霧に包まれた山の夜明け"
+        loading="lazy"
+        decoding="async"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-primary-dark/82"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <p class="text-accent-light font-serif text-sm tracking-[0.2em] mb-3">NEWSLETTER ARCHIVE</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-6">アセンション館通信</h2>
+        <div class="section-divider mx-auto"></div>
+      </div>
+
+      <!-- 統計カード -->
+      <div class="grid grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12">
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="font-serif text-3xl sm:text-4xl font-bold text-accent-light mb-2">2004</div>
+          <p class="text-white/60 text-xs sm:text-sm">創刊年</p>
+        </div>
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="font-serif text-3xl sm:text-4xl font-bold text-accent-light mb-2">1141+</div>
+          <p class="text-white/60 text-xs sm:text-sm">発行号数</p>
+        </div>
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="font-serif text-3xl sm:text-4xl font-bold text-accent-light mb-2">毎週</div>
+          <p class="text-white/60 text-xs sm:text-sm">発行ペース</p>
+        </div>
+      </div>
+
+      <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 sm:p-10 border border-white/10 mb-10" data-aos="fade-up" data-aos-delay="400">
+        <p class="text-white/75 text-base sm:text-lg leading-loose text-center">
+          2004年の創刊以来、毎週休まず発行し続けている「アセンション館通信」。アセンション、スピリチュアル、アドヴァイタ——目に見えない世界への探求を、等身大の言葉で綴り続けてきた、20年を超えるアーカイブです。
+        </p>
+      </div>
+
+      <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+        <a href="/mm/"
+          class="inline-flex items-center gap-3 bg-accent hover:bg-accent-light text-primary-dark font-medium px-8 py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-accent/30">
+          <i data-lucide="book-open" class="w-5 h-5"></i>
+          <span>アーカイブを読む</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       資料館（Content Library）セクション
+  ======================================== -->
+  <section id="library" class="py-24 lg:py-32">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <p class="text-accent font-serif text-sm tracking-[0.2em] mb-3">LIBRARY</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-primary mb-6">資料館</h2>
+        <div class="section-divider mx-auto mb-6"></div>
+        <p class="text-text-light text-base max-w-xl mx-auto">
+          pariが歩んできた探求の軌跡——本、映画、師の言葉が集まっています。
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- 本棚 -->
+        <div class="card-hover bg-white/80 rounded-2xl overflow-hidden shadow-sm border border-surface-dark" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative h-40 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1485322551133-3a4c27a9d925?w=600&q=80&fm=webp&fit=crop"
+              alt="本棚に並ぶ本"
+              loading="lazy"
+              decoding="async"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent"></div>
+            <div class="absolute bottom-3 left-4">
+              <i data-lucide="book" class="w-6 h-6 text-accent-light"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-primary mb-2">本棚</h3>
+            <p class="text-text-light text-sm leading-relaxed mb-4">
+              pariが読んできた本の記録。スピリチュアル、哲学、覚醒に関わる書籍たち。
+            </p>
+            <a href="/bookshelf/" class="inline-flex items-center gap-1 text-accent text-sm font-medium hover:text-primary transition-colors">
+              本棚を見る <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 映画 -->
+        <div class="card-hover bg-white/80 rounded-2xl overflow-hidden shadow-sm border border-surface-dark" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative h-40 overflow-hidden bg-primary-light/8 flex items-center justify-center">
+            <i data-lucide="film" class="w-16 h-16 text-accent/25"></i>
+            <div class="absolute bottom-3 left-4">
+              <i data-lucide="film" class="w-6 h-6 text-accent-light"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-primary mb-2">映画</h3>
+            <p class="text-text-light text-sm leading-relaxed mb-4">
+              pariが観てきた映画の記録。心に響いた場面と、その言葉たち。
+            </p>
+            <a href="/movie/" class="inline-flex items-center gap-1 text-accent text-sm font-medium hover:text-primary transition-colors">
+              映画を見る <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- N辞書 -->
+        <div class="card-hover bg-white/80 rounded-2xl overflow-hidden shadow-sm border border-surface-dark" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative h-40 overflow-hidden bg-primary/4 flex items-center justify-center">
+            <p class="font-serif text-7xl font-bold text-primary/8 select-none">N</p>
+            <div class="absolute bottom-3 left-4">
+              <i data-lucide="scroll-text" class="w-6 h-6 text-accent-light"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-primary mb-2">N辞書</h3>
+            <p class="text-text-light text-sm leading-relaxed mb-4">
+              ニサルガダッタ・マハラジの言葉の辞書。『私は在る』の深みへ。
+            </p>
+            <a href="/ndic/" class="inline-flex items-center gap-1 text-accent text-sm font-medium hover:text-primary transition-colors">
+              辞書を開く <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- R辞書 -->
+        <div class="card-hover bg-white/80 rounded-2xl overflow-hidden shadow-sm border border-surface-dark" data-aos="fade-up" data-aos-delay="400">
+          <div class="relative h-40 overflow-hidden bg-primary/4 flex items-center justify-center">
+            <p class="font-serif text-7xl font-bold text-primary/8 select-none">R</p>
+            <div class="absolute bottom-3 left-4">
+              <i data-lucide="scroll-text" class="w-6 h-6 text-accent-light"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-primary mb-2">R辞書</h3>
+            <p class="text-text-light text-sm leading-relaxed mb-4">
+              ラマナ・マハルシの言葉の辞書。「私は誰か？」という根源的な問い。
+            </p>
+            <a href="/rdic/" class="inline-flex items-center gap-1 text-accent text-sm font-medium hover:text-primary transition-colors">
+              辞書を開く <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       随想（Prose & Poetry）セクション
+  ======================================== -->
+  <section id="prose" class="py-24 lg:py-32 bg-surface-dark">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <p class="text-accent font-serif text-sm tracking-[0.2em] mb-3">PROSE & POETRY</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-primary mb-6">随想</h2>
+        <div class="section-divider mx-auto mb-6"></div>
+        <p class="text-text-light text-base max-w-xl mx-auto">
+          pariが言葉として紡いできた随想と詩。存在の深みから湧き出た言葉たち。
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+        <div class="bg-white/70 rounded-xl p-6 card-hover border border-white" data-aos="fade-up" data-aos-delay="100">
+          <i data-lucide="feather" class="w-5 h-5 text-accent mb-3"></i>
+          <h3 class="font-serif text-lg font-medium text-primary mb-2">在ること</h3>
+          <p class="text-text-muted text-sm leading-relaxed">Being——あるがままに在ることの探求。</p>
+        </div>
+        <div class="bg-white/70 rounded-xl p-6 card-hover border border-white" data-aos="fade-up" data-aos-delay="150">
+          <i data-lucide="feather" class="w-5 h-5 text-accent mb-3"></i>
+          <h3 class="font-serif text-lg font-medium text-primary mb-2">悟りとは</h3>
+          <p class="text-text-muted text-sm leading-relaxed">Enlightenment——悟りの意味を問い続ける随想。</p>
+        </div>
+        <div class="bg-white/70 rounded-xl p-6 card-hover border border-white" data-aos="fade-up" data-aos-delay="200">
+          <i data-lucide="feather" class="w-5 h-5 text-accent mb-3"></i>
+          <h3 class="font-serif text-lg font-medium text-primary mb-2">エゴと悟り</h3>
+          <p class="text-text-muted text-sm leading-relaxed">Ego & Satori——エゴと悟りの奇妙な関係。</p>
+        </div>
+        <div class="bg-white/70 rounded-xl p-6 card-hover border border-white" data-aos="fade-up" data-aos-delay="250">
+          <i data-lucide="feather" class="w-5 h-5 text-accent mb-3"></i>
+          <h3 class="font-serif text-lg font-medium text-primary mb-2">絶望の中で</h3>
+          <p class="text-text-muted text-sm leading-relaxed">Despair——絶望を超えた先にあるもの。</p>
+        </div>
+        <div class="bg-white/70 rounded-xl p-6 card-hover border border-white" data-aos="fade-up" data-aos-delay="300">
+          <i data-lucide="feather" class="w-5 h-5 text-accent mb-3"></i>
+          <h3 class="font-serif text-lg font-medium text-primary mb-2">永遠回帰</h3>
+          <p class="text-text-muted text-sm leading-relaxed">Eternal Recurrence——時間と永遠についての考察。</p>
+        </div>
+        <div class="bg-white/70 rounded-xl p-6 card-hover border border-white" data-aos="fade-up" data-aos-delay="350">
+          <i data-lucide="feather" class="w-5 h-5 text-accent mb-3"></i>
+          <h3 class="font-serif text-lg font-medium text-primary mb-2">恋に落ちる</h3>
+          <p class="text-text-muted text-sm leading-relaxed">Fall in Love——愛することの本質とは。</p>
+        </div>
+      </div>
+
+      <div class="text-center" data-aos="fade-up">
+        <a href="/prose-poem/"
+          class="inline-flex items-center gap-2 border border-accent text-accent hover:bg-accent hover:text-white px-6 py-3 rounded-full transition-all duration-300 text-sm font-medium">
+          すべての随想を読む
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       導師たち（Teachers）セクション
+  ======================================== -->
+  <section id="teachers" class="relative py-24 lg:py-32 overflow-hidden">
+    <!-- 背景画像：蓮の花 -->
+    <div class="absolute inset-0">
+      <img
+        src="https://images.unsplash.com/photo-1474557157379-8aa74a6ef541?w=1920&q=80&fm=webp&fit=crop"
+        alt="水面に浮かぶ蓮の花"
+        loading="lazy"
+        decoding="async"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-primary-dark/86"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <p class="text-accent-light font-serif text-sm tracking-[0.2em] mb-3">TEACHERS</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-6">導師たち</h2>
+        <div class="section-divider mx-auto mb-6"></div>
+        <p class="text-white/55 text-base max-w-xl mx-auto">
+          pariの探求の道を照らしてきた師たちの言葉と教え。
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+
+        <!-- ニサルガダッタ -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="sparkles" class="w-7 h-7 text-accent-light"></i>
+          </div>
+          <h3 class="font-serif text-lg text-white font-medium mb-3">ニサルガダッタ<br />マハラジ</h3>
+          <p class="text-white/60 text-sm leading-relaxed">
+            「私は在る」という根源的な真実を説いたマハラジ。『I AM THAT（私は在る）』はpariの探求の核心をなす書。
+          </p>
+          <div class="mt-5 pt-4 border-t border-white/10">
+            <a href="/ndic/" class="text-accent-light text-xs hover:text-white transition-colors">N辞書を開く →</a>
+          </div>
+        </div>
+
+        <!-- ラマナ・マハルシ -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="search" class="w-7 h-7 text-accent-light"></i>
+          </div>
+          <h3 class="font-serif text-lg text-white font-medium mb-3">ラマナ・マハルシ</h3>
+          <p class="text-white/60 text-sm leading-relaxed">
+            「私は誰か？」という問いを通じた自己探求を説いた聖者。アルナーチャラの山に宿る静寂の教え。
+          </p>
+          <div class="mt-5 pt-4 border-t border-white/10">
+            <a href="/rdic/" class="text-accent-light text-xs hover:text-white transition-colors">R辞書を開く →</a>
+          </div>
+        </div>
+
+        <!-- オショ -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="sun" class="w-7 h-7 text-accent-light"></i>
+          </div>
+          <h3 class="font-serif text-lg text-white font-medium mb-3">オショ</h3>
+          <p class="text-white/60 text-sm leading-relaxed">
+            バグワン・シュリー・ラジニーシュ。「瞑想こそが宗教である」と説いた20世紀の神秘家。
+          </p>
+          <div class="mt-5 pt-4 border-t border-white/10">
+            <a href="/bookshelf/" class="text-accent-light text-xs hover:text-white transition-colors">関連書籍を見る →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       珠玉の言葉（Quotes）セクション
+  ======================================== -->
+  <section id="words" class="py-24 lg:py-32">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <p class="text-accent font-serif text-sm tracking-[0.2em] mb-3">WORDS OF WISDOM</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-primary mb-6">珠玉の言葉</h2>
+        <div class="section-divider mx-auto"></div>
+      </div>
+
+      <div class="space-y-8">
+
+        <!-- Quote 1 -->
+        <div class="relative bg-white/60 rounded-2xl p-10 sm:p-12 backdrop-blur-sm quote-decoration" data-aos="fade-up" data-aos-delay="100">
+          <blockquote class="font-serif text-lg sm:text-xl text-primary/80 leading-loose text-center">
+            あなたは気づいています。<br />あなたが気づくなら、<br />それを得るために、苦労したり努力する必要はありません。
+          </blockquote>
+          <p class="text-text-muted text-sm text-center mt-6">— paritosho</p>
+        </div>
+
+        <!-- Quote 2 -->
+        <div class="relative bg-white/60 rounded-2xl p-10 sm:p-12 backdrop-blur-sm quote-decoration" data-aos="fade-up" data-aos-delay="200">
+          <blockquote class="font-serif text-lg sm:text-xl text-primary/80 leading-loose text-center">
+            「私は在る」——これだけが唯一確かな真実だ。<br />他のすべてはこれを基盤として立ち現れてくる。
+          </blockquote>
+          <p class="text-text-muted text-sm text-center mt-6">— ニサルガダッタ・マハラジ</p>
+        </div>
+
+        <!-- Quote 3 -->
+        <div class="relative bg-white/60 rounded-2xl p-10 sm:p-12 backdrop-blur-sm quote-decoration" data-aos="fade-up" data-aos-delay="300">
+          <blockquote class="font-serif text-lg sm:text-xl text-primary/80 leading-loose text-center">
+            自己を探求せよ。<br />「私は誰か？」という問いへと深く潜ることで、<br />真我が自ずと明らかになる。
+          </blockquote>
+          <p class="text-text-muted text-sm text-center mt-6">— ラマナ・マハルシ</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       仕事（Works）セクション
+  ======================================== -->
+  <section id="works" class="py-24 lg:py-32 bg-surface-dark">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <p class="text-accent font-serif text-sm tracking-[0.2em] mb-3">WORKS</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-primary mb-6">仕事・著作</h2>
+        <div class="section-divider mx-auto mb-6"></div>
+        <p class="text-text-light text-base max-w-xl mx-auto">
+          paritoshoの著述活動と、その探求の跡。
+        </p>
+      </div>
+
+      <div class="bg-white/60 rounded-2xl p-8 sm:p-12 backdrop-blur-sm mb-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex items-start gap-4 mb-6">
+          <div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center shrink-0 mt-1">
+            <i data-lucide="pen-line" class="w-5 h-5 text-accent"></i>
+          </div>
+          <div>
+            <h3 class="font-serif text-xl font-bold text-primary mb-3">著作・著述</h3>
+            <p class="text-text-light leading-relaxed">
+              「21世紀への指針——ハビトの習慣」をはじめとする著述活動。スピリチュアルな視点から、現代を生きる指針を探求し続けています。
+            </p>
+          </div>
+        </div>
+        <a href="/works/" class="inline-flex items-center gap-2 text-accent text-sm font-medium hover:text-primary transition-colors">
+          仕事・著作を詳しく見る <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="bg-white/40 rounded-xl p-6 border border-white/70">
+          <i data-lucide="globe" class="w-5 h-5 text-accent mb-3"></i>
+          <h4 class="font-serif font-medium text-primary mb-2">このサイトについて</h4>
+          <p class="text-text-light text-sm leading-relaxed">
+            2004年から続くアセンション探求の記録を、新たな形でお届けしています。
+          </p>
+        </div>
+        <div class="bg-white/40 rounded-xl p-6 border border-white/70">
+          <i data-lucide="mail" class="w-5 h-5 text-accent mb-3"></i>
+          <h4 class="font-serif font-medium text-primary mb-2">メルマガ登録</h4>
+          <p class="text-text-light text-sm leading-relaxed">
+            「アセンション館通信」は毎週発行。探求の言葉をお届けします。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       フッター
+  ======================================== -->
+  <footer class="bg-primary-dark py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <p class="font-serif text-2xl font-bold text-white mb-2">アセンション館</p>
+        <p class="text-white/35 text-sm tracking-widest">by paritosho</p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6 mb-10">
+        <a href="/mm/"         class="text-white/45 hover:text-accent-light text-sm transition-colors">通信</a>
+        <a href="/bookshelf/"  class="text-white/45 hover:text-accent-light text-sm transition-colors">本棚</a>
+        <a href="/movie/"      class="text-white/45 hover:text-accent-light text-sm transition-colors">映画</a>
+        <a href="/ndic/"       class="text-white/45 hover:text-accent-light text-sm transition-colors">N辞書</a>
+        <a href="/rdic/"       class="text-white/45 hover:text-accent-light text-sm transition-colors">R辞書</a>
+        <a href="/prose-poem/" class="text-white/45 hover:text-accent-light text-sm transition-colors">随想</a>
+        <a href="/works/"      class="text-white/45 hover:text-accent-light text-sm transition-colors">仕事</a>
+      </div>
+
+      <div class="border-t border-white/10 pt-8 text-center">
+        <p class="text-white/25 text-xs">
+          © 2004–2026 ascensionkan.com · paritosho · All Rights Reserved
+        </p>
+        <p class="text-white/18 text-xs mt-2">
+          Photos by <a href="https://unsplash.com" class="hover:text-white/35 transition-colors">Unsplash</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================
+       JavaScript：AOS / Lucide / ナビゲーション
+  ======================================== -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // AOS 初期化
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 80
+    });
+
+    // Lucide アイコン初期化
+    lucide.createIcons();
+
+    // ナビゲーション：スクロール検知（requestAnimationFrame でスロットリング）
+    let ticking = false;
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          navbar.classList.toggle('scrolled', window.scrollY > 50);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+
+    // モバイルメニュー開閉
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon   = menuToggle.querySelector('i');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      menuToggle.setAttribute('aria-expanded', String(!isOpen));
+      menuIcon.setAttribute('data-lucide', isOpen ? 'menu' : 'x');
+      lucide.createIcons();
+    });
+
+    // モバイルメニューのリンクをタップしたら閉じる
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuIcon.setAttribute('data-lucide', 'menu');
+        lucide.createIcons();
+      });
+    });
+  </script>
+
+</body>
+</html>

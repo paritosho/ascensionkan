@@ -1,0 +1,9 @@
+node_modules/
+.claude/
+dev-tools/
+scripts/
+project-docs/
+CLAUDE.md
+*.txt
+package.json
+package-lock.json

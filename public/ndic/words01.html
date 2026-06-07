@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N&#x8F9E;&#x66F8; &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F4D6;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa; --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif; --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .entry-body { white-space: pre-wrap; font-family: 'Noto Serif JP', serif; line-height: 2; font-size: 0.875rem; }
+    .entry-body strong { color: #6d28d9; font-weight: 600; }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-serif text-lg font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/ndic/" class="text-accent font-medium">N&#x8F9E;&#x66F8;</a>
+      <a href="/rdic/" class="text-white/70 hover:text-white transition-colors">R&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/movie/" class="text-white/70 hover:text-white transition-colors">&#x6620;&#x753B;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-10">
+  <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 30% 60%, #a78bfa 0%, transparent 55%);"></div>
+  <div class="relative max-w-3xl mx-auto px-4 text-center">
+    <div class="text-accent text-xs tracking-[0.3em] uppercase mb-3">nisargadatta maharaj dictionary</div>
+    <h1 class="font-serif text-3xl md:text-4xl text-white mb-3">&#x30CB;&#x30B5;&#x30EB;&#x30AC;&#x30C0;&#x30C3;&#x30BF;&#x30FB;&#x30DE;&#x30CF;&#x30E9;&#x30B8;&#x8F9E;&#x66F8;</h1>
+    <div class="mt-4">
+      <a href="index.html" class="inline-flex items-center gap-1 text-accent/80 text-sm hover:text-accent transition-colors">&#x2190; &#x7D22;&#x5F15;&#x3078;&#x623B;&#x308B;</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 py-10">
+  <div class="text-right text-xs text-gray-400 mb-6">90 &#x9805;&#x76EE;</div>
+<article id="023-13" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>背景</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">何かが現れる前に、それに対する誰かがそこにいなければならない。
+　すべての出現と消滅は、何か変わることのない<strong>背景</strong>に対する変化を前提とし
+　ている。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.23</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="023-40" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>すべての問題</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">あなたが抱えている<strong>すべての問題</strong>は、あなたの身体の問題――食事、衣服、
+　家、友人、名前、名声、安全、生存だということがわからないだろうか？
+　これらの問題すべては、あなたが単なる身体ではないと悟った瞬間に消え去
+　るのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.23</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="024-09" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>存在の感覚</strong>①</h3><div class="entry-body text-gray-700 text-sm mb-4">「私は在る」という<strong>感覚</strong>のなかに深く入っていきなさい。
+　そうすればあなたは見いだすだろう。
+　忘れ去ってしまったものを見つけだすにはどうするだろう？
+　思い起こすまでマインドにとどめておくのだ。
+　「私は在る」という<strong>存在の感覚</strong>が最初に現れる。
+　それがどこからやってくるのか、自分に尋ねなさい。
+　あるいは、それをただ静かに見守りなさい。
+　「私は在る」という<strong>感覚</strong>のなかにマインドが動じることなく定まったとき、
+　表現不可能な、しかし体験可能なひとつの境地へとあなたは入っていく。
+　何度も何度も試みることだ。
+　そうすれば、「私は在る」という<strong>感覚</strong>は、つねにあなたとともにある。
+　あなたが身体、感情、思考、観念、所有物などをそれに付随させてきただけ
+　だ。
+　こういった自己同化は、あらゆる誤解を招く。
+　そのため、あなたは本当の自分ではないものを自分自身と見誤ってきたのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.24</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="024-16" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>付随させてきた</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">「私は在る」という感覚のなかにマインドが動じることなく定まったとき、
+　表現不可能な、しかし体験可能なひとつの境地へとあなたは入っていく。
+　何度も何度も試みることだ。
+　そうすれば、「私は在る」という感覚は、つねにあなたとともにある。
+　あなたが身体、感情、思考、観念、所有物などをそれに<strong>付随させてきた</strong>だけ
+　だ。
+　こういった自己同化は、あらゆる誤解を招く。
+　そのため、あなたは本当の自分ではないものを自分自身と見誤ってきたのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.24</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="024-24" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>自己知識</strong>①</h3><div class="entry-body text-gray-700 text-sm mb-4">あなたが何ではないか、ということを知ればそれでいい。
+　あなたが何なのかを知る必要はない。
+　なぜなら知識とは既知なるもの、知覚されるもの、あるいは観念としてしか
+　表せないため、<strong>自己知識</strong>といったものはありえないからだ。
+　それゆえ、あなたが何なのかということは、完全な否定においてしか表せな
+　い。
+　あなたに言えることは、「私はこれではなく、あれでもない」ということだ
+　けだ。
+　意図をもって「これこそが私だ」ということはできない。
+　それはまったく意味をなさない。
+　あれやこれ、と指し示すことができるものは、あなたではありえない。
+　何かほかのものだとさえ言えない。
+　あなたは知覚や想像を超えた何かだ。
+　それにも関わらず、あなたなしでは想像も知覚もありえない。
+　あなたはハートの感じること、マインドの考えること、身体の為すことを観
+　察する。
+　そのこと自体が、あなたはあなたが観察するものではないということを示唆
+　しているのだ。
+　あなたなしで知覚や体験が可能だろうか？
+　体験とはかならず何かに帰属するものだ。
+　誰かが、これは私の体験だと言明するのだ。
+　体験者なくして体験はありえない。
+　体験者が体験にその実在性を与えるのだ。
+　あなたが体験できないもの、それに何の価値があるというのだろう？</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.24</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="024-34" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>あなたなしでは</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">あなたは知覚や想像を超えた何かだ。
+　それにも関わらず、<strong>あなたなしでは</strong>想像も知覚もありえない。
+　あなたはハートの感じること、マインドの考えること、身体の為すことを観
+　察する。
+　そのこと自体が、あなたはあなたが観察するものではないということを示唆
+　しているのだ。
+　<strong>あなたなしで</strong>知覚や体験が可能だろうか？
+　体験とはかならず何かに帰属するものだ。
+　誰かが、これは私の体験だと言明するのだ。
+　体験者なくして体験はありえない。
+　体験者が体験にその実在性を与えるのだ。
+　あなたが体験できないもの、それに何の価値があるというのだろう？</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.24</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="024-35" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>体験</strong> と <strong>体験者</strong>①</h3><div class="entry-body text-gray-700 text-sm mb-4">あなたは知覚や想像を超えた何かだ。
+　それにも関わらず、あなたなしでは想像も知覚もありえない。
+　あなたはハートの感じること、マインドの考えること、身体の為すことを観
+　察する。
+　そのこと自体が、あなたはあなたが観察するものではないということを示唆
+　しているのだ。
+　あなたなしで知覚や<strong>体験</strong>が可能だろうか？
+　<strong>体験</strong>とはかならず何かに帰属するものだ。
+　誰かが、これは私の<strong>体験</strong>だと言明するのだ。
+　<strong>体験者</strong>なくして<strong>体験</strong>はありえない。
+　<strong>体験者</strong>が<strong>体験</strong>にその実在性を与えるのだ。
+　あなたが<strong>体験</strong>できないもの、それに何の価値があるというのだろう？</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.24</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="024-43" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>体験</strong> と <strong>体験者</strong>②</h3><div class="entry-body text-gray-700 text-sm mb-4">明らかに、<strong>体験</strong>されたすべてのことは<strong>体験</strong>だ。
+　そして、すべての<strong>体験</strong>のなかに<strong>体験者</strong>が現れる。
+　記憶が連続するという幻想を与えるのだ。
+　実際には、各<strong>体験</strong>にそれぞれの<strong>体験者</strong>がいる。
+　そして、同一であるという感覚は、すべての<strong>体験者</strong>と<strong>体験</strong>との関係の根底に
+　おいて共通の要因があるためだ。
+　同一性と連続性は同じものではない。
+　ちょうどそれぞれの花がそれ自身の色をもっていながら、そのすべての色は
+　同じ光源をもとにしているように、数々の<strong>体験者</strong>も記憶においては別々であ
+　りながら、本質においては同一の分割不可能な気づきのなかに現れる。
+　この本質こそが根源、基盤、そして時空を超えたすべての<strong>体験</strong>の「可能性」
+　なのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.24-25</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="025-04" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>同一性</strong> と <strong>連続性</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">明らかに、体験されたすべてのことは体験だ。
+　そして、すべての体験のなかに体験者が現れる。
+　記憶が<strong>連続</strong>するという幻想を与えるのだ。
+　実際には、各体験にそれぞれの体験者がいる。
+　そして、<strong>同一</strong>であるという感覚は、すべての体験者と体験との関係の根底に
+　おいて共通の要因があるためだ。
+　<strong>同一性</strong>と<strong>連続性</strong>は同じものではない。
+　ちょうどそれぞれの花がそれ自身の色をもっていながら、そのすべての色は
+　<strong>同じ</strong>光源をもとにしているように、数々の体験者も記憶においては別々であ
+　りながら、本質においては<strong>同一</strong>の分割不可能な気づきのなかに現れる。
+　この本質こそが根源、基盤、そして時空を超えたすべての体験の「可能性」
+　なのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.24-25</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="025-09" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>体験の「可能性」</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">明らかに、<strong>体験</strong>されたすべてのことは<strong>体験</strong>だ。
+　そして、すべての<strong>体験</strong>のなかに<strong>体験</strong>者が現れる。
+　記憶が連続するという幻想を与えるのだ。
+　実際には、各<strong>体験</strong>にそれぞれの<strong>体験</strong>者がいる。
+　そして、同一であるという感覚は、すべての<strong>体験</strong>者と<strong>体験</strong>との関係の根底に
+　おいて共通の要因があるためだ。
+　同一性と連続性は同じものではない。
+　ちょうどそれぞれの花がそれ自身の色をもっていながら、そのすべての色は
+　同じ光源をもとにしているように、数々の<strong>体験</strong>者も記憶においては別々であ
+　りながら、本質においては同一の分割不可能な気づきのなかに現れる。
+　この本質こそが根源、基盤、そして時空を超えたすべての<strong>体験の「可能性」</strong>
+　なのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.24-25</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="025-19" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>大いなる愛</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">それ（体験の「可能性」）を得る必要はない。
+　なぜなら、あなたがそれなのだ。
+　あなたがそれに機会を与えれば、それがあなたを得るだろう。
+　非実在のものへの執着を解き放ちなさい。
+　そうすれば、実在はそれ自身へと即座に速やかに入りこんでいくだろう。
+　自分自身の存在をあれやこれや想像するのをやめることだ。
+　そうすれば、あなたがすべてのハートであり、源泉であるという認識は明ら
+　かになるだろう。
+　それとともに選択でも、偏愛でも、執着でもない、すべてのものを愛すべき、
+　そして愛する価値あるものへと変容させるひとつの力、<strong>大いなる愛</strong>が現れる。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.25</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="025-31" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>根本的違い</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（私たちの間に）<strong>根本的違い</strong>など何もない。
+　
+　あなたが<strong>違い</strong>を想像して、あちこちへと「優れた」人を求めてさ迷うのだ。
+　
+　（真実を）知らないからといって、あなたが劣っていると言っただろうか？
+　そんな差別を生みだした者たちに証明させるがいい。
+　私はあなたの知らないことを知っていると言いはしない。
+　事実、私の知っていることは、あなたよりはるかに少ないのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.25</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="026-05" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>過ぎ去るショー</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">私はそのようなこと（賢明な言葉、高尚な立ちふるまい、偉大な恩寵など）を
+　まったく知らないし、あなたと私の間に何の違いも見ない。
+　私の人生は、あなたの人生と同じように出来事の連続だ。
+　ただ私は固執せず、<strong>過ぎ去るショー</strong>をただ<strong>過ぎ去るショー</strong>として見ているだ
+　けで、あなたは物事に固執し、それとともに動き回るのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.26</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="026-11" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>私ではないもの</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">何も特別なことはない。
+　私のグル（師）を信頼するということが起こっただけだ。
+　彼が、私は私自身以外の何ものでもないと言い、私は彼を信じた。
+　彼を信頼し、そのとおりに生き、<strong>私ではないもの</strong>、私のものではないものに
+　注意を払わなくなったのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.26</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="026-17" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>誰が誰なのか</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（なぜ師を完全に信頼するという幸運に恵まれたか）誰が答えられよう？
+　ただそうなっただけだ。
+　ものごとは理由も原因もなしに起こる。
+　そして結局のところ、<strong>誰が誰なのか</strong>など問題ではない。
+　私に対するあなたの高い評価も、あなたの意見に過ぎない。
+　あなたがいつそれを変えても不思議はない。
+　なぜ人の意見を、たとえ自分の意見でさえ、そんなに重要視するのかね？</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.26</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="026-18" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>意見</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">ものごとは理由も原因もなしに起こる。
+　そして結局のところ、誰が誰なのかなど問題ではない。
+　私に対するあなたの高い評価も、あなたの<strong>意見</strong>に過ぎない。
+　あなたがいつそれを変えても不思議はない。
+　なぜ人の<strong>意見</strong>を、たとえ自分の<strong>意見</strong>でさえ、そんなに重要視するのかね？</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.26</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="026-20" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>なぜ人の意見を</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">ものごとは理由も原因もなしに起こる。
+　そして結局のところ、誰が誰なのかなど問題ではない。
+　私に対するあなたの高い評価も、あなたの<strong>意見</strong>に過ぎない。
+　あなたがいつそれを変えても不思議はない。
+　<strong>なぜ人の意見を</strong>、たとえ自分の<strong>意見</strong>でさえ、そんなに重要視するのかね？</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.26</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="026-21" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>自分の意見でさえ</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">ものごとは理由も原因もなしに起こる。
+　そして結局のところ、誰が誰なのかなど問題ではない。
+　私に対するあなたの高い評価も、あなたの<strong>意見</strong>に過ぎない。
+　あなたがいつそれを変えても不思議はない。
+　なぜ人の<strong>意見</strong>を、たとえ<strong>自分の意見でさえ</strong>、そんなに重要視するのかね？</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.26</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="026-24" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>奇跡</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">私はそんな（私のまわりで起こっているという）<strong>奇跡</strong>など何も知らないし、
+　自然がその法則に例外を許すとも思えない。
+　すべてが<strong>奇跡</strong>だとするなら別だが。
+　私にとってそのようなものは何もない。
+　ただその中ですべてが起こる意識が在るだけだ。
+　それは皆の体験においてまったく明らかだ。
+　あなたが注意深く見ていないだけだ。
+　よく見てみなさい、私が見るように。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.26</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="026-32" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>注意の焦点</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">私もまたあなたが見ているものを今ここで見ている。
+　ただあなたの<strong>注意の焦点</strong>が間違っているだけだ。
+　あなたは自分自身を自覚していない。
+　あなたのマインドは完全に物や、人や、観念に占有され、けっして自分自身
+　とともにいない。
+　自己に<strong>焦点</strong>を合わせ、自らの存在に気づきなさい。
+　自分がどのように行動しているのか見てみなさい。
+　行動の動機と結果を見守りなさい。
+　あなたが自分のまわりに、不注意によって築いてきた牢獄を見てみなさい。
+　あなたが何ではないかを知ることによって、あなたは自分自身を知ることに
+　なる。
+　拒否と否定を通してあなたは真我へと帰り着く。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.26</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="026-36" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>行動の動機</strong>①</h3><div class="entry-body text-gray-700 text-sm mb-4">私もまたあなたが見ているものを今ここで見ている。
+　ただあなたの注意の焦点が間違っているだけだ。
+　あなたは自分自身を自覚していない。
+　あなたのマインドは完全に物や、人や、観念に占有され、けっして自分自身
+　とともにいない。
+　自己に焦点を合わせ、自らの存在に気づきなさい。
+　自分がどのように<strong>行動</strong>しているのか見てみなさい。
+　<strong>行動の動機</strong>と結果を見守りなさい。
+　あなたが自分のまわりに、不注意によって築いてきた牢獄を見てみなさい。
+　あなたが何ではないかを知ることによって、あなたは自分自身を知ることに
+　なる。
+　拒否と否定を通してあなたは真我へと帰り着く。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.26</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="026-39" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>拒否と否定</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">私もまたあなたが見ているものを今ここで見ている。
+　ただあなたの注意の焦点が間違っているだけだ。
+　あなたは自分自身を自覚していない。
+　あなたのマインドは完全に物や、人や、観念に占有され、けっして自分自身
+　とともにいない。
+　自己に焦点を合わせ、自らの存在に気づきなさい。
+　自分がどのように行動しているのか見てみなさい。
+　行動の動機と結果を見守りなさい。
+　あなたが自分のまわりに、不注意によって築いてきた牢獄を見てみなさい。
+　あなたが何ではないかを知ることによって、あなたは自分自身を知ることに
+　なる。
+　<strong>拒否と否定</strong>を通してあなたは真我へと帰り着く。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.26</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="026-41" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>マインドの産物</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">拒否と否定を通してあなたは真我へと帰り着く。
+　ひとつ明らかなことは、真我とは想像されたものではない。
+　それは<strong>マインドの産物</strong>ではないということだ。
+　「私は在る」という感覚さえ継続しない。
+　それはどこを探すかを知る有用な指針ではあるが、何を探すのかには用をな
+　さない。
+　ただよく見てみなさい。
+　ひとたびあなたが、これが自分だと指し示すことができるものは何もなく、
+　「私は在る」ということ以外に自己を語ることができないと確信すれば、
+　「私は在る」という指針の役目は終わる。
+　もはやあなたは、自己が何なのかを言葉の上に置き換えようなどとはしない
+　だろう。
+　必要なのは、自己を定義しようとする傾向を捨て去ることだけだ。
+　すべての定義づけは、身体とその表現にしか当てはまらない。
+　この身体への固執が消えれば、あなたは自然なあるがままの姿に努力するこ
+　となく帰り着くだろう。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.26-27</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="027-02" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>自己を語る</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">ひとたびあなたが、これが自分だと指し示すことができるものは何もなく、
+　「私は在る」ということ以外に<strong>自己を語る</strong>ことができないと確信すれば、
+　「私は在る」という指針の役目は終わる。
+　もはやあなたは、<strong>自己</strong>が何なのかを言葉の上に置き換えようなどとはしない
+　だろう。
+　必要なのは、<strong>自己</strong>を定義しようとする傾向を捨て去ることだけだ。
+　すべての定義づけは、身体とその表現にしか当てはまらない。
+　この身体への固執が消えれば、あなたは自然なあるがままの姿に努力するこ
+　となく帰り着くだろう。
+　私たちの唯一の違いは、私は私の自然な状態に気づいているが、あなたはそ
+　れを見失っているということだ。
+　あえてそう思わないかぎり、装飾品として加工された金が、金粉の金より価
+　値があるわけではないように、私たちも異なるのは外見だけで、存在におい
+　てはひとつなのだ。
+　真摯（しんし）に日々それを求め、尋ね、問い、その探求に生涯を捧げるな
+　らば、私たちはそれを見いだすだろう。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.27</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="027-03" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>指針の役目</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">ひとたびあなたが、これが自分だと指し示すことができるものは何もなく、
+　「私は在る」ということ以外に自己を語ることができないと確信すれば、
+　「私は在る」という<strong>指針の役目</strong>は終わる。
+　もはやあなたは、自己が何なのかを言葉の上に置き換えようなどとはしない
+　だろう。
+　必要なのは、自己を定義しようとする傾向を捨て去ることだけだ。
+　すべての定義づけは、身体とその表現にしか当てはまらない。
+　この身体への固執が消えれば、あなたは自然なあるがままの姿に努力するこ
+　となく帰り着くだろう。
+　私たちの唯一の違いは、私は私の自然な状態に気づいているが、あなたはそ
+　れを見失っているということだ。
+　あえてそう思わないかぎり、装飾品として加工された金が、金粉の金より価
+　値があるわけではないように、私たちも異なるのは外見だけで、存在におい
+　てはひとつなのだ。
+　真摯（しんし）に日々それを求め、尋ね、問い、その探求に生涯を捧げるな
+　らば、私たちはそれを見いだすだろう。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.27</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="027-04" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>言葉の上に</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">ひとたびあなたが、これが自分だと指し示すことができるものは何もなく、
+　「私は在る」ということ以外に自己を語ることができないと確信すれば、
+　「私は在る」という指針の役目は終わる。
+　もはやあなたは、自己が何なのかを<strong>言葉の上に</strong>置き換えようなどとはしない
+　だろう。
+　必要なのは、自己を定義しようとする傾向を捨て去ることだけだ。
+　すべての定義づけは、身体とその表現にしか当てはまらない。
+　この身体への固執が消えれば、あなたは自然なあるがままの姿に努力するこ
+　となく帰り着くだろう。
+　私たちの唯一の違いは、私は私の自然な状態に気づいているが、あなたはそ
+　れを見失っているということだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.27</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="027-05" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>定義しようとする</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">ひとたびあなたが、これが自分だと指し示すことができるものは何もなく、
+　「私は在る」ということ以外に自己を語ることができないと確信すれば、
+　「私は在る」という指針の役目は終わる。
+　もはやあなたは、自己が何なのかを言葉の上に置き換えようなどとはしない
+　だろう。
+　必要なのは、自己を<strong>定義しようとする</strong>傾向を捨て去ることだけだ。
+　すべての<strong>定義</strong>づけは、身体とその表現にしか当てはまらない。
+　この身体への固執が消えれば、あなたは自然なあるがままの姿に努力するこ
+　となく帰り着くだろう。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.27</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="027-06" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>定義づけ</strong> と <strong>身体</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">ひとたびあなたが、これが自分だと指し示すことができるものは何もなく、
+　「私は在る」ということ以外に自己を語ることができないと確信すれば、
+　「私は在る」という指針の役目は終わる。
+　もはやあなたは、自己が何なのかを言葉の上に置き換えようなどとはしない
+　だろう。
+　必要なのは、自己を<strong>定義</strong>しようとする傾向を捨て去ることだけだ。
+　すべての<strong>定義づけ</strong>は、<strong>身体</strong>とその表現にしか当てはまらない。
+　この<strong>身体</strong>への固執が消えれば、あなたは自然なあるがままの姿に努力するこ
+　となく帰り着くだろう。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.27</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="027-07" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>身体への固執</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">ひとたびあなたが、これが自分だと指し示すことができるものは何もなく、
+　「私は在る」ということ以外に自己を語ることができないと確信すれば、
+　「私は在る」という指針の役目は終わる。
+　もはやあなたは、自己が何なのかを言葉の上に置き換えようなどとはしない
+　だろう。
+　必要なのは、自己を定義しようとする傾向を捨て去ることだけだ。
+　すべての定義づけは、<strong>身体</strong>とその表現にしか当てはまらない。
+　この<strong>身体への固執</strong>が消えれば、あなたは自然なあるがままの姿に努力するこ
+　となく帰り着くだろう。
+　私たちの唯一の違いは、私は私の自然な状態に気づいているが、あなたはそ
+　れを見失っているということだ。
+　あえてそう思わないかぎり、装飾品として加工された金が、金粉の金より価
+　値があるわけではないように、私たちも異なるのは外見だけで、存在におい
+　てはひとつなのだ。
+　真摯（しんし）に日々それを求め、尋ね、問い、その探求に生涯を捧げるな
+　らば、私たちはそれを見いだすだろう。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.27</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="027-10" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>自然な状態</strong>③</h3><div class="entry-body text-gray-700 text-sm mb-4">必要なのは、自己を定義しようとする傾向を捨て去ることだけだ。
+　すべての定義づけは、身体とその表現にしか当てはまらない。
+　この身体への固執が消えれば、あなたは<strong>自然な</strong>あるがままの姿に努力するこ
+　となく帰り着くだろう。
+　私たちの唯一の違いは、私は私の<strong>自然な状態</strong>に気づいているが、あなたはそ
+　れを見失っているということだ。
+　あえてそう思わないかぎり、装飾品として加工された金が、金粉の金より価
+　値があるわけではないように、私たちも異なるのは外見だけで、存在におい
+　てはひとつなのだ。
+　真摯（しんし）に日々それを求め、尋ね、問い、その探求に生涯を捧げるな
+　らば、私たちはそれを見いだすだろう。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.27</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="030-35" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>因果関係</strong>①</h3><div class="entry-body text-gray-700 text-sm mb-4"><strong>因果関係</strong>とは、物理的あるいは精神的空間のなかで起こる出来事の時間的連
+　鎖を意味する。
+　時間、空間、<strong>因果関係</strong>は精神的領域にあり、マインドとともに現れては消え
+　ていく。
+　
+　すべての精神的なものがそうであるように、いわゆる<strong>因果関係</strong>もそれ自体が
+　相矛盾するのだ。
+　存在のなかで、ある一定の原因を持っているものは何ひとつない。
+　宇宙全体がもっとも小さなものの存在の一因となる。
+　宇宙がそのようではないかぎり、何ひとつあるがままでは在りえない。
+　あらゆるものの土台と源が、起こることすべての唯一の原因であるとき、<strong>因
+　果関係</strong>を宇宙の法則と見なすのは不当だと言えよう。
+　宇宙の潜在的可能性は無限のため、その内容物によって限定されることはな
+　い。
+　しかもそれは基本的に、完全に自由な原理の表現または顕現なのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.30-31</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="030-43" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>一定の原因</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">すべての精神的なものがそうであるように、いわゆる因果関係もそれ自体が
+　相矛盾するのだ。
+　存在のなかで、ある<strong>一定の原因</strong>を持っているものは何ひとつない。
+　宇宙全体がもっとも小さなものの存在の一因となる。
+　宇宙がそのようではないかぎり、何ひとつあるがままでは在りえない。
+　あらゆるものの土台と源が、起こることすべての唯一の原因であるとき、因
+　果関係を宇宙の法則と見なすのは不当だと言えよう。
+　宇宙の潜在的可能性は無限のため、その内容物によって限定されることはな
+　い。
+　しかもそれは基本的に、完全に自由な原理の表現または顕現なのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.30-31</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="035-08" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>瞑想の目的</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（<strong>瞑想の目的</strong>とは何なのか、というなら）
+　私たちは感覚や行為といった外側の世界は知っているが、思考や感情といっ
+　た内なる世界のことはほとんど知らない。
+　<strong>瞑想の</strong>初歩的な<strong>目的</strong>は、私たちの内なる生をより身近に自覚することだ。
+　そして究極の<strong>目的</strong>は、生の源である意識にたどり着くことだ。
+　
+　付随的にだが、<strong>瞑想</strong>の修行は私たちの人格に深く影響を及ぼす。
+　私たちは私たちが知らないものの奴隷だ。
+　知るものに対しては私たちが主人だ。
+　何であれ、私たちの欠点や弱点を発見し、その原因や働きを理解する、知る
+　ということ自体がそれを克服するのだ。
+　無意識は意識層にもちこまれることによって溶解する。
+　無意識の溶解はエネルギーを解き放つ。
+　マインドはそれを適切だと感じ、そして静かになるのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.35</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="035-22" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>静かなマインド</strong>②</h3><div class="entry-body text-gray-700 text-sm mb-4">（<strong>静かなマインド</strong>は何の役に立つのか、というなら）
+　<strong>マインド</strong>が<strong>静か</strong>になったとき、私たちは自分自身が純粋な観照者であること
+　を知る。
+　私たちは経験と経験者のどちらからも身を引き、その間であり、またその二
+　つを超えた純粋な気づきとして離れて立つのだ。
+　自分自身を、「私はあれやこれだ」と想像し、自己同一化をもととする人格
+　は続いていく。
+　しかし、ただ客観的世界の一部としてだけだ。
+　観照者としての自己同一化は終焉（しゅうえん）する。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.35</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="035-37" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>純粋な行為</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">瞑想は<strong>純粋な行為</strong>であり、その目的はタマス（不活発性）とラジャス（活動
+　性）を完全に除去することだ。
+　純粋なサットヴァ（調和）は、怠惰と落ち着きのなさからの完全な自由だ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.35</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="035-42" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>サットヴァ</strong>①</h3><div class="entry-body text-gray-700 text-sm mb-4"><strong>サットヴァ</strong>はつねに強く純粋だ。
+　それは太陽のようなものだ。
+　雲やほこりに見え隠れすることはあっても、それはただ見る者の視点による
+　のだ。
+　太陽にではなく、太陽を隠す原因となるものに対処しなさい。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.35</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="036-02" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>サットヴァ</strong>②</h3><div class="entry-body text-gray-700 text-sm mb-4">（<strong>サットヴァ</strong>は何の役に立つのか、というなら）
+　真理、善、調和、美、これらがいったい何の役に立つというのか？
+　それらがそれら自身の目的なのだ。
+　ものごとがそのまま干渉されず、避けられず、求められず、概念化されず、
+　ただあるがままに完全な気づきのなかで体験されるとき、それらは自然に努
+　力することなく現れる。
+　そのような気づきそのものが<strong>サットヴァ</strong>なのだ。
+　それは人やものを利用するのではなく、それらを満たすのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.36</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="036-10" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>タマス</strong> と <strong>ラジャス</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（<strong>タマス</strong>と<strong>ラジャス</strong>にどう対処するのか、というなら）
+　あなたのなかで、それらがどう影響を与えているかを見守ることによってだ。
+　それらがどう作用するか気づいていなさい。
+　あなたの思考、言葉、行為を見守りなさい。
+　そうすればそれらのあなたへの支配は徐々に減っていき、サットヴァの澄ん
+　だ光が輝きだすだろう。
+　それは困難でも長い過程でもない。
+　真剣さ、それが唯一の成功への条件だ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.36</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="036-39" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>マインドにおける視点</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（世界は幻想ではなく、最低位から最高位にわたる生きものの階層が存在し、
+　各々の有機体の複雑性のレベルが意識の深さ、広さ、強靱さを反映し、成長
+　のための形態の進化、意識の向上、無限の可能性の表現など、一貫してひと
+　つの至高の法則が支配している……というなら）
+　そうかもしれない。
+　あるいはそうでないかもしれない。
+　たとえそうであったとしても、それは単に<strong>マインドにおける視点</strong>にすぎない。
+　だが事実は、宇宙全体（マハーダカーシュ）はただ意識（チダカーシュ）の
+　なかにのみ存在し、そして私自身は至高の絶対性（パラマカーシュ）のなか
+　に在るのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.36-37</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="036-43" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>純粋な存在</strong>①</h3><div class="entry-body text-gray-700 text-sm mb-4"><strong>純粋な存在</strong>のなかに意識が現れる。
+　意識のなかで、世界は出現し消滅していく。
+　存在するものはすべて私であり、すべては私のものだ。
+　すべてがはじまる以前にも、そしてすべてが終わった後にも――私は在る。
+　すべては私のなか、すべての生きるもののなかに輝く「私は在る」という感
+　覚のなかにその存在がある。
+　非存在でさえ私なしには考えることもできない。
+　何が起ころうとも、観照者としての私がそこにいなければならないのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.36-37</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="037-13" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>世界は現れる</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（なぜ世界の存在を否定するのか、というなら）
+　世界を否定してはいない。
+　私は世界を、広大な未知のなかの既知全体としての意識、その意識のなかの
+　<strong>現れ</strong>てとして見ている。
+　
+　はじまり、そして終わるもの、それはただの<strong>現れ</strong>にすぎない。
+　<strong>世界は現れる</strong>とは言えても、<strong>存在する</strong>とは言えない。
+　その<strong>現れ</strong>は、ある時間の比率においては非常に長い間続くだろうが、ほかの
+　比率では非常に短いかもしれない。
+　だが、結局は同じことだ。
+　何であれ時間の範囲内にあるものは、はかなく実在性がない。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.37</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="037-21" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>そう見えるだけ</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（私が取り巻く現実の世界のなかで生きている、というなら）
+　それはあなたにとって<strong>そう見えるだけ</strong>だ。
+　あなたの意識界全体を占めるものは、私にとっては微小片にすぎない。
+　世界は続いていく。
+　だが、ほんのつかの間だ。
+　記憶が、世界は継続するとあなたに考えさせるのだ。
+　記憶のなかに生きていない私にとって、世界は意識のなかのつかの間の現れ
+　にすぎない。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.37</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="037-22" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>世界</strong> と <strong>記憶</strong></h3><div class="entry-body text-gray-700 text-sm mb-4"><strong>世界</strong>は続いていく。
+　だが、ほんのつかの間だ。
+　<strong>記憶</strong>が、<strong>世界</strong>は継続するとあなたに考えさせるのだ。
+　<strong>記憶</strong>のなかに生きていない私にとって、<strong>世界</strong>は意識のなかのつかの間の現れ
+　にすぎない。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.37</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="037-23" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>記憶</strong> と <strong>世界</strong></h3><div class="entry-body text-gray-700 text-sm mb-4"><strong>記憶</strong>が、<strong>世界</strong>は継続するとあなたに考えさせるのだ。
+　<strong>記憶</strong>のなかに生きていない私にとって、<strong>世界</strong>は意識のなかのつかの間の現れ
+　にすぎない。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.37</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="037-33" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>至高の境地</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（自分が<strong>至高の境地</strong>にあるとどうやって知るのか、というなら）
+　なぜなら、私はそのなかに在るからだ。
+　それはただ自然な状態なのだ。
+　
+　それは原因なく、依存なく、関係なく、分割せず、創造せず、揺らぐことな
+　く、問うことなく、努力によっては到達できないものとして、否定において
+　のみ表現することができる。
+　どのような肯定的な定義も記憶によるものであり、それゆえ適切ではない。
+　しかし私の<strong>境地</strong>は<strong>至高</strong>の実在であり、それゆえ可能であり、実現でき、達成
+　できるものなのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.37</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="037-42" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>至高の実在</strong>①</h3><div class="entry-body text-gray-700 text-sm mb-4">それは原因なく、依存なく、関係なく、分割せず、創造せず、揺らぐことな
+　く、問うことなく、努力によっては到達できないものとして、否定において
+　のみ表現することができる。
+　どのような肯定的な定義も記憶によるものであり、それゆえ適切ではない。
+　しかし私の境地は<strong>至高の実在</strong>であり、それゆえ可能であり、実現でき、達成
+　できるものなのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.37</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="038-02" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>抽象世界</strong> と <strong>今</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（時を忘れて<strong>抽象世界</strong>のなかに没頭しているのか、というなら）
+　<strong>抽象世界</strong>は知的な、言語的なものであって、睡眠や気絶のなかで消滅し、時
+　間のなかでふたたび現れる。
+　私は永遠なる<strong>今</strong>のなかに、私自身の境地（スワルーパ）のなかに在るのだ。
+　過去と未来はマインドのなかだけに在る。
+　私は<strong>今</strong>に在る。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.38</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="038-11" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>あなたとのこの会話</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">あなたの世界はあなたのマインドのなかに在り、それは私のものではない。
+　<strong>あなたとのこの会話</strong>でさえ、あなたの世界のなかにあるだけだというのに、
+　私の何を知っているというのだろうか？
+　私の世界があなたの世界と同一だと信じる理由は何もない。
+　私の世界は知覚されたままの実在、真実だ。
+　ところがあなたの世界は、あなたのマインドの状態にしたがって現れては消
+　える。
+　あなたの世界は何か相容れないものであり、あなたはそれを恐れている。
+　私の世界は私自身であり、わが家同然だ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.38</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="038-22" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>意識</strong> と <strong>世界</strong></h3><div class="entry-body text-gray-700 text-sm mb-4"><strong>意識</strong>と<strong>世界</strong>はともに現れ、ともに消える。
+　それゆえ、それらは同じ状態の二つの層なのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.38</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="039-38" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>マインドを不動に</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（どうすれば<strong>マインドを不動に</strong>できるのか、というなら）
+　<strong>不動</strong>でない<strong>マインド</strong>が、それ自身を<strong>不動に</strong>することができるだろうか？
+　もちろんできはしない。
+　うろつきまわるのが<strong>マインド</strong>の本性なのだ。
+　あなたにできることは、意識の焦点を<strong>マインド</strong>の彼方へと移行させることだ
+　けだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.39</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="039-43" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>マインドの彼方へ</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（どうやって意識の焦点を<strong>マインドの彼方へ</strong>と移行させるのか、というなら）
+　「私は在る」という想念以外のすべての想念を拒絶しなさい。
+　はじめのうち、<strong>マインド</strong>は抵抗するだろう。
+　しかし忍耐と根気をもってすれば、それは降伏し、静かになるだろう。
+　ひとたびあなたが静かになれば、あなたからの干渉なしに、ものごとは自発
+　的にまったく自然に起こりはじめる。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.39-40</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="040-03" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>忍耐と根気</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">「私は在る」という想念以外のすべての想念を拒絶しなさい。
+　はじめのうち、マインドは抵抗するだろう。
+　しかし<strong>忍耐と根気</strong>をもってすれば、それは降伏し、静かになるだろう。
+　ひとたびあなたが静かになれば、あなたからの干渉なしに、ものごとは自発
+　的にまったく自然に起こりはじめる。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.40</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="040-06" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>闘いを避ける</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（マインドとの長い<strong>闘いを避ける</strong>ことはできるか、というなら）
+　できる。
+　生を起こるがまま生きなさい。
+　ただ留意し、見守り、あるがままにものごとが起こるのを許して、生がもた
+　らすままに、喜び、苦しみ、自然なことを自然に行う。
+　それもまた道なのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.40</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="040-18" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>真の幸福</strong> と <strong>自己</strong></h3><div class="entry-body text-gray-700 text-sm mb-4"><strong>真の幸福</strong>を、移り変わり過ぎ去っていくもののなかに見いだすことはできな
+　い。
+　喜びと苦しみは容赦なく交互にやってくる。
+　<strong>真の幸福</strong>は<strong>自己</strong>から来る。
+　そして、それは<strong>自己</strong>のなかにしか見いだせないのだ。
+　あなたの真我（スワルーパ）を見いだしなさい。
+　それとともに、それ以外のすべてもやってくるだろう。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.40</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="040-25" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>落ち着き</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">あなたの真の存在に<strong>落ち着き</strong>がないのではない、その反映がマインドのなか
+　に<strong>落ち着き</strong>なく現れるのだ。
+　なぜなら、マインドは<strong>落ち着き</strong>のないものだからだ。
+　それは水面に映る月が、風で揺らめくようなものだ。
+　欲望の風がマインドと、マインドのなかの真我の反映である「私」を揺り動
+　かし、千変万化に映しだす。
+　しかしこのような動き、<strong>落ち着き</strong>のなさ、喜びと悲しみといった観念は、す
+　べてマインドのなかに存在する。
+　真我はマインドを超えてあり、関わることなくただ気づいている。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.40</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="040-34" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>真我に到達する</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（どうやって<strong>真我に到達する</strong>のか、というなら）
+　たった今ここで、あなたは<strong>真我</strong>なのだ。
+　マインドのことは放っておきなさい。
+　覚めて、巻きこまれず、離れて在りなさい。
+　そうすれば、超然と油断なく在り、来ては去りゆく出来事をただ見守ること
+　が、あなたの真の本性の一側面であることに目覚めるだろう。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.40</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="040-24" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>純粋な喜び</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（<strong>純粋な喜び</strong>という状態は存在するのか、というなら）
+　肉体的あるいは精神的なあらゆる<strong>喜び</strong>には手段が必要だ。
+　物理的、精神的な手段はともに物質であり、どちらもすたれ、使い果たされ
+　る。
+　それらが生み出す喜びは、必然的にその強度と期間に限界がある。
+　苦しみはすべての<strong>喜び</strong>の背景にある。
+　苦しむがゆえにあなたはそれを欲しがる。
+　だが、<strong>喜び</strong>の追求自体が苦しみの原因なのだ。
+　それは悪循環だ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.41</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="041-26" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>手段は物質</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（純粋な喜びという状態は存在するのか、というなら）
+　肉体的あるいは精神的なあらゆる喜びには<strong>手段</strong>が必要だ。
+　物理的、精神的な<strong>手段は</strong>ともに<strong>物質</strong>であり、どちらもすたれ、使い果たされ
+　る。
+　それらが生み出す喜びは、必然的にその強度と期間に限界がある。
+　苦しみはすべての喜びの背景にある。
+　苦しむがゆえにあなたはそれを欲しがる。
+　だが、喜びの追求自体が苦しみの原因なのだ。
+　それは悪循環だ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.41</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="041-30" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>喜びの追求</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">苦しみはすべての喜びの背景にある。
+　苦しむがゆえにあなたはそれを欲しがる。
+　だが、<strong>喜びの追求</strong>自体が苦しみの原因なのだ。
+　それは悪循環だ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.41</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="041-31" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>混乱</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（<strong>混乱</strong>の構造は理解できても出口が見いだせない、というなら）
+　構造を調べること自体が道を示すのだ。
+　つまるところ、あなたの<strong>混乱</strong>はあなたのマインドのなかにだけ存在している。
+　そのマインドはけっして<strong>混乱</strong>に抵抗せず、それを理解しようともしてこなか
+　った。
+　マインドが抵抗したのは苦しみに対してだけだった。
+　
+　油断なく在りなさい。
+　問いかけ、観察し、調べ、<strong>混乱</strong>があなたや他人に何をし、どう作用するのか、
+　<strong>混乱</strong>について何ができるのかをすべて学びなさい。
+　<strong>混乱</strong>について明らかにすることで、あなたはそれを一掃する。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.41</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="041-44" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>永続する記念碑</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（自己の証明となるような<strong>永続する記念碑</strong>をつくりたい、というなら）
+　あなた自身、何ひとつ永遠のものはないと知るだろう。
+　すべては衰退し、朽ち果て、崩壊する。
+　<strong>記念碑</strong>を建てる土台そのものが崩れ去っていくのだ。
+　<strong>永続する</strong>ような何を築くことができるというのだろう？</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.41-42</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="042-36" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>記憶の隙間</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（眠りのなかでは「私は在る」という感覚はなかった、というなら）
+　そんな決めつけたような言葉を吐く前に、目覚めの状態を一度注意深く調べ
+　てみるがいい。
+　目覚めの状態は、マインドが空白になった瞬間でいっぱいだとすぐに気づく
+　だろう。
+　完全に目覚めているときでさえ、あなたが覚えていることがいかにわずかか
+　ということに注意を払いなさい。
+　眠りの間、あなたに意識がなかったとは言えないはずだ。
+　ただ覚えていないだけなのだ。
+　<strong>記憶の隙間</strong>が必ずしも意識の隙間であるとはかぎらない。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.42</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="042-38" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>眠り</strong>の状態<strong>を記憶する</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（深い<strong>眠り</strong>の状態<strong>を記憶する</strong>ことはできるのか、というなら）
+　もちろん！
+　目覚めている間の不注意なときを取り除くことが、<strong>眠り</strong>と呼ばれる長い放心
+　状態の感覚を徐々に除去するだろう。
+　あなたは自分が眠っていることに気づくようになるだろう。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.42</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="043-02" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>永久性</strong></h3><div class="entry-body text-gray-700 text-sm mb-4"><strong>永久性</strong>とは時間の運動から生まれた、ただの概念にすぎない。
+　時間もまた記憶に依存する。
+　<strong>永久</strong>なるものと言うことで、あなたは無限なる時間を通して、変わることの
+　ない確かな記憶を表している。
+　あなたはマインドを永遠のものにしたい。
+　だが、それは不可能だ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.43</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="043-07" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>永遠とは何か</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（<strong>永遠とは何か</strong>、というなら）
+　それは時とともに変化しないものだ。
+　一時的な、はかないものを不滅にすることはできない。
+　不変のものだけが<strong>永遠</strong>なのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.43</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="043-09" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>不変</strong> と <strong>永遠</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">それ（<strong>永遠</strong>）は時とともに変化しないものだ。
+　一時的な、はかないものを不滅にすることはできない。
+　<strong>不変</strong>のものだけが<strong>永遠</strong>なのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.43</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="043-21" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>平和に値する者</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">あなたのマインドを落ち着かなくさせる、すべてのものからあなたを引き離
+　しなさい。
+　<strong>平和</strong>を乱す、すべてのものを放棄しなさい。
+　もし<strong>平和</strong>が欲しいのなら、それを受けるに<strong>値する者</strong>となりなさい。
+　
+　（誰もが<strong>平和</strong>を受けるに<strong>値する</strong>のでは、というなら）
+　それを妨げない者だけが受けるに<strong>値する</strong>のだ。
+　
+　（いったい、どのように<strong>平和</strong>を妨げているというのか、というなら）
+　欲望や恐怖の奴隷となることによってだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.43</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="043-33" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>平和への</strong>ただひとつの<strong>道</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">無知や不注意から生じた感情的な反応はけっして正当化されない。
+　清らかなマインドと澄んだハートを探し求めなさい。
+　あなたに必要なのは、静かに油断なく自己の本性を探求することだけだ。
+　これが<strong>平和への</strong>ただひとつの<strong>道</strong>だ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.43</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="044-24" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>全体</strong> と <strong>あなた</strong></h3><div class="entry-body text-gray-700 text-sm mb-4"><strong>全世界</strong>という概念も、<strong>あなた</strong>の私的な世界の一部ではないだろうか？
+　宇宙は<strong>あなた</strong>のところにやってきて、<strong>あなた</strong>は宇宙の一部だと言いはしない。
+　<strong>全体</strong>が<strong>あなた</strong>をその一部として含んでいるという考えをつくり上げたのは、
+　<strong>あなた</strong>ではないだろうか？
+　実際に、たとえどんなに想像と期待で飾りたてていても、<strong>あなた</strong>が知ってい
+　るのは<strong>あなた</strong>の私的な世界にすぎないのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.44</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="044-41" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>記憶の反応</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">知覚、想像、期待、不安、幻想はすべて<strong>記憶</strong>に基づくものだ。
+　それらの間にはほとんど境界線さえなく、互いに溶け込んでいる。
+　すべては<strong>記憶の反応</strong>なのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.44</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="045-10" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>私の世界</strong>①</h3><div class="entry-body text-gray-700 text-sm mb-4"><strong>私の世界</strong>はあなたの<strong>世界</strong>と同様だ。
+　<strong>私</strong>は、<strong>私</strong>の知覚する<strong>世界</strong>であなたと同じように見、聞き、感じ、考え、話し、
+　行動する。
+　だがあなたにとってはそれがすべてで、<strong>私</strong>にとっては、それはほとんど無に
+　等しい。
+　<strong>世界</strong>が<strong>私</strong>自身の一部であると知っているため、あなたが食べた食事に注意を
+　払わない以上に、<strong>私</strong>もそれに留意しないのだ。
+　用意されてから食べる間、食べ物はあなたから分離して在り、あなたはそれ
+　に留意する。
+　ひとたび飲みこめば、それに対してはまったく無意識になる。
+　<strong>私</strong>は<strong>世界</strong>を食べてしまったのだ。
+　だからそれについて考える必要はもはやないのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.45</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="046-44" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>正不正の区別</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">欲望は環境や状況にしたがって、<strong>正</strong>しくもなり、間違いにもなる。
+　あなたがそれをどう見るかによるのだ。
+　<strong>正不正の区別</strong>は個人にとってのみ有効なのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.46-47</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="047-02" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>欲望の区別の指針</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（<strong>欲望の区別の指針</strong>となるものは何かというなら）
+　あなたの場合、悲しみをもたらす欲望が間違ったもので、幸せをもたらすも
+　のが正しい。
+　だが、ほかの人たちのことを忘れてはいけない。
+　彼らの悲しみや、幸せもまた考慮に入れるのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.47</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="047-09" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>未来にある結果</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（<strong>未来にある結果</strong>をどうすれば知ることができるかというなら）
+　考えなさい。
+　記憶し、観察しなさい。
+　あなたはほかの人と変わりはしない。
+　彼らの経験のほとんどは、あなたにとっても有効なものだ。
+　欲望とその枝葉の構造全体に入り、深く明瞭に考えなさい。
+　それらはあなたの精神的、感情的構造のもっとも重要な部分であり、あなた
+　の行動に強力な影響を与える。
+　覚えておきなさい。
+　あなたの知らないことを放棄することはできない。
+　あなた自身を超えていくには、あなた自身を知らなければならないのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.47</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="047-13" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>欲望の構造全体</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（未来にある結果をどうすれば知ることができるかというなら）
+　考えなさい。
+　記憶し、観察しなさい。
+　あなたはほかの人と変わりはしない。
+　彼らの経験のほとんどは、あなたにとっても有効なものだ。
+　<strong>欲望</strong>とその枝葉<strong>の構造全体</strong>に入り、深く明瞭に考えなさい。
+　それらはあなたの精神的、感情的<strong>構造</strong>のもっとも重要な部分であり、あなた
+　の行動に強力な影響を与える。
+　覚えておきなさい。
+　あなたの知らないことを放棄することはできない。
+　あなた自身を超えていくには、あなた自身を知らなければならないのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.47</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="047-16" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>知らないこと</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">欲望とその枝葉の構造全体に入り、深く明瞭に考えなさい。
+　それらはあなたの精神的、感情的構造のもっとも重要な部分であり、あなた
+　の行動に強力な影響を与える。
+　覚えておきなさい。
+　あなたの<strong>知らないこと</strong>を放棄することはできない。
+　あなた自身を超えていくには、あなた自身を<strong>知らな</strong>ければならないのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.47</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="047-17" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>放棄すること</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">欲望とその枝葉の構造全体に入り、深く明瞭に考えなさい。
+　それらはあなたの精神的、感情的構造のもっとも重要な部分であり、あなた
+　の行動に強力な影響を与える。
+　覚えておきなさい。
+　あなたの知らないことを<strong>放棄すること</strong>はできない。
+　あなた自身を超えていくには、あなた自身を知らなければならないのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.47</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="047-19" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>私自身を知る</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（<strong>私自身を知る</strong>とはどういう意味か、というなら）
+　あなたではないすべて<strong>を知る</strong>のだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.47</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="047-23" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>あなたはすでに</strong></h3><div class="entry-body text-gray-700 text-sm mb-4"><strong>あなたはすでに</strong>、あるがままの<strong>あなた</strong>なのだ。
+　何が<strong>あなた</strong>ではないかを知ることでそれから自由になり、<strong>あなた</strong>は<strong>あなた</strong>自
+　身の自然な状態にとどまる。
+　すべては自発的に、努力なしに起こるのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.47</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="047-28" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>発見するもの</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（私は何を<strong>発見する</strong>のか、というなら）
+　そこには何も<strong>発見するもの</strong>はないということを<strong>発見する</strong>。
+　あなたはただ、あなたなのだ。
+　ただそれだけだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.47</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="047-29" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>あなたはただ</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（私は何を発見するのか、というなら）
+　そこには何も発見するものはないということを発見する。
+　<strong>あなたはただ</strong>、<strong>あなた</strong>なのだ。
+　ただそれだけだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.47</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="047-30" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>究極的に私とは</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（<strong>究極的に私とは</strong>何なのか、というなら）
+　あなたではないものすべてを<strong>究極的に</strong>否定したものだ。
+　
+　（理解できない、というなら）
+　あなたが何者かでなければならないという固定観念、それがあなたを盲目に
+　するのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.47</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="047-34" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>何者かでなければ</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（究極的に私とは何なのか、というなら）
+　あなたではないものすべてを究極的に否定したものだ。
+　
+　（理解できない、というなら）
+　あなたが<strong>何者かでなければ</strong>ならないという固定観念、それがあなたを盲目に
+　するのだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.47</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="047-39" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>純粋な気づき</strong>①</h3><div class="entry-body text-gray-700 text-sm mb-4">もし私を信頼するなら、あなたは意識とその無限の内容物を照らす<strong>純粋な気
+　づき</strong>だ、と私が言うのを信じなさい。
+　それを自覚し、それにしたがって生きなさい。
+　もし私を信じることができないならば、そのときは内側に入り「私は誰か？」
+　と尋ねるがいい。
+　あるいは<strong>純粋</strong>で純然な存在である、「私は在る」という感覚にあなたの<strong>気づ
+　き</strong>の焦点を合わせなさい。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.47</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="048-12" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>放棄できない</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（すべてを<strong>放棄</strong>し住居なき放浪の人生を送るべきではないか、というなら）
+　あなたには<strong>放棄できない</strong>。
+　あなたは家を<strong>放棄</strong>し、家族に問題を与えるかもしれない。
+　だが執着はマインドのなかにあり、あなたがマインドの内も外も熟知するま
+　で、それがあなたを離れることはないだろう。
+　まず、あなた自身を知りなさい。
+　そうすれば、ほかのすべてはやってくるだろう。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.48</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="048-14" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>熟知するまで</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">（すべてを放棄し住居なき放浪の人生を送るべきではないか、というなら）
+　あなたには放棄できない。
+　あなたは家を放棄し、家族に問題を与えるかもしれない。
+　だが執着はマインドのなかにあり、あなたがマインドの内も外も<strong>熟知するま
+　で</strong>、それがあなたを離れることはないだろう。
+　まず、あなた自身を知りなさい。
+　そうすれば、ほかのすべてはやってくるだろう。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.48</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="048-25" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>あなたではない</strong></h3><div class="entry-body text-gray-700 text-sm mb-4"><strong>あなたではない</strong>、すべてを発見しなさい。
+　身体、感情、思考、概念、時間、空間、存在と非存在、あれやこれ――具象
+　であれ、抽象であれ、<strong>あなた</strong>が指し示すことのできるものはすべて<strong>あなたで
+　はない</strong>。
+　<strong>あなた</strong>はあるマントラを、何の結果も得られないまま際限なく繰り返すかも
+　しれない。
+　単に言葉による表明だけではだめなのだ。
+　<strong>あなた</strong>は自分自身を、特に<strong>あなた</strong>のマインドを見守らなければならない。
+　一瞬一瞬、何ひとつ見逃すことなく。
+　この観照が、自己から非自己を分離する本質的なものだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.48</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="048-42" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>残された道はない</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">観照のためには、そこに観照されるべき何かほかのものがなければならない。
+　それではまだ、私たちは二元性のなかにいるのだ！
+　
+　（観照者を観照することはどうか？　気づきに気づくことは？）
+　言葉を並べ立てることではどこにも到達しない。
+　内面に入り、あなたではないものを見いだしなさい。
+　それ以外、<strong>残された道はない</strong>。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.48</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="049-22" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>三つの精神状態</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">私にとっても同じことだ。
+　しかし、そこには違いがあるように見える。
+　各々の状態のなかで、あなたはほかの二つの状態を忘れているが、私にとっ
+　ては目覚め、夢見、眠りの<strong>三つの精神状態</strong>を含み、しかも超越したひとつの
+　存在状態があるだけだ。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.49</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+<article id="049-26" class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 mb-4 scroll-mt-20"><h3 class="font-serif text-lg text-violet-700 mb-4 leading-relaxed"><strong>想像の反映</strong></h3><div class="entry-body text-gray-700 text-sm mb-4">世界とは私の<strong>想像の反映</strong>にすぎない。
+　何であれ見たいと思うものを、私は見ることができる。
+　だが、なぜ創造、進化、破壊というパターンを編みだす必要があるだろうか？
+　私にはそれらは必要ない。
+　世界は私のなかにあり、世界は私自身なのだ。
+　私はそれを恐れることもなければ、それをひとつの固定させた心理的画像に
+　閉じこめたいなどという望みもない。</div><div class="flex items-center justify-between pt-3 border-t border-gray-100"><span class="text-gray-400 text-xs font-mono">p.49</span><a href="index.html#0" class="text-violet-400 text-xs hover:text-violet-600 transition-colors">&#x2191; &#x7D22;&#x5F15;&#x3078;</a></div></article>
+
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vol.0927 &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;&#x901A;&#x4FE1;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa;
+      --font-sans: 'Noto Sans JP', sans-serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .mm-pre { font-family: 'Noto Sans Mono', 'Courier New', monospace; font-size: 0.82rem; line-height: 1.65; white-space: pre-wrap; word-break: break-all; color: #1e1b35; }
+    .nav-arrow { display: inline-flex; align-items: center; gap: 0.25rem; color: #a78bfa; font-size: 0.8rem; transition: color 0.15s; padding: 0.4rem 0.8rem; border: 1px solid rgba(167,139,250,0.3); border-radius: 9999px; }
+    .nav-arrow:hover { color: #7c3aed; border-color: rgba(124,58,237,0.5); background: rgba(167,139,250,0.05); }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-sans text-base font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/mm/" class="text-accent font-medium">&#x901A;&#x4FE1;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="bg-gradient-to-br from-primary-dark via-primary to-primary-light pt-24 pb-8">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <div class="text-accent/60 text-xs tracking-widest mb-2">2022-01-23</div>
+    <div class="text-white/40 text-xs font-mono mb-1">Vol.0927</div>
+    <a href="index.html" class="text-white/40 text-xs hover:text-accent transition-colors">&#x2190; &#x901A;&#x4FE1;&#x30A2;&#x30FC;&#x30AB;&#x30A4;&#x30D6;</a>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 py-8">
+  <div class="flex items-center justify-between mb-6">
+    <a href="vol0926.html" class="nav-arrow">&#x2190; &#x524D;&#x865F;</a>
+    <a href="vol0928.html" class="nav-arrow">&#x6B21;&#x53F7; &#x2192;</a>
+  </div>
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 md:p-8">
+    <div class="mm-pre">━━━━☆☆☆☆━━━━━━━━━━━━━━ by paritosho ━
+　　☆☆　　　☆☆
+　☆☆　　　　　☆☆『アセンション館通信』2022/01/23(第927号)
+☆☆　　 ☆　　 ☆☆
+☆☆　　　　　　☆★　【気刊】──「私は在る」に導かれ♪──
+-☆☆────-☆☆─────────────────────
+　☆☆　　　☆☆　　 https://www.ascensionkan.com
+━━☆☆☆☆━━━━━━━━━━━━━━━━━━━━━━━━
+
+◇◇ このメルマガの趣旨 ◇◇
+
+　〈自己〉は展開する宇宙的ドラマの壮大なショー生み出し、
+　それを観ながら、そのなかに、そしてそれとして現れているが、
+　それは夢を見ている人が自分の夢を作り出すと同時に
+　それを見ながらそこに出演しているのと同じだ。
+　（『夢へと目覚める』レオ・ハートン）
+　
+内容は人畜無害、でも読む人は相当変わっていますね。現在493名
+──────────────────
+◇◇ もくじ ◇◇
+
+１．「私」は何にも成れない
+
+２．編集後記
+──────────────────
+
+━━━━━━━━━━━━━━━━━━
+■ １．「私」は何にも成れない
+━━━━━━━━━━━━━━━━━━
+
+今日は晴れて暖かい日なので
+
+しばらくぶりに朝から外に出て
+
+敷地西端の後始末整理を少し進めました。
+
+電源ケーブルと電動チェーンソー、
+
+そして竹に角穴を開けるために電動ドリルと
+
+電動ジグソーといったいつもの道具を運んで
+
+じっくり腰を据えてやる作業です。
+
+今日進めたのは
+
+防護柵の外側の斜めになったまま倒れない杉を
+
+途中から切って高さを縮める作業や、
+
+これまた切ったあと倒れない竹を
+
+引き抜いて倒して反対側に倒す作業。
+
+なぜわざわざ竹の向きを反転させたかと言うと、
+
+この竹を防護柵の鉄の支柱の上に載せて
+
+防護柵全体の補強と見た目を整えたいわけです。
+
+これがなかなか思うように進まない。(^_-)
+
+体力の不足を頭で勝負。(*^_^*)
+
+なんちゃって。
+
+とはいえ、思ったことは実現しました。
+
+夢の中で嬉しい。(^_-)
+
+身体を動かすと草臥れますが、
+
+やっぱり元気になりますね。
+
+さて、またまた一週間が過ぎて、
+
+楽しい“アセンション噺”と
+
+“「私は在る」噺”を紡ぐ今がきました。
+
+『アセンション館通信』配達人のpariです。
+
+身体が生きているあいだ、
+
+身体の感覚やいろいろな想念は浮かんできます。
+
+興味、期待感、嫌悪感……そんなものが浮上してくる。
+
+これを避けられない。
+
+肉体年齢に応じて
+
+比率は変わるかもしれませんけど。
+
+肉体が若いうちは興味、期待なんてのが
+
+多いかもしれない。
+
+これが古びてきて身体の疲労感が増してくると
+
+それに応じて倦怠感、嫌悪感なんてのが
+
+多くなってくる。
+
+まあ、
+
+「聖なる催眠」が懸かっているかぎり
+
+これはいわば自然現象です。
+
+吉本隆明さんもどこかで
+
+「老人になるというのは、
+
+　面白いことが何もなくなることだ」って、
+
+おっしゃっていましたものね。
+
+身体の疲労感や倦怠感に対する自然反応として
+
+生きていることに対する
+
+自然な嫌悪感が湧いてくるわけです。
+
+それはそれで現象世界の表面の
+
+ごく自然な傾向でしょう。
+
+素晴らしい芸術作品を眺めても
+
+それに深く共振しようなどという
+
+意欲が起こってこない。
+
+それが意識の時空間の中で想像された
+
+ストーリーだという感覚がこれまた自然に
+
+浮上してきます。
+
+こういう症状は
+
+ルパート・スパイラが言う
+
+非二元が新たな宗教になってしまう
+
+可能性でもあるのかもしれません。
+
+とはいえ同時に、
+
+これらの疲労感や倦怠感あるいは嫌悪感が
+
+自分でないことも自明です。
+
+もしその嫌悪感が自分だったら、
+
+嫌悪感は嫌悪感として現象できません。
+
+嫌悪感が嫌悪感として現象できるためには、
+
+何かが嫌悪感に気づいていなくてはならない。
+
+そしてその気づいている何かは、
+
+嫌悪感ではありえない。
+
+これはまったく理屈ではありません。
+
+誰も否定できない単なる事実です。
+
+「私」は何かであることはできない。
+
+マインドは未知には耐えられなくて
+
+何かに片づきたがります。
+
+“自分”を何かに決めつけたがる。
+
+でもどんな何かも、
+
+いかなる既知も「私」ではありえない。
+
+「私」はそれに気づいている者だから。
+
+マインドはすぐに
+
+何かの気分になりたがるんだけど、
+
+何かの気分はその瞬間の風景、
+
+その瞬間のフォーカス、その瞬間の縮尺です。
+
+「私」は何にも成れない。
+
+どんな光景になって現れることもできるけれど、
+
+それとして留まることはできない。
+
+不動は不動を映しだせないから。
+
+考えてみれば、
+
+「私」は寂しいのかも。
+
+だから“「私」は寂しい”という気分となって
+
+一瞬現れることもできる。
+
+でも「私」はいかなるもにも成ることはできない。
+
+いかなる光景も「私」の自由連想の一場面。
+
+「私」のつかの間の表現。
+
+気づきが波立つとき「私は在る」。
+
+気づきが鎮まるとき
+
+「私」は「私が在る」ことを知らない。
+
+(-||-)
+
+──────────────────
+　あなたは在る。
+　ほかのすべては現れにすぎない。
+　
+　『私は在る』(p421) 
+──────────────────
+
+(-||-)
+
+──────────────────
+　永久的なもの、
+　それはあなた自身の存在である。
+　真我として在りなさい。
+　それが至福である。
+　あなたはいつもそれなのである。
+　
+　『あるがままに』(p58) 
+──────────────────
+
+……。(-_-)
+
+ありがとうございました。
+
+(-||-)
+
+今日はこんなところで。
+
+……。
+
+m(_ _)m
+
+
+　　 ………○…………○…………○………
+
+
+「ニサルガ辞書」はここです。
+https://www.ascensionkan.com/ndic/
+
+「ラマナ・マハルシ辞書」はここです。
+https://www.ascensionkan.com/rdic/
+
+おこがましくも『アセ通』既刊号は
+すべてここに置いてあります。
+https://www.ascensionkan.com/mm/
+
+　　 ………○…………○…………○………
+
+
+▼『アセ通』へのご意見投稿フォーム：
+http://www.formzu.net/fgen.ex?ID=P48750702
+
+
+　　 ………○…………○…………○………
+
+
+▼『アセ通』への情報ご投稿フォーム
+http://www.formzu.net/fgen.ex?ID=P87119518
+
+
+　　 ………○…………○…………○………
+
+
+━━━━━━━━━━━━━━━━━━
+■ ２．編集後記：
+━━━━━━━━━━━━━━━━━━
+
+まあまあ、今日も楽しかった。
+
+けっこう草臥れたけど。
+
+今日は暗くなってから書き始めました。
+
+おやすみなさい。
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━
+■　【作者】 『アセンション資料館』主人 pari
+━━━━━━━━━━━━━━━━━━━━━━━
+　　メール：　pariアットマークjk2.so-net.ne.jp
+──────────────────
+mag2：http://www.mag2.com/m/0000126287.html
+━━━━━━━━━━━━━━━━━━━━━━━
+Copyleft(C)2022 paritosho
+──────────────────</div>
+  </article>
+  <div class="flex items-center justify-between mt-6">
+    <a href="vol0926.html" class="nav-arrow">&#x2190; &#x524D;&#x865F;</a>
+    <a href="vol0928.html" class="nav-arrow">&#x6B21;&#x53F7; &#x2192;</a>
+  </div>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>

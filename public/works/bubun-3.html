@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>寓話●“部分最適化系”の崩壊 &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa; --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif; --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .article-body { font-family: 'Noto Serif JP', serif; line-height: 2.2; font-size: 1rem; color: #1e1b35; }
+    .article-body strong { color: #6d28d9; font-weight: 600; }
+    .article-body dl { margin: 1.5em 0; }
+    .article-body dt { font-weight: 700; margin-top: 1.5em; color: #1e1b4b; }
+    .article-body dd { margin-left: 1.5em; }
+    .works-heading { color: #db245b; font-weight: 700; display: block; text-align: center; margin-bottom: 1.5em; font-size: 1.1em; }
+    .works-series { color: #a78bfa; font-size: 0.8em; text-align: center; margin-bottom: 0.5em; }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-serif text-lg font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/works/" class="text-accent font-medium">&#x4ED5;&#x4E8B;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-10">
+  <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 30% 60%, #a78bfa 0%, transparent 55%);"></div>
+  <div class="relative max-w-3xl mx-auto px-4 text-center">
+    <div class="works-series">『21世紀への指導原理　ＯＳＨＯ』より</div>
+    <h1 class="font-serif text-2xl md:text-3xl text-white mb-4 leading-relaxed">寓話●“部分最適化系”の崩壊</h1>
+    <div class="mt-4">
+      <a href="index.html" class="inline-flex items-center gap-1 text-accent/80 text-sm hover:text-accent transition-colors">&#x2190; &#x76EE;&#x6B21;&#x3078;&#x623B;&#x308B;</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-8 md:p-12">
+    <div class="article-body">
+br>
+
+<strong>『21世紀への指導原理　ＯＳＨＯ』より<br><br>
+<span class="works-heading">【</span>寓話●<span class="works-heading">“部分最適化系”の崩壊</span><span class="works-heading">】</span></strong>
+<br>
+<br>
+
+
+
+　……<br>
+　そしてついに、「個」が爆発的に大きくなるときが来た。……<br>
+　眼前で崩壊して行く「全体」を目の当たりにしながら、「個」たちはそれを信じない。呆然として為す術を知らず、むしろそれを無視する道を選ぶ。<br>
+“強迫観念”によって“部分最適化系”の虜 (ﾄﾘｺ) にされている「個」は、唯一確かなものであるはずの“部分最適化系”のリアリティにすがろうとする。<br>
+　まるで、生きているのは「個」だけであるかのようだった。<br>
+　そしてその時も、「個」は唯一の実在「全体」の有機的な部分だった。<br><br>
+
+　　　　　　　　　　　　　　………………………<br><br>
+
+　……気がついてみると、あたりにはただ燦々 (ｻﾝｻﾝ) と春の陽が降り注いでいた。<br>
+　人々は、大地の上でただ太古からの営みを続けているだけのようでもあった。<br>
+ “夢”から醒めてみれば、遠い昔と同じように、太陽と大地の恵みを受けて人はただ生かされているだけなのだった。<br>
+　何も変わらなかったともいえた。<br>
+　けれども何もかも変わってしまったともいえた。<br><br>
+
+　あの苦難の日々がまるで嘘のようだった。<br>
+　あのような日々があったことが、現実とは思えなかった。<br>
+　誰もが、あれが“夢”だったことを知っていた。<br>
+　けれども一方、今では誰もが、あの苦難の日々がなぜ必要だったのかも知っていた。<br>
+　確かにあれは必要だった。<br>
+　あれしか方法はなかった。<br>
+　そして、そこで体験するのが何であるかを前もって知っていたら、なるほどそれを“自分”から呼び寄せようとする者がまずいないだろうことも確かだった。<br>
+　今では誰もが、ただ感謝することを知っていた。<br>
+　というより、感謝以外に自然に沸き起こってくるものなど何もなかったのだ。<br>
+　ただ太古からの同じ営みを続けているだけのようでもあったが、それは“自分”がしていることとも言えなかった。<br>
+　けれども、確かに生きているのは自分なのだった。<br><br>
+
+　人はただ、自分流に生きていた。<br>
+　そう生きるのが、自分にとっては自然だったからだ。<br>
+　他の人の生き方が、自分の生き方と違っていることに何の違和感もなかった。<br>
+　誰もが「個」を生きていたが、その「個」はあらゆる瞬間に「全体」とつながっていたからだ。そしてそのことを誰もが知っていた。<br>
+　人の思いを忖度 (ｿﾝﾀｸ) するということはなかった。<br>
+　見ればその人の心は分かった。それだけだった。<br>
+　隠す必要もなければ、また隠すことが可能でもなかった。<br>
+　人はまさにありのままに生きているだけだった。<br>
+　意味というものはなかった。ただ、嬉しいだけだった。<br><br>
+
+　その時も確かに、「個」は唯一の実在「全体」の有機的な部分だった……。(p421-423)
+    </div>
+  </article>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>

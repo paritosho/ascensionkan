@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vol.0916 &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;&#x901A;&#x4FE1;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa;
+      --font-sans: 'Noto Sans JP', sans-serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .mm-pre { font-family: 'Noto Sans Mono', 'Courier New', monospace; font-size: 0.82rem; line-height: 1.65; white-space: pre-wrap; word-break: break-all; color: #1e1b35; }
+    .nav-arrow { display: inline-flex; align-items: center; gap: 0.25rem; color: #a78bfa; font-size: 0.8rem; transition: color 0.15s; padding: 0.4rem 0.8rem; border: 1px solid rgba(167,139,250,0.3); border-radius: 9999px; }
+    .nav-arrow:hover { color: #7c3aed; border-color: rgba(124,58,237,0.5); background: rgba(167,139,250,0.05); }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-sans text-base font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/mm/" class="text-accent font-medium">&#x901A;&#x4FE1;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="bg-gradient-to-br from-primary-dark via-primary to-primary-light pt-24 pb-8">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <div class="text-accent/60 text-xs tracking-widest mb-2">2021-11-07</div>
+    <div class="text-white/40 text-xs font-mono mb-1">Vol.0916</div>
+    <a href="index.html" class="text-white/40 text-xs hover:text-accent transition-colors">&#x2190; &#x901A;&#x4FE1;&#x30A2;&#x30FC;&#x30AB;&#x30A4;&#x30D6;</a>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 py-8">
+  <div class="flex items-center justify-between mb-6">
+    <a href="vol0915.html" class="nav-arrow">&#x2190; &#x524D;&#x865F;</a>
+    <a href="vol0917.html" class="nav-arrow">&#x6B21;&#x53F7; &#x2192;</a>
+  </div>
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-6 md:p-8">
+    <div class="mm-pre">━━━━☆☆☆☆━━━━━━━━━━━━━━ by paritosho ━
+　　☆☆　　　☆☆
+　☆☆　　　　　☆☆『アセンション館通信』2021/11/07(第916号)
+☆☆　　 ☆　　 ☆☆
+☆☆　　　　　　☆★　【気刊】──「私は在る」に導かれ♪──
+-☆☆────-☆☆─────────────────────
+　☆☆　　　☆☆　　 https://www.ascensionkan.com
+━━☆☆☆☆━━━━━━━━━━━━━━━━━━━━━━━━
+
+◇◇ このメルマガの趣旨 ◇◇
+
+　〈自己〉は展開する宇宙的ドラマの壮大なショー生み出し、
+　それを観ながら、そのなかに、そしてそれとして現れているが、
+　それは夢を見ている人が自分の夢を作り出すと同時に
+　それを見ながらそこに出演しているのと同じだ。
+　（『夢へと目覚める』レオ・ハートン）
+　
+内容は人畜無害、でも読む人は相当変わっていますね。現在493名
+──────────────────
+◇◇ もくじ ◇◇
+
+１．私は非顕現
+
+２．編集後記
+──────────────────
+
+━━━━━━━━━━━━━━━━━━
+■ １．私は非顕現
+━━━━━━━━━━━━━━━━━━
+
+今日もまたポカポカ陽気。
+
+ありがたいことです。
+
+(*^_^*)
+
+さて、またまた一週間が過ぎて、
+
+楽しい“アセンション噺”と
+
+“「私は在る」噺”を紡ぐ今がきました。
+
+『アセンション館通信』配達人のpariです。
+
+マインドに注目すれば、
+
+マインドは常に何かの想念として湧いてきます。
+
+そのマインドの展開の姿に巻き込まれて
+
+その姿を追いかけつづければ
+
+それは求める何かであるようにも見えます。
+
+でも実はそれはただ
+
+隙間を埋めるためにその瞬間配達された想念にすぎず、
+
+それが求める何かである根拠などありません。
+
+そもそも誰が何を求めているのか？
+
+何かを求めれば次の想念は湧いてきます。 
+
+しかし誰が何を求めているというのか？
+
+「私は在る」。
+
+しかし私は何かであるわけではありません。
+
+──────────────────
+　対象宇宙は無数の形態を投影し、
+　消滅させている。
+　つまり、
+　そのイメージは始終変化し続けている。
+　しかし、どうして「私」が
+　このことを気にするだろうか？
+　私はこのすべての出来事の
+　単なる観照者にすぎない。
+　出来事の最中に起こることが何であれ、
+　それぞれの場合に、
+　ただ肉体精神器官に影響するだけで、
+　「私は在る」の「私」には影響はないのだ。
+　
+　『ニサルガダッタ・マハラジが
+　　指し示したもの』(p106)
+　https://amzn.to/2J4Pbtr
+──────────────────
+
+しかしもし自分をこの身体と見なしたら、
+
+たちまちその身体は
+
+対象宇宙で展開される物語のなかで
+
+個人として動き出すことになるのは間違いない。
+
+そしてその個人こそが
+
+いつかその不条理さに耐えられずに、
+
+＜何故にすべては始まってしまったのか？＞などと、
+
+呟やきだしていたのです。
+
+現に＜いま・ここ＞に現われている顕現は、
+
+いまこの瞬間に現れているだけの
+
+つかの間の【見かけ】にすぎないことは明らかです。
+
+しかしもしその一瞬の【見かけ】を追いつづけたら、
+
+たちまちこの身体を取り囲む
+
+現象宇宙という一大構造体が立ち上がってきます。
+
+【見かけ】のなかのこの身体は個人となって、
+
+いつの間にかまわりを取り巻く現象世界の
+
+虜囚になり果てていることでしょう。
+
+そこで展開されている物語は
+
+その個人の観点からするなら
+
+この上もなくもっともらしい構造によって
+
+支えられることになります。
+
+そこではどんな疑問に対しても
+
+たちまち問う者が納得する解答が配達され
+
+問えば問うほど背景の現象宇宙は
+
+一見深遠な構造となって立ち現れることでしょう。
+
+現象世界で身体が歩む個人の物語を
+
+その個人として楽しめるのなら
+
+もちろん楽しんだらいいのです。
+
+しかしそこで創造される物語の中に
+
+私が求めているものが現れることはない。
+
+なぜならその求めている“私”自身が
+
+現象世界の一部だから。
+
+その“私”は顕現の中の物語の部品にほかならない。
+
+夢見られているその“私”が
+
+何かを求めることなどできるでしょうか？
+
+いやそれは読まれている物語の中の黒い文字のようなもの。
+
+スクリーン上に映し出された光の点滅のようなもの。
+
+何かを求める実体などではありえない。
+
+では誰が求めているというのか？
+
+それは顕現として展開される物語を観ている者です。
+
+しかしその者は何かを願ってはいません。
+
+なぜなら、何かを願ったとたん、
+
+願ったその者は属性を担った何者かとして顕現の一部になり
+
+展開する物語の中に取り込まれてしまうからです。
+
+展開する物語の一部になってしまっては、
+
+物語を展開することはできない。
+
+スクリーンが投影される光の点滅に染まってしまっては、
+
+もう映画を映し出すことができないようなものです。
+
+スクリーンは映画には染まらない。
+
+だからこそスクリーンは映画を映し出せるのです。
+
+私は非顕現。
+
+非顕現である私はすべての顕現を観照しています。
+
+非顕現である私がいなくては顕現はありえない。
+
+あらゆる顕現は非顕現である私ではない。
+
+私はあらゆる顕現を愛し、受け容れ、観ている。
+
+しかしまた、
+
+非顕現である私はあらゆる顕現でもある。
+
+なぜなら、私が観ているすべては
+
+私が観ているがゆえに顕現でありえているのだから。
+
+私が観ているがゆえに在りえているあらゆる顕現は
+
+すでに私自身の顕現にほかならない。
+
+あらゆる顕現は非顕現である私の顕現にほかならない。
+
+私は非顕現。
+
+非顕現である私がすべての顕現として現われている。
+
+──────────────────
+　現象とは別に創造された何かでも、
+　また投影された何かでさえもなく、
+　実に非現象が
+　観念化ないしは対象化されたものである。
+　言い換えるなら、
+　その違いは純粋に観念的なものである。
+　その観念がなければ、
+　それらは分離することができず、
+　現象と非現象の間に
+　現実には二元性はないのだ。
+　
+　このアイデンティティ
+　──この分類不可能性──
+　が理解への鍵、
+　というより
+　私たちの本質を直感的に理解する鍵である。
+　なぜなら、
+　もし現象と非現象の間の
+　基本的融合が見失われれば、
+　対象化と観念のぬかるみの中で
+　行き詰まってしまうだろうからだ。
+　いったん、
+　非現象は私たちであるすべてであり、
+　現象は私たちが分離した対象物として
+　そう見えるものであることが理解されれば、
+　どんな実体も
+　私たちの本質に関係することはできない
+　こともまた理解され、
+　それゆえ、
+　解放を必要とする実体という観念が
+　ナンセンスなものと見なされることであろう。
+　そして、
+　「解放」がもしあるとすれば、
+　まさに束縛と解放という観念からの
+　解放であることがわかるだろう。
+　
+　『ニサルガダッタ・マハラジが
+　　指し示したもの』(p109)
+──────────────────
+
+(-||-)
+
+──────────────────
+　マハラジは、
+　私たちがいつもいっしょにいる仲間は意識であり、
+　自分の意識の流れに継続的に注意を払うことが、
+　私たちを絶対
+　──根本的実存、生命－愛－喜び──
+　へ連れて行くということを、
+　私たちに決して忘れさせません。
+　マハラジによれば、
+　意識していることをまさに意識することが、
+　すでに絶対に向かう運動であるということです。
+　マインドはそのまさに性質によって、
+　外向きで、
+　物事の源泉を物事それ自身の
+　内部に求める傾向があります。
+　マインドが内なる源泉に向けられるとき、
+　それはほとんど
+　新しい生活の始まりのようなものです。
+　絶対が意識にとって替わるのです。
+　意識の中の一つの思考である
+　「私は在る」が停止します。
+　気づきの中においてはどんな思考もありません。
+　気づきは意識の源泉です。
+　マハラジは
+　「静かに座って、
+　　マインドの表面に何が来るかを眺めているのは、
+　　素晴らしい霊的練習である」
+　と私たちに提案します。
+　私たちが思考と呼んでいるものは、
+　水の表面のさざ波のようなものです。
+　
+　『ニサルガダッタ・マハラジが
+　　指し示したもの』(p43)
+──────────────────
+
+&gt;「静かに座って、
+&gt;　マインドの表面に何が来るかを眺めているのは、
+&gt;　素晴らしい霊的練習である」
+
+(-||-)
+
+──────────────────
+　あなたは在る。
+　ほかのすべては現れにすぎない。
+　
+　『私は在る』(p421) 
+──────────────────
+
+(-||-)
+
+──────────────────
+　永久的なもの、
+　それはあなた自身の存在である。
+　真我として在りなさい。
+　それが至福である。
+　あなたはいつもそれなのである。
+　
+　『あるがままに』(p58) 
+──────────────────
+
+……。(-_-)
+
+ありがとうございました。
+
+(-||-)
+
+今日はこんなところで。
+
+……。
+
+m(_ _)m
+
+
+　　 ………○…………○…………○………
+
+
+「ニサルガ辞書」はここです。
+https://www.ascensionkan.com/ndic/
+
+「ラマナ・マハルシ辞書」はここです。
+https://www.ascensionkan.com/rdic/
+
+おこがましくも『アセ通』既刊号は
+すべてここに置いてあります。
+https://www.ascensionkan.com/mm/
+
+　　 ………○…………○…………○………
+
+
+▼『アセ通』へのご意見投稿フォーム：
+http://www.formzu.net/fgen.ex?ID=P48750702
+
+
+　　 ………○…………○…………○………
+
+
+▼『アセ通』への情報ご投稿フォーム
+http://www.formzu.net/fgen.ex?ID=P87119518
+
+
+　　 ………○…………○…………○………
+
+
+━━━━━━━━━━━━━━━━━━
+■ ２．編集後記：
+━━━━━━━━━━━━━━━━━━
+
+今日は比較的涼しかったので
+
+以前から懸案にしていた杉の樹を
+
+まずは一本チェーンソーで切りました。
+
+その杉の樹の姿を見て
+
+南北どちらの方向に倒すかを判断するのだけれど、
+
+今日はそれが成功してとても自信に繋がりました。
+
+思った方向に傾いでくれないと、
+
+チェーンソーが重くなって切れなくなるのです。
+
+ありがたかった。(-||-)
+
+とは言っても切り倒したわけでもありません。
+
+まだ他の立木にもたれかかって斜めに立っています。
+
+どういうわけやら。
+
+(*^_^*)
+
+今日は晩くなりました。
+
+おやすみなさい。
+
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━
+■　【作者】 『アセンション資料館』主人 pari
+━━━━━━━━━━━━━━━━━━━━━━━
+　　メール：　pariアットマークjk2.so-net.ne.jp
+──────────────────
+mag2：http://www.mag2.com/m/0000126287.html
+━━━━━━━━━━━━━━━━━━━━━━━
+Copyleft(C)2021 paritosho
+──────────────────</div>
+  </article>
+  <div class="flex items-center justify-between mt-6">
+    <a href="vol0915.html" class="nav-arrow">&#x2190; &#x524D;&#x865F;</a>
+    <a href="vol0917.html" class="nav-arrow">&#x6B21;&#x53F7; &#x2192;</a>
+  </div>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>

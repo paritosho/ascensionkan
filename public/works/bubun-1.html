@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>寓話●“部分最適化系”の話① &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa; --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif; --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .article-body { font-family: 'Noto Serif JP', serif; line-height: 2.2; font-size: 1rem; color: #1e1b35; }
+    .article-body strong { color: #6d28d9; font-weight: 600; }
+    .article-body dl { margin: 1.5em 0; }
+    .article-body dt { font-weight: 700; margin-top: 1.5em; color: #1e1b4b; }
+    .article-body dd { margin-left: 1.5em; }
+    .works-heading { color: #db245b; font-weight: 700; display: block; text-align: center; margin-bottom: 1.5em; font-size: 1.1em; }
+    .works-series { color: #a78bfa; font-size: 0.8em; text-align: center; margin-bottom: 0.5em; }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-serif text-lg font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/works/" class="text-accent font-medium">&#x4ED5;&#x4E8B;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-10">
+  <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 30% 60%, #a78bfa 0%, transparent 55%);"></div>
+  <div class="relative max-w-3xl mx-auto px-4 text-center">
+    <div class="works-series">『21世紀への指導原理　ＯＳＨＯ』より</div>
+    <h1 class="font-serif text-2xl md:text-3xl text-white mb-4 leading-relaxed">寓話●“部分最適化系”の話①</h1>
+    <div class="mt-4">
+      <a href="index.html" class="inline-flex items-center gap-1 text-accent/80 text-sm hover:text-accent transition-colors">&#x2190; &#x76EE;&#x6B21;&#x3078;&#x623B;&#x308B;</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-8 md:p-12">
+    <div class="article-body">
+br>
+
+<strong>『21世紀への指導原理　ＯＳＨＯ』より<br><br>
+<span class="works-heading">【</span>寓話●<span class="works-heading">“部分最適化系”の話①</span><span class="works-heading">】</span></strong>
+<br>
+<br>
+
+
+
+　その昔、「個」があまりにも小さく、「全体」があまりにも大きかったとき、「個」は「全体」のことなど思い及ばなかった。<br>
+ 「個」はささやかな自分の思いで行為して間違うことはなく、「全体」はその結果を吸収し跡形も残さなかった。<br>
+ 「個」は「全体」というものがあることを意識しなかった。<br>
+ 「個」はあまりにも小さく、過ちを犯す可能性もなかった。「個」と「全体」の葛藤があらわになることはなかった。言ってみれば、生きていたのは「全体」だけだった。<br>
+　まるで無限のような長い時間がそうして過ぎた。<br>
+　その時、「個」は唯一の実在「全体」の有機的な部分だった。<br><br>
+
+　やがて「個」たちは少しずつ大きくなった。<br>
+ 「個」が自分の思いで行為すると、思いの外の結果が返って来ることがあった。<br>
+ 「個」はそれほどに、自分の思いに意識的になり始めていた。自分の思いに意識的になることによって、「個」たちは「全体」というものの存在に気づき始めた。<br>
+ 「個」たちはそれを“神”と名づけた。それは超越的な力の顕現に接したある遠い記憶が呼び起こされたのかもしれなかった。<br>
+　そして自らの行為の結果に意識的になることによって、「個」たちは誤ること、過ちを犯すことができるようになった。「個」たちはときに互いに葛藤し、闘争した。「個」たちは「全体」の思いを測りかね、「全体」を、“神”をなだめなければならないことを知った。<br>
+　そうして長い時間が過ぎた。<br>
+　そしてその時も、「個」は唯一の実在「全体」の有機的な部分だった。<br><br>
+　　やがて「個」はどんどん大きくなった。<br>
+　自分の思いで行為して、かなりの結果に見当がつくようになった。<br>
+ 「個」たちは寄り集まって、“神”という名の「全体」を、自分たちの仕切の中に入れるようなった。その仕切は“神の社”とか“神の家”と名づけられ、そこの番人“神の代理人”の行う“祭りごと”は、「個」たちの葛藤の上に超越的な権威を持つことになった。<br>
+　そんなふうに「全体」を中に取り込んだ「個」たちの“社会”は、そうすることによってかえって「全体」から離れて行くようでもあった。「全体」を封印したと思った「個」たちは、逆にそのことによって「全体」の力の源泉から切り離されたのかも知れなかった。自分を切り離した「個」は、その代償に密かに“やましさ”というものをもらってそれを内に秘めることになった。<br>
+　そんな時代が長く続いた。<br>
+　そしてその時も、「個」は唯一の実在「全体」の有機的な部分だった。<br><br>
+
+　そして「個」はますます大きくなった。<br>
+　自分の思いで行為して、大抵の結果には見当がついた。<br>
+“神の代理人”は“祭りごと”の代行者として他の「個」たちに超越的な力を振るい続けるにしたがい、その“権威”が、「個」たちの葛藤の手段“武力”に根拠を持つ“権力”と競合する場面を何度も経験するようになった。<br>
+　つまり“神の代理人”は、“神”という超越的な“権威”の代行業務が、“支配”という名の別のゲームでもありうることを理解するようになった。かくて「個」たちは、“神”の“権威”と、地上の“権力”の二つの力の名の下に“支配”する者とされる者に分裂して行った。<br>
+　そうする過程で、“神”という名で閉じ込めた実際の「全体」は徐々に忘れ去られ、今や「個」の前に広がっている「全体」は“自然”と名づけられ、「個」たちの操作の対象になっていた。操作方法は体系づけられ、“科学”と名づけられた。
+　だがそうすることによって、“やましさ”の一部はぼんやりした“不安”というものに変質して行った。<br>
+　時間はだんだん速く進んで行くようだった。<br>
+　そしてその時も、「個」は唯一の実在「全体」の有機的な部分だった。(p60-63)
+    </div>
+  </article>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>
