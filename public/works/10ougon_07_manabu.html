@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>学ぶこと（教育について） &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa; --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif; --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .article-body { font-family: 'Noto Serif JP', serif; line-height: 2.2; font-size: 1rem; color: #1e1b35; }
+    .article-body strong { color: #6d28d9; font-weight: 600; }
+    .works-heading { color: #db245b; font-weight: 700; display: block; text-align: center; margin-bottom: 1.5em; font-size: 1.1em; }
+    .works-series { color: #a78bfa; font-size: 0.8em; text-align: center; margin-bottom: 0.5em; }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-serif text-lg font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/works/" class="text-accent font-medium">&#x4ED5;&#x4E8B;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-10">
+  <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 30% 60%, #a78bfa 0%, transparent 55%);"></div>
+  <div class="relative max-w-3xl mx-auto px-4 text-center">
+    <div class="works-series">『21世紀への指導原理　ＯＳＨＯ』より</div>
+    <h1 class="font-serif text-2xl md:text-3xl text-white mb-4 leading-relaxed">学ぶこと（教育について）</h1>
+    <div class="mt-4">
+      <a href="index.html" class="inline-flex items-center gap-1 text-accent/80 text-sm hover:text-accent transition-colors">&#x2190; &#x76EE;&#x6B21;&#x3078;&#x623B;&#x308B;</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-8 md:p-12">
+    <div class="article-body">
+
+<strong>『21世紀への指導原理　ＯＳＨＯ』より<br><br>
+<span class="works-heading">学ぶこと（教育について）</span></strong>
+<br><br>
+
+二〇世紀の今日まで世界中で教育と呼ばれてきたものは、単に不完全であるだけでなく有害でもある、とＯＳＨＯはいう。<br>
+　ただ自分の生計を立てられる人間を目標としたそれらの“教育”は、競争に基づいていた。それは愛のない人々を創り出し、人々を野望の達成のための苦闘に駆り立て、それによって結局は人々の幸福を破壊してきた、と。<br><br>
+　新しい世界では、「あらゆる子どもたちが最初から生命に対する畏敬の念を持って育てられるだろう。それが生きているということで、樹々に対する畏敬の念を、動物に対する畏敬の念を、小鳥たちに対する畏敬の念をもって」<br><br>
+　ＯＳＨＯが教える新しい教育ビジョンの中には“試験”は存在しない。<br>
+ 「誰ひとり劣ってはいない。また誰ひとり優越してもいない。人はただ、その人自身であるだけ、比較することはできない。だから、試験の果たす役割はない」<br>
+　そして、あらゆる教育機関において試験が存在しないため、教育現場でのものの見方の焦点は未来から現在へと転じるだろう。今この瞬間に学んでいるそのことへの興味が決定的であるために、教育からあらゆる目的志向が消失するだろう。<br><br>
+　ＯＳＨＯは、五つの分野からなる教育をビジョンする。<br>
+　第一分野は、歴史、地理など、テレビやコンピュータを使うことで扱えるような「知識を教える学科」だ。<br>
+　この分野に言語も入る。世界のすべての人々は母国語と国際語としての英語の、少なくとも二つの言語をまなぶことになるだろう。<br><br>
+　第二分野は、「自然科学」だ。この分野もテレビとコンピュータを援用することができるだろうが、より複雑であるため人間の案内者が必要になる程度が高い。<br><br>
+　第三分野は、過去からの教育に欠けていたもの、すなわち生き方、「生きることの技術【アート】」だ。<br>
+　そこで子どもたちは気づき、生きること、生への畏敬、愛を込めて関わること、問題を解決すること、今に応じる能力、協力、ユーモアのセンス、あるいは客観性、といったような課目を学ぶことになるだろう。<br>
+　これまで「人々は、自分が愛が何であるかを当然知っているものと思ってきた。だが、人々は知らない。そしてそれを知った頃にはもう遅すぎる」。この分野の教育で、あらゆる子どもが、自分の怒り、憎しみ、嫉妬を、愛に変容することを教えられるだろう。<br>
+「樹々をわたるこの小鳥たちのさえずりも耳に入らないようであってはいけない。樹や花や星は、あなたのハートと結ばれるべきだ。日の出や日没はたんなる外側のことではない。それは内なる何かでもあるべきだ。生命【いのち】に対する畏敬の念が、この第三分野の土台であるべきだ」<br><br>
+　第四分野は、「芸術と創造性」の分野になるだろう。<br>
+　絵画、音楽、舞踊、演劇、工芸、陶器、彫刻……、創造的なものはすべてこの分野にはいる。創造性のあらゆる領域が許容されるだろう。学生は創造的芸術の全領域から、何かを必修として選択することになる。「創造の仕方を学ばなければ、人は絶えず創造的である存在の一部にはならないからだ」<br><br>
+　第五分野は、死に方、「死ぬことの技術【アート】」だ。<br>
+ 「この五番目の領域に、死が存在しないことを知ることができるように、自分の内なる＜永遠の生命＞に気づくことができるように、あらゆる瞑想が入る。これは絶対に必修だ。誰もが死ななければならず、誰ひとりそれを避けることはできないのだから」<br><br>
+ 「この瞑想という大きな傘の下で、禅に、タオに、ヨーガに、ハシディズムに、そしてかつて存在しながら教育が何の注意も払ってこなかったあらゆる種類のあらゆる可能性に触れることができる。この五番目の領域で、合気道や柔術、柔道のような武術の存在も知らされるべきだ。武器を持つことのない自己防御の技術。それは自己防御であるだけでなく、同時に瞑想でもある」<br><br>
+　強制的なものはほんのわずかでいい、とＯＳＨＯはいう。<br>
+　地球社会の構成員であるための国際言語、自分が属するコミューンの構成員として何かの仕事を分担する能力。それくらいのものだ。<br>
+　本質的なことだけが必修で、非本質的なことはすべて選択科目だ。人はこの選択科目の中から沢山の科目を選ぶことができる。こういうことはすべて、何の苦もなくきわめて容易に行われるだろう、とＯＳＨＯはいう。
+    </div>
+  </article>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>

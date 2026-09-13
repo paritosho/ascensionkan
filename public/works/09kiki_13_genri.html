@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>“部分最適化原理”の終焉 &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa; --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif; --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .article-body { font-family: 'Noto Serif JP', serif; line-height: 2.2; font-size: 1rem; color: #1e1b35; }
+    .article-body strong { color: #6d28d9; font-weight: 600; }
+    .works-heading { color: #db245b; font-weight: 700; display: block; text-align: center; margin-bottom: 1.5em; font-size: 1.1em; }
+    .works-series { color: #a78bfa; font-size: 0.8em; text-align: center; margin-bottom: 0.5em; }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-serif text-lg font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/works/" class="text-accent font-medium">&#x4ED5;&#x4E8B;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-10">
+  <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 30% 60%, #a78bfa 0%, transparent 55%);"></div>
+  <div class="relative max-w-3xl mx-auto px-4 text-center">
+    <div class="works-series">『21世紀への指導原理　ＯＳＨＯ』より</div>
+    <h1 class="font-serif text-2xl md:text-3xl text-white mb-4 leading-relaxed">“部分最適化原理”の終焉</h1>
+    <div class="mt-4">
+      <a href="index.html" class="inline-flex items-center gap-1 text-accent/80 text-sm hover:text-accent transition-colors">&#x2190; &#x76EE;&#x6B21;&#x3078;&#x623B;&#x308B;</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-8 md:p-12">
+    <div class="article-body">
+
+<strong>『21世紀への指導原理　ＯＳＨＯ』より<br><br>
+<span class="works-heading">“部分最適化原理”の終焉</span></strong>
+<br><br>
+
+これまで地球上の歴史で、いわば“部分最適化原理”とでもいうべきある種の方向に人間の“欲動推進”を導いてきた一大勢力は、どのようにその仕事を終えることになるのだろう。<br>
+　恐らく、その勢力のこの地上での仕事は、その最終的成功によって不可避的に自己破滅するというドラマを、最後の幕を引くまで演じ尽くすことではないだろうか。そしてその過程で、私たち個々人の中の“何か”を、磁石のように引き付けて抱き込んでいくことではないだろうか。そしてそのことによって、ある肝心要の教訓を私たち一人ひとりの地球人に学ばせることではないだろうか。<br><br>
+　その勢力の基本戦略は、“分割して統治する”ことだという。<br>
+　だがそうだとすれば、その機構の中では、頂点にあって真に分割統治する不可視の一者以外は、実はあらゆる者が分割統治される不透明な階層性の中での歯車に成らざるをえないともいえる。<br>
+　その意味では、その個々人が現在の地上でどれほどの権力を手中にしているように見えても、実は自分を売り渡して歯車の一部になるそのことによって、そのずる賢さそのものに内在する盲目性と隷属に身を任せることにならざるをえないだろう。<br>
+　まわりの者たちを無知無能に止めて家畜化しようとするその意図、その盲目性の中で、自身不可避的に闇の中に沈まざるをえないだろう。<br>
+　その一大勢力は、まわりを取り巻く深い闇の中で、なおかつ自分だけがまわりを支配できるだけの意識の明るさを保っていられるだろうか。<br>
+　これまでの地球では、それが可能だったかもしれない。<br>
+　だがこれからの地球では、あらゆる所に“仕切り”を入れ、あらゆる所に“結界”を張るその“分割統治”は、息苦しいような粘着性を帯びた効率をしか達成できないだろう。それは素朴な“思いやり”ほどの効率も、成功も収めることはできないだろう。<br>
+　人の意識をひたすら眠らせる方に働くその“力”のまわりで、その一大勢力はなおかつ“分割統治”を維持するだけの意識を保っていられるだろうか。<br>
+　恐らく、それは可能ではないだろう。<br><br>
+　例えば、ひたすら子どもたちを白痴化させるテレビ番組、スポーツ、コンピュータゲームを制作販売しているその大人たちは、当人自身の家族の子どもたちだけはその白痴化から守っているのだろうか。<br>
+　そんなことを信じることはできない。<br>
+　恐らく、意識の暗さは底辺からじわじわと頂上めがけて昇って行くに違いない。<br>
+　支配階級そのものが、“支配”という愚かしい“夢”の中に溺れ、その“支配”を維持するだけの力をすら持てなくなるかもしれない。<br>
+　それらの一大勢力が、金融権力を信じ、知的所有権などという幻に夢を託している内に、何時かそんな特許そのものがいつの間にか時代遅れになっているだろう。<br>
+　どんなやましさも持たない心に生まれる純粋な直感ほどに強力な創造力は存在せず、単純な“思いやり”ほど高速な伝達方法は存在しないのだから。
+    </div>
+  </article>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>

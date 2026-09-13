@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>貨幣について &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa; --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif; --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .article-body { font-family: 'Noto Serif JP', serif; line-height: 2.2; font-size: 1rem; color: #1e1b35; }
+    .article-body strong { color: #6d28d9; font-weight: 600; }
+    .works-heading { color: #db245b; font-weight: 700; display: block; text-align: center; margin-bottom: 1.5em; font-size: 1.1em; }
+    .works-series { color: #a78bfa; font-size: 0.8em; text-align: center; margin-bottom: 0.5em; }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-serif text-lg font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/works/" class="text-accent font-medium">&#x4ED5;&#x4E8B;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-10">
+  <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 30% 60%, #a78bfa 0%, transparent 55%);"></div>
+  <div class="relative max-w-3xl mx-auto px-4 text-center">
+    <div class="works-series">『21世紀への指導原理　ＯＳＨＯ』より</div>
+    <h1 class="font-serif text-2xl md:text-3xl text-white mb-4 leading-relaxed">貨幣について</h1>
+    <div class="mt-4">
+      <a href="index.html" class="inline-flex items-center gap-1 text-accent/80 text-sm hover:text-accent transition-colors">&#x2190; &#x76EE;&#x6B21;&#x3078;&#x623B;&#x308B;</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-8 md:p-12">
+    <div class="article-body">
+
+<strong>『21世紀への指導原理　ＯＳＨＯ』より<br><br>
+<span class="works-heading">貨幣について</span></strong>
+<br><br>
+
+新しい時代の世界に、貨幣は存在しないだろう。<br>
+　ＯＳＨＯは「すべてのコミューンは相互依存すべきだが、金銭のやりとりはしないだろう。通貨は解体すべきだ」という。<br>
+　ＯＳＨＯはいう。<br>
+　それは人類に対して途方もない害を及ぼした。金はため込むことができる。ひとつのコミューンが他のコミューンよりも豊かになれば、裏口から貧困と豊かさ、資本主義のあらゆる悪夢が入り込んで来る。貧民階級と富裕階級、そして結局は支配への欲望がやって来る。富ゆえのコミューンの隷属が起こることになる、と。<br>
+ 「コミューンは、物々交換することになる」<br><br>
+　考えてみれば、貨幣とは不思議なものだった。<br>
+　実在のリアルな世界、森羅万象は変転きわまりない。<br>
+　何ひとつ変転しないもののない実在の世界の中で、ただ一点、万象のあらゆる変転に逆らって同一性を固執しようとするのが私たちの自我【エゴ】だった。そのエゴが万象の中に発見した不動の一点が“物【もの】”（すなわち物質）であること、そのエゴが万象の変転の根拠として仮想したものが“時間”であることを再発見し、爽やかに証明してみせたのはクラーゲスだった。<br>
+　そのクラーゲスに倣っていうなら、濃密な時間幻想が支配する体験世界の中で、体験＜主体＞（自我【エゴ】）と体験対象（“物【もの】”）とを“所有”という虚構の関係で固定し、それを実在の生命世界の中に物質化したものが「貨幣」だった。<br>
+　もともと無生命の“エゴ”と“物”の間に虚構された“所有”概念の物質化である以上、「貨幣」が無生命のものであることはいうまでもない。<br>
+　けれども、一旦発明されたこの「貨幣」には、森羅万象が流転する柔らかい生命世界を鋭い刃物のように切り割きながら、朽ちることなく、腐敗することなく、“所有”という虚構の一点を固執し続ける権能が許されたのだった。<br>
+ 「貨幣」は“所有”という虚構の概念を日常的に視覚化することによって、私たちの地球の想念界の“自我”“時間”“物質”の三位一体に、深い物質的根拠を与えて来たといえる。<br><br>
+　あるいは「貨幣」とは、物理次元に突出した＜意識＞がどうしても体験を通して卒業して行かなければならない、ひとつの大きなレッスンのようなものなのかもしれない。<br>
+　そして、宇宙の中のさまざまの惑星がその段階の知的生命体を育むに到ると、何処からともなく、どうしてもそのゲームを止められない一群の人たちが、精緻に組み立てられたマネーゲームのワンセットを持ってその惑星を訪れるのかもしれない。<br>
+ 『シオンの議定書』なる文書も、そのような霊統の魂がもたらしたとしか思えないほどのあまりにも突出した狡知を感じさせる。<br>
+　その人たちにはそのような宇宙の中での役割があり、それは誰に頼まれたというのでもなく、その人たちの尊厳を賭けた自身の選択による役割なのだろう。が、だからといって、私たち地球人類が何時までもその段階で留まる必要はないだろう。<br><br>
+　ＯＳＨＯは教える、「貯めることはハートを駄目にする。あらゆる貯蔵は有毒だ。分かち合えば、あなたのシステムは毒から解放される」と。<br>
+　いいや、私たち人類は何時までもそんなゲームに捕まってはいないだろう。<br>
+　そのことを全身が、全細胞が納得するためにこそ、私たちはあれほどの苦難を通り抜けなければならなかったのだから……。<br>
+　ＯＳＨＯはいう。<br>
+ 「貨幣は社会から消えなければならない」<br>
+ 「交換手段としての金がなくなったら、多くの犯罪が消えていくだろう」と。
+    </div>
+  </article>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>

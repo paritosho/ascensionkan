@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小さなコミューンの世界 &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa; --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif; --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .article-body { font-family: 'Noto Serif JP', serif; line-height: 2.2; font-size: 1rem; color: #1e1b35; }
+    .article-body strong { color: #6d28d9; font-weight: 600; }
+    .works-heading { color: #db245b; font-weight: 700; display: block; text-align: center; margin-bottom: 1.5em; font-size: 1.1em; }
+    .works-series { color: #a78bfa; font-size: 0.8em; text-align: center; margin-bottom: 0.5em; }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-serif text-lg font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/works/" class="text-accent font-medium">&#x4ED5;&#x4E8B;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-10">
+  <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 30% 60%, #a78bfa 0%, transparent 55%);"></div>
+  <div class="relative max-w-3xl mx-auto px-4 text-center">
+    <div class="works-series">『21世紀への指導原理　ＯＳＨＯ』より</div>
+    <h1 class="font-serif text-2xl md:text-3xl text-white mb-4 leading-relaxed">小さなコミューンの世界</h1>
+    <div class="mt-4">
+      <a href="index.html" class="inline-flex items-center gap-1 text-accent/80 text-sm hover:text-accent transition-colors">&#x2190; &#x76EE;&#x6B21;&#x3078;&#x623B;&#x308B;</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-8 md:p-12">
+    <div class="article-body">
+
+<strong>『21世紀への指導原理　ＯＳＨＯ』より<br><br>
+<span class="works-heading">小さなコミューンの世界</span></strong>
+<br><br>
+
+私たちは素晴らしい時代の出現に立ち合うだろう。<br>
+　ＯＳＨＯは美しいコミューンの世界のビジョンを語る。<br>
+　それは「国家もなく、大都市もなく、家族もなく、地球上のあらゆる所、深い森の中、青々と繁る森の中、山の中、島の中に、広がり点在する無数の小さなコミューンの世界」だ。<br>
+　それは、言い換えるなら、誰もが家族の一員である世界だ。<br>
+　新しい地球には、ひたすら人間の内面の混乱と孤独、そして砂漠化を深めるだけの巨大都市は存在しないだろう。<br><br>
+　コミューンの中を支配する原理は、万人の平等ではない。<br>
+　そこでは誰もが他の誰とも平等ではない。だが、不平等なのでもない。ただ、誰もが自分自身であるための平等な機会を持っているだけだ。<br>
+　そこでの自明の前提は、一人ひとりの個人が等しく独自【ユニーク】だということだ。平等不平等の問題は起こらない。個人を比べることはできないからだ。<br>
+　そこでは誰もが、人はみな永遠の命であること、努力の結果としてそうなるのではなく、絶対的な＜タオ＞としてそれぞれがユニークな存在であることを、自明のこととして知っていることだろう。<br>
+ 「コミューンとは、非野心的な生と万人のための機会均等の宣言だ」<br><br>
+　そこでは、昔たくさんの人たちが、嫉妬や偽善からではなく、最上の真心を込めて願ったあの“共産主義”が苦もなく実現していることだろう。ただそこでは誰もが、“産み出し”ているのが自分たち人間ではないこと、それがまさに「全体」が送ってくれている奇跡であることを自明のこととして知っているに違いない。<br>
+ 「コミューンとは、私たちのあらゆるエネルギーや資金、あらゆるものをひとつの共同資産にいれ、それがすべての人々の面倒を見るということだ」<br>
+　そこには、絶対的な言論の自由と創作表現の自由がある。<br>
+ 「それぞれの個人は、どんな理想に従うのでもなく、そのあるがままで尊重されるべきだ。彼の基本的要求はコミューンによって満たされ、コミューンが豊かになるにつれすべての個人は、より一層の快適さと贅沢を与えられる」<br>
+　そこはもはや贅沢や快適に反対する者はいない。そしてまた、物質的贅沢や快適さに駆り立てられている者もいない。<br><br>
+　どんな美名の下であれ、実在の世界にリアルに存在する＜意識＞の担い手「個」が苦しむことが是認されることはない。宗教の名の下であれ、社会の名の下であれ、いかなる集団の名においても、誰かを犠牲にすることが是認されることはない。<br>
+　またそこでは、どんな自虐行為も支持されないだろう。<br>
+ 「人間は、喜ぶために、可能な限り生を美しく、平安に満ちて、快適に生きるためにここにいる」<br>
+　そこでは科学者たちが自らの歓びをもって「人間をより幸福に、長生きに、若々しく健康にする進歩的発明、人生をもっと喜びと楽しみのあるものに、揺り篭から墓場までその旅をより苦しみの少ないものにする進歩的発明」を進めていることだろう。<br>
+　そして「その豊かさはコミューンのものになる。コミューンが豊かになるにつれ、すべての個人もより豊かになる」のだ。<br><br>
+　そのような世界では、自分が明るくなることが、自分が住む世界全体が明るくなることと同じであることを誰もが知っている。<br>
+　まわりの誰かを苦しめること、誰かの苦しみを見殺しにすることは直ちに自分に返ってきて、自分が住む世界の波動を低めることが自明のこととして理解されているからだ。<br>
+　そこでは、自分の豊かさの確認のために仲間の誰の貧しさも必要ではなく、それがただ単純に、自分が住む世界の波動を暗く重たいものにするに過ぎないことを誰もが知っている。<br><br>
+　そして、それが自明である地球では、私たちはもはや仲間の動物たちを屠殺を目的にして飼うことはないだろう。<br>
+　そのような地球からは、動物たちの恐怖の波動は消えている。<br>
+　法と裁きは存在せず、地上に刑罰を目的とする機関も存在しない。<br>
+ 「新しいコミューン、新しい人間は、どんな法律も、どんな秩序もなしに生きることができる。愛がその法になり、理解がその秩序になる。科学が、あらゆる困難な状況において最後の頼みの綱になる」<br>
+　形式ではなく誰もが本心で、全世界はひとつの人類であることを知っているのだ。<br>
+ 「ただ実用上の基準として小さなコミューンに分けられているだけだ。狂信主義もなければ、民族主義もなく、国粋主義もない」
+    </div>
+  </article>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>

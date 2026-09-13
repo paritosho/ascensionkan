@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>肉食と有機的世界 &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa; --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif; --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .article-body { font-family: 'Noto Serif JP', serif; line-height: 2.2; font-size: 1rem; color: #1e1b35; }
+    .article-body strong { color: #6d28d9; font-weight: 600; }
+    .works-heading { color: #db245b; font-weight: 700; display: block; text-align: center; margin-bottom: 1.5em; font-size: 1.1em; }
+    .works-series { color: #a78bfa; font-size: 0.8em; text-align: center; margin-bottom: 0.5em; }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-serif text-lg font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/works/" class="text-accent font-medium">&#x4ED5;&#x4E8B;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-10">
+  <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 30% 60%, #a78bfa 0%, transparent 55%);"></div>
+  <div class="relative max-w-3xl mx-auto px-4 text-center">
+    <div class="works-series">『21世紀への指導原理　ＯＳＨＯ』より</div>
+    <h1 class="font-serif text-2xl md:text-3xl text-white mb-4 leading-relaxed">肉食と有機的世界</h1>
+    <div class="mt-4">
+      <a href="index.html" class="inline-flex items-center gap-1 text-accent/80 text-sm hover:text-accent transition-colors">&#x2190; &#x76EE;&#x6B21;&#x3078;&#x623B;&#x308B;</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-8 md:p-12">
+    <div class="article-body">
+
+<strong>『21世紀への指導原理　ＯＳＨＯ』より<br><br>
+<span class="works-heading">肉食と有機的世界</span></strong>
+<br><br>
+
+現在先進国が拡大しつつある肉食という食生活は、従来貧しい国々が維持してきたといわれる穀物菜食という食事パターンの二十倍という非効率な土地とエネルギーの利用形態だ。<br>
+　それ自体が地球資源の搾取と汚染を拡大する構造だった。<br>
+　元々それ自体、継続維持できるようなものではなかったのだ。<br>
+　問題は、この構造によって利益を得ている人々以外に、この構造を日常的に意識する立場にある者がいなかったということだ。<br>
+　現在の肉食の生活は、本来の食肉の価格を支払うことによって維持されているものではない。<br>
+　食肉生産に関わる実際上の資源の略奪と環境汚染、エネルギー使用、それらの経済効果を実際の食肉の価格に転化すれば、現在の価格は何倍に増加することだろう。<br>
+　それ所か、それが第三世界の人々の飢餓を代償として実現されている構造だとすれば、いったいその価格をどうやって決めればいいのだろう。しかも、それは食肉に供される動物たちの悲惨な状態、苦痛、恐怖をまったく度外視しての話だ。<br><br>
+　しかし有機的な世界の中では、すべてが有機的に連動している。<br>
+　たとえそれだけの価格を支払ってそのような食生活を維持したところで、その動物たちの恐怖と苦痛の波動が、めぐりめぐって私たちが生きる意識の世界に有機的な形で反映して来る。<br>
+　私たち人間に最も近い存在である動物たちを食べることの反映が、すでに私たちの肉体という物理次元で、また私たちの内面という非物理次元で表現されていると考えなくてはならない。人間と同じ食物連鎖の最上位に存在する生き物たちを食糧とするために行っている薬物汚染は、無論、最終的に彼らを補食する私たち人間の肉体の中に濃縮蓄積するしかない。<br>
+ 『エコロジカル・ダイエット』の著者ジョン・ロビンズは、現代の悪夢ともいえる食肉生産“工場”の実体を報告して、動物たちが恐怖のあまり発狂し、発病し、ついには動物としては考えられない自殺志向にまで到る恐怖の世界を描いている。<br>
+　もしこの地球に未来があるなら、エイズとは、現代人の性行動を内的に汚染した“やましさ”という毒物と、濃厚に薬物汚染された食肉中に含まれる動物たちの“恐怖と絶望”が引き起こした複合汚染であり、その結果起こった生きる意欲の喪失だったと記録する日が来るかもしれない。<br>
+　たとえ現象的には、地上の権力者の指示によってエイズ・ウィルスが“製造”されたという推論が事実だとしても、それはそのような権力者たちの恣意的な意図によるのではなく、おそらくは、そのような権力者をも手段として使うある種の必然によるに違いない。<br><br>
+　ＯＳＨＯはいう。<br>
+ 「人が生きる意志を失うと必ず、その抵抗力はたちまち落ちてしまう。肉体はマインドに従うからだ。肉体はマインドの非常に忠実な召使いだ。それは宗教的なまでにマインドに仕える」<br>
+ 「エイズと呼ばれている病気は単なる病気ではない。それは人類が生きる意志を失いつつあることを示している」と。<br>
+　私たちが“有機系”の言語をけっして理解しようとせず、あくまでも“部分最適化”の悪夢の中にさまよい込むなら、結局私たちが受け取るのは“部分最適化”の世界の言語であり、すべての事態は悪夢的な最後通牒として現象しなければならなくなる。<br><br>
+　恐らく、食糧問題というものは存在しない。<br>
+　現象しているのはただ、現在いわゆる先進世界が行っている肉食という食生活が、人間が卒業して行くべき食生活の一段階であることの「全体」からの通告なのだろう。
+    </div>
+  </article>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>
