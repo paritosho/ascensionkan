@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>時代の&lt;ソフト&gt; &#x2014; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x2728;</text></svg>" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #1e1b4b; --color-primary-light: #312e81; --color-primary-dark: #0f0e2a;
+      --color-accent: #a78bfa; --color-surface: #f5f3ff;
+      --font-sans: 'Noto Sans JP', sans-serif; --font-serif: 'Zen Old Mincho', 'Noto Serif JP', serif;
+    }
+  </style>
+  <style>
+    body { background-color: #f5f3ff; color: #1e1b35; font-family: 'Noto Sans JP', sans-serif; }
+    #navbar { background: linear-gradient(to bottom, rgba(15,14,42,0.7), transparent); }
+    #navbar.scrolled { background: rgba(30,27,75,0.93); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .article-body { font-family: 'Noto Serif JP', serif; line-height: 2.2; font-size: 1rem; color: #1e1b35; }
+    .article-body strong { color: #6d28d9; font-weight: 600; }
+    .works-heading { color: #db245b; font-weight: 700; display: block; text-align: center; margin-bottom: 1.5em; font-size: 1.1em; }
+    .works-series { color: #a78bfa; font-size: 0.8em; text-align: center; margin-bottom: 0.5em; }
+  </style>
+</head>
+<body class="min-h-screen">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-white font-serif text-lg font-bold">&#x2728; &#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/works/" class="text-accent font-medium">&#x4ED5;&#x4E8B;</a>
+      <a href="/ndic/" class="text-white/70 hover:text-white transition-colors">N&#x8F9E;&#x66F8;</a>
+      <a href="/bookshelf/" class="text-white/70 hover:text-white transition-colors">&#x672C;&#x68DA;</a>
+      <a href="/prose-poem/" class="text-white/70 hover:text-white transition-colors">&#x968F;&#x60F3;</a>
+    </div>
+  </div>
+</nav>
+<script>
+  const nav=document.getElementById('navbar');let t=false;
+  window.addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',scrollY>50);t=false;});t=true;}});
+</script>
+<header class="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden pt-28 pb-10">
+  <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 30% 60%, #a78bfa 0%, transparent 55%);"></div>
+  <div class="relative max-w-3xl mx-auto px-4 text-center">
+    <div class="works-series">『21世紀への指導原理　ＯＳＨＯ』</div>
+    <h1 class="font-serif text-2xl md:text-3xl text-white mb-4 leading-relaxed">時代の&lt;ソフト&gt;</h1>
+    <div class="mt-4">
+      <a href="index.html" class="inline-flex items-center gap-1 text-accent/80 text-sm hover:text-accent transition-colors">&#x2190; &#x76EE;&#x6B21;&#x3078;&#x623B;&#x308B;</a>
+    </div>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+  <article class="bg-white rounded-2xl shadow-sm border border-indigo-50 p-8 md:p-12">
+    <div class="article-body">
+
+<strong>『21世紀への指導原理　ＯＳＨＯ』<br><br>
+<span class="works-heading">時代の&lt;ソフト&gt;</span></strong>
+<br>
+<br>
+
+　不幸は、けっして人間の＜道【タオ】＞の一部ではない、とＯＳＨＯは言う。<br>
+　それどころか、歓喜こそが私たちの＜タオ＞だ。<br>
+　意識であることを選んだ人間は、その本質の中に不幸を、惨めさを埋め込まれて生まれて来ているのではない。人間を不幸にしているのは、現在の人類が選んでいる＜ソフト＞のせいに過ぎない、と。<br><br>
+　ここで＜ソフト＞とは、私たちの行動を内側から制御しているある判断枠のようなものを指す言葉だとしよう。<br>
+　目に見えるコンピュータはハードウェアとしての機械の外見だが、そのコンピュータがどんな振る舞いをするのかは、内蔵するソフトウェアによってその機械が動き出してみないことには分からない。同じように、私たち一人ひとりの人間の内面がどのようであり、次にどのような行動を起こそうとしているのかは、当人の＜ソフト＞が決定した行動が外面化するまで他人には分からない。<br>
+　素晴らしく幸福であるべき状況にあると思われていた人が、口を開くと大変な不幸を訴えるかもしれない。この上もない不幸な状況にあると思われた人が、実は至福に目を輝かせているかもしれないのだ。<br><br>
+　自分の幸不幸を決定するその＜ソフト＞にどのようなものを選択するかは、無論、私たち一人ひとりの個人に任されている。それこそが人間の尊厳であり、それによって私たちは＜意識＞の旅を創造している。<br>
+　けれども、それとはまた少し違った広い意味で、人類全体が無意識のうちに選択してしまっているような、あるいはほとんど選択の余地もなく強引に選ばされてしまっているような、「時代のソフト」とでもいうしかないものもある。<br><br>
+　コンピュータのソフトウェアが、もともとハードウェアの仕様にないことを試み続けたら、コンピュータはクラッシュし続けるより仕方ないだろう。人間が創り出したチャチなコンピュータならクラッシュで済む。何度でも再起動して、何度でもクラッシュすればいいだけだ。<br>
+　けれども人間が本来内蔵しているのは実現されるべき＜タオ＞であり、その実現を支援するための＜ソフト＞だ。この＜ソフト＞は、どんな状況にも対応できる能力があり、どんな愚かな命令にも合わせることができる。<br>
+　戦国時代に生を得ようが、二十一世紀に生を得ようが、そこで生き延びるために、その状況に自分を適合させる能力を持っている。<br>
+　だが、その＜ソフト＞にできないことがある。それは、＜タオ＞を変更することだ。<br>
+“種子”として内蔵されている＜タオ＞の実現を支援するのが、その＜ソフト＞の存在理由だからだ。<br><br>
+　本来の内蔵＜ソフト＞がいたずらに愚かな選択を強いられ、自身愚かな＜ソフト＞となって苦渋に満ちた道を歩みながら＜タオ＞に仕えるとき、その人間に約束されるのが不幸だ。<br>
+　なぜなら、“種子”として内蔵された＜タオ＞本来の力は、元々“歓び”を触媒として無限に発現するように仕組まれており、苦悩に満ちた人生では、最も愚かな要請にも適応できるように仕組まれている＜ソフト＞の“やりくり”だけでこの世を渡って行かなければならないからだ。<br>
+　言ってみるなら、補助ロケットのやりくりだけで宇宙空間を旅するようなものだ。<br>
+　この世に生まれ落ちた赤ん坊は、素早く自分の＜ソフト＞を、この世の＜ソフト＞の愚かさに合わせなければならない。彼は自らの人生を、時代の＜ソフト＞に自分を適合させたところから出発させなければならない。<br>
+　そして、これまでの全歴史を通じて、人類はその＜ソフト＞の選び方を誤って来た、とＯＳＨＯは言う。
+    </div>
+  </article>
+</main>
+<footer class="bg-primary-dark text-white/30 py-8 text-center text-xs mt-4">
+  <p>&#x00A9; paritosho | <a href="/" class="hover:text-white/60 transition-colors">&#x30A2;&#x30BB;&#x30F3;&#x30B7;&#x30E7;&#x30F3;&#x9928;</a></p>
+</footer>
+</body>
+</html>
